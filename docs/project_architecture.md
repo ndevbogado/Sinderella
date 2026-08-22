@@ -26,3 +26,45 @@ project/
 ├── tools/              -> Herramientas y gestores de desarrollo internas            
 ├── docs/               -> Documentacion general de como funciona cada componente    
 └── tests/              -> Seccion para el testeo de codigo    
+
+
+
+# Basic player or npc dir structure:
+
+project/
+└── game/
+    └── characters/
+        ├─── player/
+        │    ├── Player.tscn
+        │    ├── Player.gd
+        │    ├── PlayerAnimations.tres
+        │    │
+        │    └── sprites/
+        │        ├── idle/
+        │        │   ├── idle_0.png
+        │        │   └── idle_1.png
+        │        │
+        │        ├── walk/
+        │        │   ├── walk_0.png
+        │        │   └── walk_1.png
+        │        │
+        │        └── attack/
+        │            ├── attack_0.png
+        │            └── attack_1.png 
+        └── npc_01/ 
+            ├── Npc_01.tscn
+            ├── Npc_01.gd
+            ├── Npc_01Animations.tres
+            │       
+            └── sprites/
+                ├── idle/
+                │   ├── idle_0.png
+                │   └── idle_1.png
+                │   
+                ├── walk/
+                │   ├── walk_0.png
+                │   └── walk_1.png
+                │   
+                └── attack/
+                    ├── attack_0.png
+                     └── attack_1.png  
