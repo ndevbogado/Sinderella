@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://systems/music_manager.gd" id="1_manager"]
+[ext_resource type="AudioStream" path="res://music/01_cinematica_inicial.ogg" id="2_opening"]
+[ext_resource type="AudioStream" path="res://music/02_bosque_persecucion.ogg" id="3_forest"]
+[ext_resource type="AudioStream" path="res://music/03_combate.ogg" id="4_battle"]
+[ext_resource type="AudioStream" path="res://music/04_derrota.ogg" id="5_defeat"]
+[ext_resource type="AudioStream" path="res://music/05_victoria.ogg" id="6_victory"]
+
+[node name="MusicManager" type="Node"]
+script = ExtResource("1_manager")
+cinematica_inicial = ExtResource("2_opening")
+bosque_persecucion = ExtResource("3_forest")
+combate = ExtResource("4_battle")
+cinematica_derrota = ExtResource("5_defeat")
+cinematica_victoria = ExtResource("6_victory")
+volumen_general_db = -5.0
+duracion_fundido = 0.85
+
+[node name="PlayerA" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+
+[node name="PlayerB" type="AudioStreamPlayer" parent="."]
+process_mode = 3

@@ -1,0 +1,344 @@
+[gd_scene format=3 uid="uid://ccj1og2x6ba85"]
+
+[ext_resource type="Script" uid="uid://i1pwkx0o734d" path="res://scripts/story_reader.gd" id="1_reader"]
+[ext_resource type="Script" uid="uid://bp5j6gyge6r7p" path="res://scripts/story_page.gd" id="2_page"]
+[ext_resource type="AudioStream" uid="uid://cbo6jy782q7wb" path="res://music/01_cinematica_inicial.ogg" id="2_w48qg"]
+[ext_resource type="PackedScene" uid="uid://bpxfl8nntfv0x" path="res://components/story_panel.tscn" id="3_panel"]
+[ext_resource type="Texture2D" uid="uid://bkt5kay6wubed" path="res://images/panel-01.png" id="5_vivmo"]
+[ext_resource type="Texture2D" uid="uid://co56yut6206gt" path="res://images/panel-02.png" id="6_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://bfghf3ir4ab11" path="res://images/panel-03.png" id="7_yaehf"]
+[ext_resource type="Texture2D" uid="uid://bdf8dc8b3sivr" path="res://images/panel-04.png" id="8_074og"]
+[ext_resource type="Texture2D" uid="uid://dmcx4ngu8ugtn" path="res://images/panel-05.png" id="9_cegan"]
+[ext_resource type="Texture2D" uid="uid://cflpc5fomkmro" path="res://images/panel-06.png" id="10_82xsv"]
+[ext_resource type="Texture2D" uid="uid://cwk5b8yvf0xtp" path="res://images/panel-07.png" id="11_getpj"]
+[ext_resource type="Texture2D" uid="uid://bbj7boohw6s2x" path="res://images/panel-08.png" id="12_ryguw"]
+[ext_resource type="Texture2D" uid="uid://crelhtp5w41xu" path="res://images/panel-09.png" id="13_d13ii"]
+[ext_resource type="Texture2D" uid="uid://bcj8ohrn6yae2" path="res://images/panel-10.png" id="14_1u8w0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_page_2"]
+bg_color = Color(0.0705882, 0.0470588, 0.0745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_page_1"]
+bg_color = Color(0.054902, 0.0627451, 0.0823529, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_page_3"]
+bg_color = Color(0.0431373, 0.0666667, 0.0705882, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_hud"]
+bg_color = Color(0.0156863, 0.0196078, 0.0313726, 0.92)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 0.18)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_button"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.137255, 0.172549, 0.235294, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_button_hover"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.235294, 0.317647, 0.431373, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="StoryMangaMode" type="Control" unique_id=1621238555]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_reader")
+auto_panel_interval = 1.6
+auto_page_interval = 2.2
+next_scene_path = "res://scenes/forest_gameplay.tscn"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1663810252]
+stream = ExtResource("2_w48qg")
+
+[node name="Pages" type="Control" parent="." unique_id=118351344]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Page01" type="Control" parent="Pages" unique_id=1680942351]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_page")
+page_title = "Caida"
+
+[node name="Background" type="Panel" parent="Pages/Page01" unique_id=788425964]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBox_page_2")
+
+[node name="Panel01" parent="Pages/Page01" unique_id=1310595928 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.045
+anchor_right = 0.965
+anchor_bottom = 0.355
+pivot_offset = Vector2(595.19995, 99.82)
+story_order = 1
+panel_title = "PANORAMICA"
+image = ExtResource("5_vivmo")
+placeholder_color = Color(0.321569, 0.247059, 0.482353, 1)
+entry_from = 3
+
+[node name="Panel02" parent="Pages/Page01" unique_id=259030721 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.39
+anchor_right = 0.48
+anchor_bottom = 0.955
+pivot_offset = Vector2(284.8, 181.93002)
+story_order = 2
+panel_title = "CAIDA"
+image = ExtResource("6_2cqfq")
+placeholder_color = Color(0.2, 0.384314, 0.541176, 1)
+enter_duration = 0.75
+initial_rotation_degrees = -2.0
+
+[node name="Panel03" parent="Pages/Page01" unique_id=281889455 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.505
+anchor_top = 0.39
+anchor_right = 0.965
+anchor_bottom = 0.68
+pivot_offset = Vector2(294.39996, 93.38001)
+story_order = 3
+panel_title = "MIRADA"
+image = ExtResource("7_yaehf")
+placeholder_color = Color(0.54902, 0.266667, 0.360784, 1)
+entry_from = 1
+
+[node name="Panel04" parent="Pages/Page01" unique_id=618913030 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.505
+anchor_top = 0.715
+anchor_right = 0.965
+anchor_bottom = 0.955
+pivot_offset = Vector2(294.39996, 77.280014)
+story_order = 4
+panel_title = "IMPACTO"
+image = ExtResource("8_074og")
+placeholder_color = Color(0.541176, 0.443137, 0.215686, 1)
+entry_from = 3
+
+[node name="Page02" type="Control" parent="Pages" unique_id=2116843977]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_page")
+page_title = "Llegada"
+
+[node name="Background" type="Panel" parent="Pages/Page02" unique_id=1432816955]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBox_page_1")
+
+[node name="Panel01" parent="Pages/Page02" unique_id=288938923 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.045
+anchor_right = 0.59
+anchor_bottom = 0.47
+pivot_offset = Vector2(355.19998, 136.84999)
+story_order = 1
+panel_title = "PLANO GENERAL"
+image = ExtResource("9_cegan")
+placeholder_color = Color(0.247059, 0.360784, 0.509804, 1)
+initial_rotation_degrees = -1.5
+
+[node name="Panel02" parent="Pages/Page02" unique_id=1601683296 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.615
+anchor_top = 0.045
+anchor_right = 0.965
+anchor_bottom = 0.47
+pivot_offset = Vector2(223.99997, 136.84999)
+story_order = 2
+panel_title = "DETALLE"
+image = ExtResource("10_82xsv")
+placeholder_color = Color(0.482353, 0.278431, 0.396078, 1)
+entry_from = 2
+enter_duration = 0.45
+
+[node name="Panel03" parent="Pages/Page02" unique_id=1866665288 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.505
+anchor_right = 0.35
+anchor_bottom = 0.955
+pivot_offset = Vector2(201.6, 144.90001)
+story_order = 3
+panel_title = "PERSONAJE"
+image = ExtResource("11_getpj")
+placeholder_color = Color(0.345098, 0.435294, 0.337255, 1)
+entry_from = 6
+enter_duration = 0.6
+initial_rotation_degrees = 1.2
+
+[node name="Panel04" parent="Pages/Page02" unique_id=948511577 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.505
+anchor_right = 0.965
+anchor_bottom = 0.955
+pivot_offset = Vector2(377.59998, 144.90001)
+story_order = 4
+panel_title = "ACCION"
+image = ExtResource("12_ryguw")
+placeholder_color = Color(0.537255, 0.345098, 0.203922, 1)
+entry_from = 1
+enter_duration = 0.7
+
+[node name="Page03" type="Control" parent="Pages" unique_id=639258539]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_page")
+page_title = "Encuentro"
+
+[node name="Background" type="Panel" parent="Pages/Page03" unique_id=821565410]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBox_page_3")
+
+[node name="Panel01" parent="Pages/Page03" unique_id=1700410000 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.045
+anchor_right = 0.351
+anchor_bottom = 0.95500004
+offset_right = -0.08004761
+offset_bottom = -6.1035156e-05
+pivot_offset = Vector2(202.2, 293.02)
+story_order = 1
+panel_title = "SILUETA"
+image = ExtResource("13_d13ii")
+placeholder_color = Color(0.223529, 0.45098, 0.45098, 1)
+enter_duration = 0.8
+
+[node name="Panel02" parent="Pages/Page03" unique_id=1583539507 instance=ExtResource("3_panel")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37600002
+anchor_top = 0.045
+anchor_right = 0.965
+anchor_bottom = 0.95500004
+offset_left = -0.08001709
+offset_bottom = -6.1035156e-05
+pivot_offset = Vector2(376.99997, 293.02)
+story_order = 2
+panel_title = "ROSTRO"
+image = ExtResource("14_1u8w0")
+placeholder_color = Color(0.447059, 0.294118, 0.490196, 1)
+entry_from = 1
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=444294999]
+
+[node name="BottomBar" type="PanelContainer" parent="HUD" unique_id=168582022]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = -64.0
+offset_right = -18.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBox_hud")
+
+[node name="Margin" type="MarginContainer" parent="HUD/BottomBar" unique_id=94971701]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+
+[node name="Row" type="HBoxContainer" parent="HUD/BottomBar/Margin" unique_id=1327835329]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PreviousButton" type="Button" parent="HUD/BottomBar/Margin/Row" unique_id=1645619958]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBox_button")
+theme_override_styles/hover = SubResource("StyleBox_button_hover")
+text = "<  ANTERIOR"
+
+[node name="AutoButton" type="Button" parent="HUD/BottomBar/Margin/Row" unique_id=1187144009]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBox_button")
+theme_override_styles/hover = SubResource("StyleBox_button_hover")
+text = "AUTO: OFF"
+
+[node name="StatusLabel" type="Label" parent="HUD/BottomBar/Margin/Row" unique_id=1923293093]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.86, 0.88, 0.94, 1)
+text = "Pagina 1/3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NextButton" type="Button" parent="HUD/BottomBar/Margin/Row" unique_id=1259005109]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBox_button")
+theme_override_styles/hover = SubResource("StyleBox_button_hover")
+text = "SIGUIENTE  >"

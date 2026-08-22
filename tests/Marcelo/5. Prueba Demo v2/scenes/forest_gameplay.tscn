@@ -1,0 +1,209 @@
+[gd_scene format=3 uid="uid://cmmyks5jnnvdv"]
+
+[ext_resource type="Script" uid="uid://bm4q5s3s3mixc" path="res://scripts/forest_controller.gd" id="1_controller"]
+[ext_resource type="Script" uid="uid://bjaglfj7nq7hc" path="res://scripts/burning_forest_placeholder.gd" id="2_forest"]
+[ext_resource type="Script" uid="uid://c23mbsarv1fh5" path="res://scripts/actors/player_controller.gd" id="3_player"]
+[ext_resource type="Script" uid="uid://de5ri3j6040v8" path="res://scripts/actors/hunter_controller.gd" id="4_hunter"]
+[ext_resource type="PackedScene" path="res://components/editable_actor_visual.tscn" id="5_visual"]
+
+[sub_resource type="CapsuleShape2D" id="Capsule_player"]
+radius = 15.0
+height = 38.0
+
+[sub_resource type="CapsuleShape2D" id="Capsule_hunter"]
+radius = 15.0
+height = 38.0
+
+[sub_resource type="StyleBoxFlat" id="Style_action_feedback"]
+bg_color = Color(0.035, 0.018, 0.025, 0.98)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.54, 0.22, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.7)
+shadow_size = 14
+
+[sub_resource type="StyleBoxFlat" id="Style_popup"]
+bg_color = Color(0.035, 0.025, 0.035, 0.96)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9, 0.36, 0.23, 0.92)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+
+[sub_resource type="StyleBoxFlat" id="Style_button"]
+content_margin_left = 28.0
+content_margin_top = 8.0
+content_margin_right = 28.0
+content_margin_bottom = 8.0
+bg_color = Color(0.56, 0.16, 0.12, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="BurningForest" type="Node2D" unique_id=940556590]
+script = ExtResource("1_controller")
+
+[node name="ForestPlaceholder" type="Node2D" parent="." unique_id=1590977158]
+script = ExtResource("2_forest")
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=1135275035]
+offset_right = 2400.0
+offset_bottom = 1350.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Cinderella" type="CharacterBody2D" parent="." unique_id=681278859]
+unique_name_in_owner = true
+position = Vector2(430, 675)
+script = ExtResource("3_player")
+movement_bounds = Rect2(80, 80, 2240, 1190)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cinderella" unique_id=1485944478]
+shape = SubResource("Capsule_player")
+
+[node name="Visual" parent="Cinderella" unique_id=186999092 instance=ExtResource("5_visual")]
+placeholder_color = Color(0.42, 0.68, 0.94, 1)
+character_name = "CENICIENTA"
+
+[node name="Camera2D" type="Camera2D" parent="Cinderella" unique_id=1321578186]
+limit_left = 0
+limit_top = 0
+limit_right = 2400
+limit_bottom = 1350
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="Caperucita" type="CharacterBody2D" parent="." unique_id=1246086897]
+unique_name_in_owner = true
+position = Vector2(1450, 675)
+script = ExtResource("4_hunter")
+target_path = NodePath("../Cinderella")
+movement_bounds = Rect2(80, 80, 2240, 1190)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caperucita" unique_id=1160590515]
+shape = SubResource("Capsule_hunter")
+
+[node name="Visual" parent="Caperucita" unique_id=1368156529 instance=ExtResource("5_visual")]
+placeholder_color = Color(0.82, 0.15, 0.18, 1)
+character_name = "CAPERUCITA"
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=492969064]
+
+[node name="ControlsHint" type="Label" parent="HUD" unique_id=1875528087]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -292.0
+offset_top = 668.0
+offset_right = -20.0
+offset_bottom = 700.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 1, 0.75)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+text = "WASD / FLECHAS  ·  MOVIMIENTO"
+horizontal_alignment = 2
+
+[node name="ActionFeedback" type="PanelContainer" parent="HUD" unique_id=282046882]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -112.0
+offset_right = 340.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_action_feedback")
+
+[node name="Margin" type="MarginContainer" parent="HUD/ActionFeedback" unique_id=1169651535]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 10
+
+[node name="Column" type="VBoxContainer" parent="HUD/ActionFeedback/Margin" unique_id=1097757462]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="DetectedLabel" type="Label" parent="HUD/ActionFeedback/Margin/Column" unique_id=431888116]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.66, 0.35, 1)
+theme_override_font_sizes/font_size = 14
+text = "ACCIÓN ACTUAL"
+horizontal_alignment = 1
+
+[node name="ActionFeedbackLabel" type="Label" parent="HUD/ActionFeedback/Margin/Column" unique_id=1438144484]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.75, 0.08, 0.05, 0.9)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/font_size = 26
+text = "Manteniendo la guardia"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IntroPopup" type="PanelContainer" parent="HUD" unique_id=1347326246]
+unique_name_in_owner = true
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 290.0
+offset_top = 24.0
+offset_right = -290.0
+offset_bottom = 192.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("Style_popup")
+
+[node name="Margin" type="MarginContainer" parent="HUD/IntroPopup" unique_id=816283696]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 14
+
+[node name="Column" type="VBoxContainer" parent="HUD/IntroPopup/Margin" unique_id=248298545]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="Title" type="Label" parent="HUD/IntroPopup/Margin/Column" unique_id=1673334399]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.76, 0.55, 1)
+theme_override_font_sizes/font_size = 26
+text = "DUELO DE CUENTOS: CENICIENTA VS CAPERUCITA"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="HUD/IntroPopup/Margin/Column" unique_id=779583429]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.92, 0.9, 0.92, 1)
+theme_override_font_sizes/font_size = 18
+text = "Mantén la guardia, ataca o huye."
+horizontal_alignment = 1
+
+[node name="OkButton" type="Button" parent="HUD/IntroPopup/Margin/Column" unique_id=2127814651]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 38)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("Style_button")
+text = "OK"

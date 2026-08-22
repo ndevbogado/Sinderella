@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="CombatSettings" format=3 uid="uid://b7ekpxwabgypl"]
+
+[ext_resource type="Script" uid="uid://bpbarexgwpcc0" path="res://resources/combat_settings.gd" id="1_settings"]
+
+[resource]
+script = ExtResource("1_settings")

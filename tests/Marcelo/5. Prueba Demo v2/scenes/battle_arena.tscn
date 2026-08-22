@@ -1,0 +1,506 @@
+[gd_scene format=3 uid="uid://bnf8fl1nv2vc2"]
+
+[ext_resource type="Script" uid="uid://bvmx6jbfi2on6" path="res://scripts/combat/battle_arena.gd" id="1_arena"]
+[ext_resource type="Script" uid="uid://dsalrq3nl4q6p" path="res://scripts/combat/letter_qte.gd" id="2_qte"]
+[ext_resource type="Script" uid="uid://c1y6hfho61aua" path="res://scripts/combat/timing_bar.gd" id="3_timing"]
+[ext_resource type="PackedScene" path="res://components/editable_actor_visual.tscn" id="4_visual"]
+[ext_resource type="Resource" uid="uid://b7ekpxwabgypl" path="res://resources/default_combat_settings.tres" id="5_settings"]
+
+[sub_resource type="StyleBoxFlat" id="Style_card"]
+bg_color = Color(0.025, 0.025, 0.04, 0.94)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.74, 0.58, 0.42, 0.8)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="Style_health_bg"]
+bg_color = Color(0.12, 0.08, 0.09, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_health_player"]
+bg_color = Color(0.28, 0.67, 0.94, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_health_enemy"]
+bg_color = Color(0.88, 0.17, 0.18, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_message"]
+bg_color = Color(0.018, 0.015, 0.025, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 0.2)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="Style_widget"]
+bg_color = Color(0.02, 0.018, 0.032, 0.98)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.93, 0.39, 0.24, 0.9)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="Style_timer_bg"]
+bg_color = Color(0.12, 0.09, 0.13, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_timer_fill"]
+bg_color = Color(0.94, 0.51, 0.2, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_action"]
+content_margin_left = 18.0
+content_margin_top = 12.0
+content_margin_right = 18.0
+content_margin_bottom = 12.0
+bg_color = Color(0.18, 0.075, 0.09, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.95, 0.55, 0.32, 0.7)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="Style_action_hover"]
+content_margin_left = 18.0
+content_margin_top = 12.0
+content_margin_right = 18.0
+content_margin_bottom = 12.0
+bg_color = Color(0.42, 0.13, 0.105, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.77, 0.38, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[node name="BattleArena" type="Control" unique_id=1788438741]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_arena")
+combat_settings = ExtResource("5_settings")
+
+[node name="ArenaColor" type="ColorRect" parent="." unique_id=1369003701]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.105, 0.045, 0.055, 1)
+
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=1738408384]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ArenaFloor" type="Polygon2D" parent="." unique_id=2076083067]
+color = Color(0.16, 0.105, 0.11, 1)
+polygon = PackedVector2Array(182, 556, 366, 262, 914, 262, 1100, 556)
+
+[node name="CinderellaBattleVisual" parent="." unique_id=769688391 instance=ExtResource("4_visual")]
+unique_name_in_owner = true
+position = Vector2(410, 445)
+character_name = "CENICIENTA"
+
+[node name="CaperucitaBattleVisual" parent="." unique_id=141011342 instance=ExtResource("4_visual")]
+unique_name_in_owner = true
+position = Vector2(870, 445)
+placeholder_color = Color(0.84, 0.14, 0.17, 1)
+character_name = "CAPERUCITA"
+
+[node name="CinderellaCard" type="PanelContainer" parent="." unique_id=1039655423]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 310.0
+offset_bottom = 213.0
+theme_override_styles/panel = SubResource("Style_card")
+
+[node name="Margin" type="MarginContainer" parent="CinderellaCard" unique_id=1960236761]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Row" type="HBoxContainer" parent="CinderellaCard/Margin" unique_id=1754600111]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PortraitBox" type="PanelContainer" parent="CinderellaCard/Margin/Row" unique_id=1952805356]
+custom_minimum_size = Vector2(108, 145)
+layout_mode = 2
+
+[node name="CinderellaPortrait" type="TextureRect" parent="CinderellaCard/Margin/Row/PortraitBox" unique_id=551268456]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CinderellaPortraitPlaceholder" type="Label" parent="CinderellaCard/Margin/Row/PortraitBox" unique_id=1048383089]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.62, 0.83, 1, 1)
+text = "FOTO
+CENICIENTA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Info" type="VBoxContainer" parent="CinderellaCard/Margin/Row" unique_id=584153362]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 7
+
+[node name="Name" type="Label" parent="CinderellaCard/Margin/Row/Info" unique_id=666533984]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.67, 0.84, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "CENICIENTA"
+
+[node name="CinderellaHealth" type="ProgressBar" parent="CinderellaCard/Margin/Row/Info" unique_id=426622607]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 18)
+layout_mode = 2
+theme_override_styles/background = SubResource("Style_health_bg")
+theme_override_styles/fill = SubResource("Style_health_player")
+show_percentage = false
+
+[node name="CinderellaStats" type="Label" parent="CinderellaCard/Margin/Row/Info" unique_id=1710185297]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.94, 0.94, 0.98, 1)
+theme_override_font_sizes/font_size = 15
+text = "VIDA 120/120
+ATAQUE 25
+DEFENSA 50"
+
+[node name="CaperucitaCard" type="PanelContainer" parent="." unique_id=1300552378]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -310.0
+offset_top = 18.0
+offset_right = -18.0
+offset_bottom = 213.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("Style_card")
+
+[node name="Margin" type="MarginContainer" parent="CaperucitaCard" unique_id=1530502208]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Row" type="HBoxContainer" parent="CaperucitaCard/Margin" unique_id=434360896]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Info" type="VBoxContainer" parent="CaperucitaCard/Margin/Row" unique_id=1374826787]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 7
+
+[node name="Name" type="Label" parent="CaperucitaCard/Margin/Row/Info" unique_id=854152855]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.55, 0.55, 1)
+theme_override_font_sizes/font_size = 20
+text = "CAPERUCITA"
+horizontal_alignment = 2
+
+[node name="CaperucitaHealth" type="ProgressBar" parent="CaperucitaCard/Margin/Row/Info" unique_id=636863741]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 18)
+layout_mode = 2
+theme_override_styles/background = SubResource("Style_health_bg")
+theme_override_styles/fill = SubResource("Style_health_enemy")
+show_percentage = false
+
+[node name="CaperucitaStats" type="Label" parent="CaperucitaCard/Margin/Row/Info" unique_id=2042775198]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.94, 0.94, 0.98, 1)
+theme_override_font_sizes/font_size = 15
+text = "VIDA 360/360
+ATAQUE 100
+DEFENSA 25"
+horizontal_alignment = 2
+
+[node name="PortraitBox" type="PanelContainer" parent="CaperucitaCard/Margin/Row" unique_id=662249686]
+custom_minimum_size = Vector2(108, 145)
+layout_mode = 2
+
+[node name="CaperucitaPortrait" type="TextureRect" parent="CaperucitaCard/Margin/Row/PortraitBox" unique_id=1961372660]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CaperucitaPortraitPlaceholder" type="Label" parent="CaperucitaCard/Margin/Row/PortraitBox" unique_id=1507336097]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.58, 0.58, 1)
+text = "FOTO
+CAPERUCITA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MessageBox" type="PanelContainer" parent="." unique_id=869897665]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 350.0
+offset_top = 22.0
+offset_right = -350.0
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("Style_message")
+
+[node name="BattleMessage" type="Label" parent="MessageBox" unique_id=445799245]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.75, 1)
+theme_override_font_sizes/font_size = 20
+text = "COMIENZA EL DUELO"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PreparationPopup" type="PanelContainer" parent="." unique_id=419974060]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -74.0
+offset_right = 340.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("Style_widget")
+
+[node name="PreparationLabel" type="Label" parent="PreparationPopup" unique_id=840947078]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.82, 0.48, 1)
+theme_override_colors/font_shadow_color = Color(0.75, 0.08, 0.08, 0.7)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 34
+text = "PREPARATE PARA ATACAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LetterQTE" type="PanelContainer" parent="." unique_id=1508624084]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -178.0
+offset_right = 260.0
+offset_bottom = 178.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("Style_widget")
+script = ExtResource("2_qte")
+
+[node name="LetterFlash" type="ColorRect" parent="LetterQTE" unique_id=1524020469]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.2, 0.9, 0.35, 0.28)
+
+[node name="Margin" type="MarginContainer" parent="LetterQTE" unique_id=1594558486]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 22
+
+[node name="Column" type="VBoxContainer" parent="LetterQTE/Margin" unique_id=386972710]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="LetterQTE/Margin/Column" unique_id=662940843]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.73, 0.42, 1)
+theme_override_font_sizes/font_size = 20
+text = "REDUCÍ EL DAÑO"
+horizontal_alignment = 1
+
+[node name="LetterLabel" type="Label" parent="LetterQTE/Margin/Column" unique_id=1864401305]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.9, 0.15, 0.12, 0.8)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/font_size = 106
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LetterFeedback" type="Label" parent="LetterQTE/Margin/Column" unique_id=1689675237]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="LetterTimer" type="ProgressBar" parent="LetterQTE/Margin/Column" unique_id=1550887012]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+theme_override_styles/background = SubResource("Style_timer_bg")
+theme_override_styles/fill = SubResource("Style_timer_fill")
+show_percentage = false
+
+[node name="LetterProgress" type="Label" parent="LetterQTE/Margin/Column" unique_id=1406292312]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.88, 0.88, 0.92, 1)
+text = "LETRA 1/6"
+horizontal_alignment = 1
+
+[node name="TimingBar" type="PanelContainer" parent="." unique_id=1813547572]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -390.0
+offset_top = -126.0
+offset_right = 390.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("Style_widget")
+script = ExtResource("3_timing")
+
+[node name="Margin" type="MarginContainer" parent="TimingBar" unique_id=551363114]
+layout_mode = 2
+theme_override_constants/margin_left = 34
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 34
+theme_override_constants/margin_bottom = 22
+
+[node name="Column" type="VBoxContainer" parent="TimingBar/Margin" unique_id=2123116643]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="TimingBar/Margin/Column" unique_id=1629337541]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.76, 0.43, 1)
+theme_override_font_sizes/font_size = 22
+text = "TIMING DE ATAQUE"
+horizontal_alignment = 1
+
+[node name="TimingTrack" type="Control" parent="TimingBar/Margin/Column" unique_id=1483793388]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(690, 46)
+layout_mode = 2
+
+[node name="TrackBackground" type="ColorRect" parent="TimingBar/Margin/Column/TimingTrack" unique_id=228955071]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.22, 0.17, 0.19, 1)
+
+[node name="GoodZone" type="ColorRect" parent="TimingBar/Margin/Column/TimingTrack" unique_id=34534325]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 46.0
+mouse_filter = 2
+color = Color(0.25, 0.82, 0.43, 1)
+
+[node name="PerfectZone" type="ColorRect" parent="TimingBar/Margin/Column/TimingTrack" unique_id=844999019]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 36.0
+offset_bottom = 46.0
+mouse_filter = 2
+color = Color(1, 0.82, 0.17, 1)
+
+[node name="TimingMarker" type="ColorRect" parent="TimingBar/Margin/Column/TimingTrack" unique_id=681095844]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = -6.0
+offset_right = 7.0
+offset_bottom = 52.0
+mouse_filter = 2
+
+[node name="TimingResult" type="Label" parent="TimingBar/Margin/Column" unique_id=205375549]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Presioná ESPACIO, ENTER o DETENER"
+horizontal_alignment = 1
+
+[node name="StopTimingButton" type="Button" parent="TimingBar/Margin/Column" unique_id=170988234]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("Style_action")
+theme_override_styles/hover = SubResource("Style_action_hover")
+text = "DETENER"

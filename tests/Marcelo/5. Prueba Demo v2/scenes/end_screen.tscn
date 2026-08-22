@@ -1,0 +1,75 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/end_screen.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="Style_button"]
+bg_color = Color(0.42, 0.11, 0.12, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[node name="EndScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.025, 0.018, 0.029, 1)
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Column" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -330.0
+offset_top = -120.0
+offset_right = 330.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 26
+
+[node name="ResultLabel" type="Label" parent="Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.82, 0.63, 1)
+theme_override_font_sizes/font_size = 32
+text = "FIN DE LA DEMO"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="RestartButton" type="Button" parent="Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("Style_button")
+text = "VOLVER AL INICIO"
