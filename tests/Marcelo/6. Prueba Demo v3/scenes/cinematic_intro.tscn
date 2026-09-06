@@ -1,0 +1,123 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/cinematic/cinematic_player.gd" id="1_script"]
+[ext_resource type="Resource" path="res://resources/cinematics/elias_intro.tres" id="2_sequence"]
+[ext_resource type="Script" path="res://scripts/cinematic/atmosphere_overlay.gd" id="3_atmosphere"]
+[ext_resource type="Theme" path="res://resources/themes/dark_fantasy_theme.tres" id="4_theme"]
+
+[sub_resource type="StyleBoxFlat" id="HintStyle"]
+bg_color = Color(0.0352941, 0.0509804, 0.0784314, 0.8)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.368627, 0.407843, 0.458824, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[node name="CinematicIntro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_theme")
+script = ExtResource("1_script")
+secuencia = ExtResource("2_sequence")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0235294, 0.0313725, 0.0509804, 1)
+
+[node name="PanelLayer" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Atmosphere" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_atmosphere")
+
+[node name="ProgressLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 26.0
+offset_top = 20.0
+offset_right = 206.0
+offset_bottom = 50.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.86, 0.84, 0.78, 0.72)
+theme_override_font_sizes/font_size = 12
+text = "01  /  08"
+
+[node name="AdvanceHint" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -238.0
+offset_top = -55.0
+offset_right = -22.0
+offset_bottom = -17.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("HintStyle")
+
+[node name="Label" type="Label" parent="AdvanceHint"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9, 0.88, 0.82, 0.82)
+theme_override_font_sizes/font_size = 11
+text = "AVANZAR   ·   ESPACIO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ErrorCenter" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ErrorLabel" type="Label" parent="ErrorCenter"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.537255, 0.537255, 1)
+theme_override_font_sizes/font_size = 18
+text = "Error de secuencia"
+horizontal_alignment = 1
+

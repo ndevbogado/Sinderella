@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ComicSequence" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/cinematic/comic_sequence.gd" id="1_script"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/cinematic_theme.wav" id="2_music"]
+[ext_resource type="AudioStream" path="res://assets/audio/music/city_ambience.wav" id="3_ambience"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_001.tscn" id="4_p1"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_002.tscn" id="5_p2"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_003.tscn" id="6_p3"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_004.tscn" id="7_p4"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_005.tscn" id="8_p5"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_006.tscn" id="9_p6"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_007.tscn" id="10_p7"]
+[ext_resource type="PackedScene" path="res://scenes/cinematic/pages/page_008.tscn" id="11_p8"]
+
+[resource]
+script = ExtResource("1_script")
+titulo = "La salida de Elias"
+demora_inicial = 0.45
+musica = ExtResource("2_music")
+ambiente = ExtResource("3_ambience")
+paginas = Array[PackedScene]([ExtResource("4_p1"), ExtResource("5_p2"), ExtResource("6_p3"), ExtResource("7_p4"), ExtResource("8_p5"), ExtResource("9_p6"), ExtResource("10_p7"), ExtResource("11_p8")])
+escena_siguiente = "res://scenes/elias_room.tscn"
+texto_de_carga = "Entrando en casa…"
+

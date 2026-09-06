@@ -1,0 +1,581 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/inventory_panel.gd" id="1_script"]
+[ext_resource type="Theme" path="res://resources/themes/dark_fantasy_theme.tres" id="2_theme"]
+
+[sub_resource type="StyleBoxFlat" id="ObjectiveStyle"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 14.0
+content_margin_bottom = 8.0
+bg_color = Color(0.025, 0.035, 0.052, 0.84)
+border_width_left = 2
+border_color = Color(0.80, 0.61, 0.25, 0.9)
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+
+[sub_resource type="StyleBoxFlat" id="HintStyle"]
+content_margin_left = 12.0
+content_margin_top = 7.0
+content_margin_right = 12.0
+content_margin_bottom = 7.0
+bg_color = Color(0.025, 0.035, 0.052, 0.78)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.35, 0.39, 0.46, 0.8)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="CardStyle"]
+content_margin_left = 30.0
+content_margin_top = 25.0
+content_margin_right = 30.0
+content_margin_bottom = 24.0
+bg_color = Color(0.035, 0.047, 0.069, 0.985)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.80, 0.61, 0.25, 0.92)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_size = 18
+
+[sub_resource type="StyleBoxFlat" id="SlotStyle"]
+content_margin_left = 9.0
+content_margin_top = 9.0
+content_margin_right = 9.0
+content_margin_bottom = 9.0
+bg_color = Color(0.075, 0.09, 0.12, 0.86)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.25, 0.29, 0.35, 0.95)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="ToastStyle"]
+content_margin_left = 12.0
+content_margin_top = 7.0
+content_margin_right = 16.0
+content_margin_bottom = 7.0
+bg_color = Color(0.045, 0.06, 0.085, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.87, 0.69, 0.34, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="InventoryInterface" type="CanvasLayer"]
+layer = 40
+script = ExtResource("1_script")
+
+[node name="HUDRoot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+
+[node name="ObjectiveCard" type="PanelContainer" parent="HUDRoot"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 61.0
+offset_right = 374.0
+offset_bottom = 108.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("ObjectiveStyle")
+
+[node name="Row" type="HBoxContainer" parent="HUDRoot/ObjectiveCard"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Text" type="VBoxContainer" parent="HUDRoot/ObjectiveCard/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="Kicker" type="Label" parent="HUDRoot/ObjectiveCard/Row/Text"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.80, 0.61, 0.25, 1)
+theme_override_font_sizes/font_size = 10
+text = "OBJETIVO ACTUAL"
+
+[node name="ObjectiveTitle" type="Label" parent="HUDRoot/ObjectiveCard/Row/Text"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "PREPARATIVOS PARA EL VIAJE"
+text_overrun_behavior = 3
+
+[node name="ObjectiveProgress" type="Label" parent="HUDRoot/ObjectiveCard/Row"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.94, 0.83, 0.54, 1)
+theme_override_font_sizes/font_size = 15
+text = "0 / 4"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="InventoryHint" type="PanelContainer" parent="HUDRoot"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 61.0
+offset_right = -24.0
+offset_bottom = 102.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("HintStyle")
+
+[node name="Row" type="HBoxContainer" parent="HUDRoot/InventoryHint"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="HUDRoot/InventoryHint/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 12
+text = "I   ·   MOCHILA"
+vertical_alignment = 1
+
+[node name="InventoryCount" type="Label" parent="HUDRoot/InventoryHint/Row"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(58, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.94, 0.83, 0.54, 1)
+theme_override_font_sizes/font_size = 12
+text = "0 / 8"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="PickupToast" type="PanelContainer" parent="HUDRoot"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 420.0
+offset_top = 22.0
+offset_right = -420.0
+offset_bottom = 82.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("ToastStyle")
+
+[node name="Row" type="HBoxContainer" parent="HUDRoot/PickupToast"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="PickupIcon" type="TextureRect" parent="HUDRoot/PickupToast/Row"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(46, 46)
+layout_mode = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PickupLabel" type="Label" parent="HUDRoot/PickupToast/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.90, 0.72, 1)
+theme_override_font_sizes/font_size = 13
+text = "AÑADIDO  ·  OBJETO"
+vertical_alignment = 1
+
+[node name="InventoryOverlay" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme = ExtResource("2_theme")
+
+[node name="Shade" type="ColorRect" parent="InventoryOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008, 0.012, 0.02, 0.82)
+
+[node name="Center" type="CenterContainer" parent="InventoryOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card" type="PanelContainer" parent="InventoryOverlay/Center"]
+custom_minimum_size = Vector2(900, 570)
+layout_mode = 2
+theme_override_styles/panel = SubResource("CardStyle")
+
+[node name="Column" type="VBoxContainer" parent="InventoryOverlay/Center/Card"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Header" type="HBoxContainer" parent="InventoryOverlay/Center/Card/Column"]
+layout_mode = 2
+
+[node name="Titles" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="Kicker" type="Label" parent="InventoryOverlay/Center/Card/Column/Header/Titles"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.80, 0.61, 0.25, 1)
+theme_override_font_sizes/font_size = 11
+text = "EQUIPAJE DE ELÍAS"
+
+[node name="Title" type="Label" parent="InventoryOverlay/Center/Card/Column/Header/Titles"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "MOCHILA"
+
+[node name="Subtitle" type="Label" parent="InventoryOverlay/Center/Card/Column/Header/Titles"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.64, 0.67, 0.72, 1)
+theme_override_font_sizes/font_size = 12
+text = "Prepará lo necesario antes de abandonar la capital."
+
+[node name="CloseButton" type="Button" parent="InventoryOverlay/Center/Card/Column/Header"]
+custom_minimum_size = Vector2(120, 44)
+layout_mode = 2
+text = "CERRAR"
+
+[node name="Divider" type="HSeparator" parent="InventoryOverlay/Center/Card/Column"]
+layout_mode = 2
+
+[node name="Slots" type="GridContainer" parent="InventoryOverlay/Center/Card/Column"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 4
+
+[node name="Slot01" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot01"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot01/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot01/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot01/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot01/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot02" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot02"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot02/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot02/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot02/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot02/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot03" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot03"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot03/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot03/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot03/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot03/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot04" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot04"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot04/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot04/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot04/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot04/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot05" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot05"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot05/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot05/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot05/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot05/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot06" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot06"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot06/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot06/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot06/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot06/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot07" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot07"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot07/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot07/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot07/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot07/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Slot08" type="PanelContainer" parent="InventoryOverlay/Center/Card/Column/Slots"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(196, 172)
+layout_mode = 2
+theme_override_styles/panel = SubResource("SlotStyle")
+
+[node name="Margin" type="MarginContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot08"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="InventoryOverlay/Center/Card/Column/Slots/Slot08/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="InventoryOverlay/Center/Card/Column/Slots/Slot08/Margin/Content"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot08/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "VACÍO"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="State" type="Label" parent="InventoryOverlay/Center/Card/Column/Slots/Slot08/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.59, 0.65, 1)
+theme_override_font_sizes/font_size = 9
+text = "ESPACIO DISPONIBLE"
+horizontal_alignment = 1
+
+[node name="Footer" type="HBoxContainer" parent="InventoryOverlay/Center/Card/Column"]
+layout_mode = 2
+
+[node name="Help" type="Label" parent="InventoryOverlay/Center/Card/Column/Footer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.58, 0.61, 0.67, 1)
+theme_override_font_sizes/font_size = 11
+text = "Pasá el cursor sobre un objeto para leer su descripción."
+
+[node name="CloseHint" type="Label" parent="InventoryOverlay/Center/Card/Column/Footer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.77, 0.81, 0.8)
+theme_override_font_sizes/font_size = 11
+text = "I / ESC  ·  CERRAR"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="InventoryOverlay/Center/Card/Column/Header/CloseButton" to="." method="_on_close_pressed"]

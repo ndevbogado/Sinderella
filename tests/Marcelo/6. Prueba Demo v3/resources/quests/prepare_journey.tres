@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TravelQuest" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/travel_quest.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/inventory_item.gd" id="2_item_script"]
+[ext_resource type="Resource" path="res://resources/items/travel_cloak.tres" id="3_cloak"]
+[ext_resource type="Resource" path="res://resources/items/road_map.tres" id="4_map"]
+[ext_resource type="Resource" path="res://resources/items/waterskin.tres" id="5_water"]
+[ext_resource type="Resource" path="res://resources/items/provisions.tres" id="6_food"]
+
+[resource]
+script = ExtResource("1_script")
+titulo = "Preparativos para el viaje"
+dialogo_al_llegar = "Me iré de la capital por un tiempo. Antes de partir, tengo que prepararme. En casa debería encontrar todo lo necesario para el viaje."
+objetos_requeridos = Array[ExtResource("2_item_script")]([ExtResource("3_cloak"), ExtResource("4_map"), ExtResource("5_water"), ExtResource("6_food")])
+mensaje_incompleto = "Aún no estoy listo. Debo reunir todo lo necesario antes de abandonar la capital."
+mensaje_completado = "Capa, mapa, agua y provisiones. Ya estoy listo para dejar la capital."

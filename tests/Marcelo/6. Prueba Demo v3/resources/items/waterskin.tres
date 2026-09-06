@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/inventory_item.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/inventory/waterskin.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+identificador = &"waterskin"
+nombre = "Cantimplora"
+descripcion = "Cuero curtido, costuras firmes y agua suficiente para abandonar la capital."
+icono = ExtResource("2_icon")
+color_acento = Color(0.55, 0.32, 0.18, 1)
+objeto_clave = true
+

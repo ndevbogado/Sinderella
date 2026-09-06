@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/cinematic/comic_text_box.gd" id="1_script"]
+
+[sub_resource type="StyleBoxFlat" id="NarrationStyle"]
+bg_color = Color(0.0352941, 0.0509804, 0.0784314, 0.94)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.796078, 0.611765, 0.247059, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="NarrationBox" type="Panel"]
+custom_minimum_size = Vector2(360, 92)
+offset_right = 360.0
+offset_bottom = 92.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("NarrationStyle")
+script = ExtResource("1_script")
+texto = "Escribí la narración desde el Inspector."
+tamano_de_letra = 16
+color_de_texto = Color(0.909804, 0.890196, 0.839216, 1)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 12
+
+[node name="Text" type="Label" parent="Margin"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.890196, 0.839216, 1)
+theme_override_font_sizes/font_size = 16
+text = "Escribí la narración desde el Inspector."
+vertical_alignment = 1
+autowrap_mode = 3
+

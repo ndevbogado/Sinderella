@@ -1,0 +1,415 @@
+[gd_scene load_steps=27 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/room_scene.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/art/room/elias_room.png" id="2_room"]
+[ext_resource type="PackedScene" path="res://scenes/game/elias.tscn" id="3_elias"]
+[ext_resource type="Script" path="res://scripts/game/interaction_point.gd" id="4_interaction"]
+[ext_resource type="Theme" path="res://resources/themes/dark_fantasy_theme.tres" id="5_theme"]
+[ext_resource type="Resource" path="res://resources/quests/prepare_journey.tres" id="6_quest"]
+[ext_resource type="PackedScene" path="res://scenes/ui/inventory_panel.tscn" id="7_inventory_ui"]
+[ext_resource type="Script" path="res://scripts/game/room_sector.gd" id="8_sector"]
+[ext_resource type="Resource" path="res://resources/items/travel_cloak.tres" id="9_cloak"]
+[ext_resource type="Resource" path="res://resources/items/road_map.tres" id="10_map"]
+[ext_resource type="Resource" path="res://resources/items/waterskin.tres" id="11_water"]
+[ext_resource type="Resource" path="res://resources/items/provisions.tres" id="12_food"]
+
+[sub_resource type="RectangleShape2D" id="BedShape"]
+size = Vector2(300, 250)
+
+[sub_resource type="RectangleShape2D" id="WardrobeShape"]
+size = Vector2(120, 220)
+
+[sub_resource type="RectangleShape2D" id="BedroomChestShape"]
+size = Vector2(160, 85)
+
+[sub_resource type="RectangleShape2D" id="StudyDeskShape"]
+size = Vector2(235, 150)
+
+[sub_resource type="RectangleShape2D" id="FireplaceShape"]
+size = Vector2(215, 190)
+
+[sub_resource type="RectangleShape2D" id="PackingTableShape"]
+size = Vector2(300, 190)
+
+[sub_resource type="RectangleShape2D" id="PantryShelfShape"]
+size = Vector2(205, 300)
+
+[sub_resource type="RectangleShape2D" id="PantryTableShape"]
+size = Vector2(160, 105)
+
+[sub_resource type="RectangleShape2D" id="CratesShape"]
+size = Vector2(240, 120)
+
+[sub_resource type="RectangleShape2D" id="SectorBedroomShape"]
+size = Vector2(520, 640)
+
+[sub_resource type="RectangleShape2D" id="SectorStudyShape"]
+size = Vector2(620, 820)
+
+[sub_resource type="RectangleShape2D" id="SectorPantryShape"]
+size = Vector2(450, 650)
+
+[sub_resource type="StyleBoxFlat" id="PromptStyle"]
+bg_color = Color(0.025, 0.035, 0.052, 0.90)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.48, 0.52, 0.59, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="MessageStyle"]
+bg_color = Color(0.025, 0.035, 0.052, 0.96)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.80, 0.61, 0.25, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="EliasHouse" type="Node2D"]
+script = ExtResource("1_script")
+preparacion_de_viaje = ExtResource("6_quest")
+
+[node name="RoomArtwork" type="Sprite2D" parent="."]
+z_index = -100
+position = Vector2(836, 470.5)
+texture = ExtResource("2_room")
+texture_filter = 1
+
+[node name="CoolTint" type="CanvasModulate" parent="."]
+color = Color(0.96, 0.975, 1, 1)
+
+[node name="Collisions" type="Node2D" parent="."]
+
+[node name="OuterBoundary" type="StaticBody2D" parent="Collisions"]
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions/OuterBoundary"]
+build_mode = 1
+polygon = PackedVector2Array(45, 720, 485, 720, 485, 870, 710, 870, 710, 925, 1000, 925, 1000, 870, 1190, 870, 1190, 790, 1635, 790, 1635, 115, 1210, 115, 1210, 60, 1165, 60, 1165, 25, 600, 25, 600, 65, 205, 65, 45, 140)
+
+[node name="Bed" type="StaticBody2D" parent="Collisions"]
+position = Vector2(220, 365)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/Bed"]
+shape = SubResource("BedShape")
+
+[node name="Wardrobe" type="StaticBody2D" parent="Collisions"]
+position = Vector2(500, 295)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/Wardrobe"]
+shape = SubResource("WardrobeShape")
+
+[node name="BedroomChest" type="StaticBody2D" parent="Collisions"]
+position = Vector2(150, 565)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/BedroomChest"]
+shape = SubResource("BedroomChestShape")
+
+[node name="StudyDesk" type="StaticBody2D" parent="Collisions"]
+position = Vector2(740, 240)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/StudyDesk"]
+shape = SubResource("StudyDeskShape")
+
+[node name="Fireplace" type="StaticBody2D" parent="Collisions"]
+position = Vector2(1065, 255)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/Fireplace"]
+shape = SubResource("FireplaceShape")
+
+[node name="PackingTable" type="StaticBody2D" parent="Collisions"]
+position = Vector2(900, 515)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/PackingTable"]
+shape = SubResource("PackingTableShape")
+
+[node name="PantryShelf" type="StaticBody2D" parent="Collisions"]
+position = Vector2(1330, 350)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/PantryShelf"]
+shape = SubResource("PantryShelfShape")
+
+[node name="PantryTable" type="StaticBody2D" parent="Collisions"]
+position = Vector2(1515, 385)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/PantryTable"]
+shape = SubResource("PantryTableShape")
+
+[node name="Crates" type="StaticBody2D" parent="Collisions"]
+position = Vector2(1470, 710)
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions/Crates"]
+shape = SubResource("CratesShape")
+
+[node name="Sectors" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="BedroomSector" type="Area2D" parent="Sectors"]
+position = Vector2(270, 390)
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+script = ExtResource("8_sector")
+nombre = "Dormitorio"
+subtitulo = "Casa de Elías"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sectors/BedroomSector"]
+shape = SubResource("SectorBedroomShape")
+debug_color = Color(0.56, 0.20, 0.22, 0.16)
+
+[node name="StudySector" type="Area2D" parent="Sectors"]
+position = Vector2(850, 460)
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+script = ExtResource("8_sector")
+nombre = "Estudio y equipaje"
+subtitulo = "Casa de Elías"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sectors/StudySector"]
+shape = SubResource("SectorStudyShape")
+debug_color = Color(0.20, 0.42, 0.65, 0.13)
+
+[node name="PantrySector" type="Area2D" parent="Sectors"]
+position = Vector2(1410, 430)
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+script = ExtResource("8_sector")
+nombre = "Despensa y entrada"
+subtitulo = "Casa de Elías"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sectors/PantrySector"]
+shape = SubResource("SectorPantryShape")
+debug_color = Color(0.47, 0.37, 0.16, 0.14)
+
+[node name="Elias" parent="." instance=ExtResource("3_elias")]
+unique_name_in_owner = true
+position = Vector2(840, 820)
+
+[node name="Interactions" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="TravelCloak" type="Marker2D" parent="Interactions"]
+position = Vector2(155, 555)
+script = ExtResource("4_interaction")
+etiqueta = "Guardar capa y manta"
+mensaje = "Una vieja capa de viaje."
+radio = 125.0
+recoger_al_interactuar = true
+objeto = ExtResource("9_cloak")
+mensaje_al_recoger = "Servirá contra el frío. Elías guarda la capa y la manta en su equipaje."
+
+[node name="RoadMap" type="Marker2D" parent="Interactions"]
+position = Vector2(735, 245)
+script = ExtResource("4_interaction")
+etiqueta = "Tomar el mapa"
+mensaje = "Un mapa de los caminos de Briar."
+radio = 125.0
+recoger_al_interactuar = true
+objeto = ExtResource("10_map")
+mensaje_al_recoger = "No piensa seguir la ruta que marcarían los guardias. El mapa será útil."
+
+[node name="Waterskin" type="Marker2D" parent="Interactions"]
+position = Vector2(1510, 390)
+script = ExtResource("4_interaction")
+etiqueta = "Llenar la cantimplora"
+mensaje = "Una cantimplora de cuero."
+radio = 135.0
+recoger_al_interactuar = true
+objeto = ExtResource("11_water")
+mensaje_al_recoger = "La cantimplora aún está en buen estado. Elías la llena y la guarda."
+
+[node name="Provisions" type="Marker2D" parent="Interactions"]
+position = Vector2(1335, 455)
+script = ExtResource("4_interaction")
+etiqueta = "Preparar provisiones"
+mensaje = "Queda comida suficiente para el viaje."
+radio = 140.0
+recoger_al_interactuar = true
+objeto = ExtResource("12_food")
+mensaje_al_recoger = "Pan, queso y fruta seca. No será un banquete, pero alcanzará para el camino."
+
+[node name="BedInteraction" type="Marker2D" parent="Interactions"]
+position = Vector2(235, 375)
+script = ExtResource("4_interaction")
+etiqueta = "Examinar la cama"
+mensaje = "Después de la prisión, incluso esta cama parece demasiado cómoda. No es momento de descansar."
+radio = 165.0
+
+[node name="FireplaceInteraction" type="Marker2D" parent="Interactions"]
+position = Vector2(1055, 300)
+script = ExtResource("4_interaction")
+etiqueta = "Avivar el fuego"
+mensaje = "Un poco de calor antes de marcharse. Quizá la casa no vuelva a verlo durante bastante tiempo."
+radio = 135.0
+
+[node name="PackingTableInteraction" type="Marker2D" parent="Interactions"]
+position = Vector2(905, 525)
+script = ExtResource("4_interaction")
+etiqueta = "Revisar el equipaje"
+mensaje = "El bolso está vacío. Elías tendrá que reunir cada cosa antes de partir."
+radio = 145.0
+
+[node name="ExitInteraction" type="Marker2D" parent="Interactions"]
+position = Vector2(840, 850)
+script = ExtResource("4_interaction")
+etiqueta = "Salir de casa"
+mensaje = "La salida de la capital continuará en la próxima escena."
+radio = 82.0
+es_salida = true
+
+[node name="MinimalInterface" type="CanvasLayer" parent="."]
+layer = 30
+
+[node name="InterfaceRoot" type="Control" parent="MinimalInterface"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("5_theme")
+
+[node name="LocationLabel" type="Label" parent="MinimalInterface/InterfaceRoot"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 28.0
+offset_top = 22.0
+offset_right = 420.0
+offset_bottom = 50.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.93, 0.90, 0.83, 0.88)
+theme_override_font_sizes/font_size = 13
+text = "BRIAR  ·  CASA DE ELIAS"
+
+[node name="SectorLabel" type="Label" parent="MinimalInterface/InterfaceRoot"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 22.0
+offset_bottom = 50.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.94, 0.86, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "ESTUDIO Y EQUIPAJE  ·  CASA DE ELIAS"
+horizontal_alignment = 1
+
+[node name="PauseHint" type="Label" parent="MinimalInterface/InterfaceRoot"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -160.0
+offset_top = 22.0
+offset_right = -24.0
+offset_bottom = 50.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.86, 0.86, 0.84, 0.68)
+theme_override_font_sizes/font_size = 11
+text = "ESC  ·  PAUSA"
+horizontal_alignment = 2
+
+[node name="InteractionPrompt" type="PanelContainer" parent="MinimalInterface/InterfaceRoot"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -185.0
+offset_top = -62.0
+offset_right = 185.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("PromptStyle")
+
+[node name="Margin" type="MarginContainer" parent="MinimalInterface/InterfaceRoot/InteractionPrompt"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 6
+
+[node name="InteractionPromptLabel" type="Label" parent="MinimalInterface/InterfaceRoot/InteractionPrompt/Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "E   ·   Examinar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MessagePanel" type="PanelContainer" parent="MinimalInterface/InterfaceRoot"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -410.0
+offset_top = -166.0
+offset_right = 410.0
+offset_bottom = -82.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("MessageStyle")
+
+[node name="Margin" type="MarginContainer" parent="MinimalInterface/InterfaceRoot/MessagePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 11
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 11
+
+[node name="MessageLabel" type="Label" parent="MinimalInterface/InterfaceRoot/MessagePanel/Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "Texto de interacción editable desde cada punto de la casa."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="InventoryInterface" parent="." instance=ExtResource("7_inventory_ui")]
+unique_name_in_owner = true
+quest = ExtResource("6_quest")

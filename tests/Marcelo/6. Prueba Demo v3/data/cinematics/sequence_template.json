@@ -1,0 +1,50 @@
+{
+  "title": "Nombre de la secuencia",
+  "format_version": 1,
+  "start_delay": 0.4,
+  "music": "res://assets/audio/music/cinematic_theme.wav",
+  "ambience": "res://assets/audio/music/city_ambience.wav",
+  "next_scene": "res://scenes/elias_room.tscn",
+  "next_scene_caption": "Cargando…",
+  "beats": [
+	{
+	  "id": "pagina_01",
+	  "hold": 4.5,
+	  "atmosphere": "mist",
+	  "atmosphere_intensity": 0.5,
+	  "panels": [
+		{
+		  "image": "res://assets/art/panels/prison_exterior.png",
+		  "rect": [0.05, 0.08, 0.9, 0.82],
+		  "enter": "left",
+		  "delay": 0.0,
+		  "duration": 0.65,
+		  "zoom_from": 1.0,
+		  "zoom_to": 1.05,
+		  "pan": [0.01, 0.0],
+		  "image_offset": [0.0, 0.0],
+		  "border_width": 3,
+		  "border_color": "#e8dfcf",
+		  "texts": [
+			{
+			  "kind": "narration",
+			  "text": "Texto editable.",
+			  "rect": [0.05, 0.06, 0.35, 0.14],
+			  "font_size": 18,
+			  "align": "left",
+			  "text_color": "#ebe5d8",
+			  "background_color": "#090d14f2",
+			  "border_color": "#c8a766",
+			  "border_width": 3,
+			  "corner_radius": 3,
+			  "padding_x": 16,
+			  "padding_y": 9,
+			  "allow_overflow": false
+			}
+		  ]
+		}
+	  ],
+	  "overlays": []
+	}
+  ]
+}

@@ -1,0 +1,135 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/autoload/pause_manager.gd" id="1_script"]
+[ext_resource type="Theme" path="res://resources/themes/dark_fantasy_theme.tres" id="2_theme"]
+[ext_resource type="PackedScene" path="res://scenes/ui/options_panel.tscn" id="3_options"]
+
+[sub_resource type="StyleBoxFlat" id="CardStyle"]
+content_margin_left = 28.0
+content_margin_top = 28.0
+content_margin_right = 28.0
+content_margin_bottom = 28.0
+bg_color = Color(0.0627451, 0.0823529, 0.117647, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.345098, 0.380392, 0.439216, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[node name="PauseManager" type="CanvasLayer"]
+process_mode = 3
+layer = 100
+script = ExtResource("1_script")
+
+[node name="Overlay" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme = ExtResource("2_theme")
+
+[node name="Shade" type="ColorRect" parent="Overlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.015, 0.02, 0.03, 0.82)
+
+[node name="Accent" type="ColorRect" parent="Overlay"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 4.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0.796078, 0.611765, 0.247059, 1)
+
+[node name="Center" type="CenterContainer" parent="Overlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuCard" type="PanelContainer" parent="Overlay/Center"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(390, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("CardStyle")
+
+[node name="Menu" type="VBoxContainer" parent="Overlay/Center/MenuCard"]
+layout_mode = 2
+theme_override_constants/separation = 11
+
+[node name="Title" type="Label" parent="Overlay/Center/MenuCard/Menu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.768627, 0.423529, 1)
+theme_override_font_sizes/font_size = 32
+text = "PAUSA"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="Overlay/Center/MenuCard/Menu"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "REANUDAR"
+
+[node name="OptionsButton" type="Button" parent="Overlay/Center/MenuCard/Menu"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "OPCIONES"
+
+[node name="SkipButton" type="Button" parent="Overlay/Center/MenuCard/Menu"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "SALTAR CINEMÁTICA"
+
+[node name="RestartButton" type="Button" parent="Overlay/Center/MenuCard/Menu"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "REINICIAR ESCENA"
+
+[node name="MainMenuButton" type="Button" parent="Overlay/Center/MenuCard/Menu"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "MENÚ PRINCIPAL"
+
+[node name="QuitButton" type="Button" parent="Overlay/Center/MenuCard/Menu"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "SALIR"
+
+[node name="OptionsHolder" type="CenterContainer" parent="Overlay"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsPanel" parent="Overlay/OptionsHolder" instance=ExtResource("3_options")]
+layout_mode = 2
+
+[connection signal="pressed" from="Overlay/Center/MenuCard/Menu/ResumeButton" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Overlay/Center/MenuCard/Menu/OptionsButton" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Overlay/Center/MenuCard/Menu/SkipButton" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="Overlay/Center/MenuCard/Menu/RestartButton" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Overlay/Center/MenuCard/Menu/MainMenuButton" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Overlay/Center/MenuCard/Menu/QuitButton" to="." method="_on_quit_pressed"]
+[connection signal="close_requested" from="Overlay/OptionsHolder/OptionsPanel" to="." method="_on_options_panel_close_requested"]
+

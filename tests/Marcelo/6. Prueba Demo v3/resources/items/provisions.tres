@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/inventory_item.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/inventory/provisions.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+identificador = &"provisions"
+nombre = "Provisiones"
+descripcion = "Pan, queso, fruta seca y hierbas envueltos para varios días de camino."
+icono = ExtResource("2_icon")
+color_acento = Color(0.65, 0.45, 0.25, 1)
+objeto_clave = true
+

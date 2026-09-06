@@ -1,0 +1,128 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/cinematic/visual_comic_page.gd" id="1_page"]
+[ext_resource type="Script" path="res://scripts/cinematic/visual_comic_panel.gd" id="2_panel"]
+[ext_resource type="StyleBox" path="res://resources/themes/comic_frame.tres" id="3_frame"]
+[ext_resource type="Texture2D" path="res://assets/art/story/elias_release/001_01.png" id="4_a"]
+[ext_resource type="Texture2D" path="res://assets/art/story/elias_release/001_02.png" id="5_b"]
+[ext_resource type="Texture2D" path="res://assets/art/story/elias_release/001_03.png" id="6_c"]
+
+[node name="Page001" type="Control"]
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+script = ExtResource("1_page")
+identificador = "page_001_briar"
+espera = 10.0
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0235294, 0.0313725, 0.0509804, 1)
+
+[node name="Panel01" type="Control" parent="."]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 41.0
+offset_right = 1189.0
+offset_bottom = 369.0
+mouse_filter = 2
+script = ExtResource("2_panel")
+entrada = 3
+duracion = 0.72
+
+[node name="Image" type="TextureRect" parent="Panel01"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_a")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Frame" type="Panel" parent="Panel01"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("3_frame")
+
+[node name="Panel02" type="Control" parent="."]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 376.0
+offset_right = 505.0
+offset_bottom = 657.0
+mouse_filter = 2
+script = ExtResource("2_panel")
+entrada = 1
+demora = 0.18
+duracion = 0.58
+
+[node name="Image" type="TextureRect" parent="Panel02"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5_b")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Frame" type="Panel" parent="Panel02"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("3_frame")
+
+[node name="Panel03" type="Control" parent="."]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 376.0
+offset_right = 1189.0
+offset_bottom = 657.0
+mouse_filter = 2
+script = ExtResource("2_panel")
+entrada = 2
+demora = 0.36
+duracion = 0.62
+
+[node name="Image" type="TextureRect" parent="Panel03"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_c")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Frame" type="Panel" parent="Panel03"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("3_frame")

@@ -1,0 +1,157 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/options_panel.gd" id="1_script"]
+[ext_resource type="Theme" path="res://resources/themes/dark_fantasy_theme.tres" id="2_theme"]
+
+[sub_resource type="StyleBoxFlat" id="CardStyle"]
+content_margin_left = 26.0
+content_margin_top = 26.0
+content_margin_right = 26.0
+content_margin_bottom = 26.0
+bg_color = Color(0.0627451, 0.0823529, 0.117647, 0.97)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.796078, 0.611765, 0.247059, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[node name="OptionsPanel" type="PanelContainer"]
+custom_minimum_size = Vector2(520, 0)
+theme = ExtResource("2_theme")
+theme_override_styles/panel = SubResource("CardStyle")
+script = ExtResource("1_script")
+
+[node name="Content" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Heading" type="Label" parent="Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.913725, 0.768627, 0.423529, 1)
+theme_override_font_sizes/font_size = 28
+text = "OPCIONES"
+
+[node name="Rule" type="HSeparator" parent="Content"]
+layout_mode = 2
+
+[node name="MasterRow" type="HBoxContainer" parent="Content"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Label" type="Label" parent="Content/MasterRow"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Volumen general"
+
+[node name="MasterSlider" type="HSlider" parent="Content/MasterRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 0.9
+
+[node name="MasterValue" type="Label" parent="Content/MasterRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 0)
+layout_mode = 2
+text = "90"
+horizontal_alignment = 2
+
+[node name="MusicRow" type="HBoxContainer" parent="Content"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Label" type="Label" parent="Content/MusicRow"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Música"
+
+[node name="MusicSlider" type="HSlider" parent="Content/MusicRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 0.72
+
+[node name="MusicValue" type="Label" parent="Content/MusicRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 0)
+layout_mode = 2
+text = "72"
+horizontal_alignment = 2
+
+[node name="AmbienceRow" type="HBoxContainer" parent="Content"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Label" type="Label" parent="Content/AmbienceRow"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Ambiente"
+
+[node name="AmbienceSlider" type="HSlider" parent="Content/AmbienceRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 0.78
+
+[node name="AmbienceValue" type="Label" parent="Content/AmbienceRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 0)
+layout_mode = 2
+text = "78"
+horizontal_alignment = 2
+
+[node name="SfxRow" type="HBoxContainer" parent="Content"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Label" type="Label" parent="Content/SfxRow"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Efectos"
+
+[node name="SfxSlider" type="HSlider" parent="Content/SfxRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+value = 0.85
+
+[node name="SfxValue" type="Label" parent="Content/SfxRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 0)
+layout_mode = 2
+text = "85"
+horizontal_alignment = 2
+
+[node name="FullscreenToggle" type="CheckButton" parent="Content"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Pantalla completa"
+
+[node name="ReduceMotionToggle" type="CheckButton" parent="Content"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reducir movimiento de paneles"
+
+[node name="AutoplayToggle" type="CheckButton" parent="Content"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Avance automático de cinemáticas"
+
+[node name="CloseButton" type="Button" parent="Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "VOLVER"
+

@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://u6rbo74bgr0v"]
+
+[ext_resource type="Script" uid="uid://cmpvgktvrbs1x" path="res://scripts/ui/main_menu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dor2kxxp8lugh" path="res://assets/art/menu/briar_menu.png" id="2_background"]
+[ext_resource type="Theme" uid="uid://cvees66icv1w1" path="res://resources/themes/dark_fantasy_theme.tres" id="3_theme"]
+[ext_resource type="PackedScene" path="res://scenes/ui/options_panel.tscn" id="4_options"]
+
+[node name="MainMenu" type="Control" unique_id=168713280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_theme")
+script = ExtResource("1_script")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1202682782]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_background")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Tint" type="ColorRect" parent="." unique_id=1397608622]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.015, 0.02, 0.032, 0.3)
+
+[node name="LeftShade" type="ColorRect" parent="." unique_id=1726921578]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.48
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.015, 0.02, 0.03, 0.86)
+
+[node name="Accent" type="ColorRect" parent="." unique_id=358880301]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 74.0
+offset_right = 65.0
+offset_bottom = 646.0
+mouse_filter = 2
+color = Color(0.796078, 0.611765, 0.247059, 1)
+
+[node name="ContentMargin" type="MarginContainer" parent="." unique_id=2022349130]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.48
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 94
+theme_override_constants/margin_top = 72
+theme_override_constants/margin_right = 70
+theme_override_constants/margin_bottom = 72
+
+[node name="Column" type="VBoxContainer" parent="ContentMargin" unique_id=1326290068]
+layout_mode = 2
+theme_override_constants/separation = 11
+
+[node name="Kicker" type="Label" parent="ContentMargin/Column" unique_id=1971026396]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.796078, 0.611765, 0.247059, 1)
+theme_override_font_sizes/font_size = 13
+text = "UNA HISTORIA DE CUENTOS ROTOS"
+
+[node name="Title" type="Label" parent="ContentMargin/Column" unique_id=1411677198]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.890196, 0.839216, 1)
+theme_override_font_sizes/font_size = 68
+text = "BRIAR"
+
+[node name="Subtitle" type="Label" parent="ContentMargin/Column" unique_id=1131630949]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.631373, 0.654902, 0.690196, 1)
+theme_override_font_sizes/font_size = 18
+text = "El reino que se niega a despertar"
+
+[node name="Spacer" type="Control" parent="ContentMargin/Column" unique_id=1375040716]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="NewGameButton" type="Button" parent="ContentMargin/Column" unique_id=2009914437]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(320, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "NUEVA PARTIDA"
+alignment = 0
+
+[node name="ContinueButton" type="Button" parent="ContentMargin/Column" unique_id=1289331375]
+custom_minimum_size = Vector2(320, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+tooltip_text = "Disponible cuando exista una partida guardada."
+disabled = true
+text = "CONTINUAR"
+alignment = 0
+
+[node name="OptionsButton" type="Button" parent="ContentMargin/Column" unique_id=1974273004]
+custom_minimum_size = Vector2(320, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "OPCIONES"
+alignment = 0
+
+[node name="QuitButton" type="Button" parent="ContentMargin/Column" unique_id=43685410]
+custom_minimum_size = Vector2(320, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "SALIR"
+alignment = 0
+
+[node name="Version" type="Label" parent="." unique_id=1149943346]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -40.0
+offset_right = -24.0
+offset_bottom = -18.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.72, 0.75, 0.79, 0.65)
+theme_override_font_sizes/font_size = 11
+text = "PROTOTIPO 1.2.0 · GODOT 4"
+horizontal_alignment = 2
+
+[node name="OptionsLayer" type="Control" parent="." unique_id=55044860]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Shade" type="ColorRect" parent="OptionsLayer" unique_id=1272228228]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.015, 0.024, 0.86)
+
+[node name="Center" type="CenterContainer" parent="OptionsLayer" unique_id=1631143996]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsPanel" parent="OptionsLayer/Center" unique_id=995913701 instance=ExtResource("4_options")]
+layout_mode = 2
+
+[connection signal="pressed" from="ContentMargin/Column/NewGameButton" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="ContentMargin/Column/OptionsButton" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="ContentMargin/Column/QuitButton" to="." method="_on_quit_pressed"]
+[connection signal="close_requested" from="OptionsLayer/Center/OptionsPanel" to="." method="_on_options_panel_close_requested"]

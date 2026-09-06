@@ -1,0 +1,325 @@
+{
+  "title": "La salida de Elias",
+  "format_version": 2,
+  "start_delay": 0.45,
+  "music": "res://assets/audio/music/cinematic_theme.wav",
+  "ambience": "res://assets/audio/music/city_ambience.wav",
+  "next_scene": "res://scenes/elias_room.tscn",
+  "next_scene_caption": "Entrando en casa…",
+  "beats": [
+	{
+	  "id": "page_001_briar",
+	  "hold": 10.0,
+	  "atmosphere": "none",
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/001_01.png",
+		  "rect": [0.07103, 0.05683, 0.85794, 0.45605],
+		  "enter": "top",
+		  "duration": 0.72,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/001_02.png",
+		  "rect": [0.07103, 0.52201, 0.32353, 0.39116],
+		  "enter": "left",
+		  "delay": 0.18,
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/001_03.png",
+		  "rect": [0.39919, 0.52201, 0.52978, 0.39116],
+		  "enter": "right",
+		  "delay": 0.36,
+		  "duration": 0.62,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_002_prison",
+	  "hold": 7.0,
+	  "atmosphere": "none",
+	  "sfx": "res://assets/audio/sfx/prison_gate.wav",
+	  "sfx_volume": -7.0,
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/002_01.png",
+		  "rect": [0.07411, 0.06231, 0.24946, 0.84446],
+		  "enter": "left",
+		  "duration": 0.66,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/002_02.png",
+		  "rect": [0.32769, 0.06231, 0.59819, 0.41675],
+		  "enter": "top",
+		  "delay": 0.18,
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/002_03.png",
+		  "rect": [0.32769, 0.4882, 0.59819, 0.41858],
+		  "enter": "bottom",
+		  "delay": 0.34,
+		  "duration": 0.62,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_003_release",
+	  "hold": 7.5,
+	  "atmosphere": "none",
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/003_01.png",
+		  "rect": [0.07103, 0.05683, 0.21706, 0.44417],
+		  "enter": "left",
+		  "duration": 0.52,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/003_02.png",
+		  "rect": [0.2922, 0.05683, 0.63677, 0.44417],
+		  "enter": "right",
+		  "delay": 0.17,
+		  "duration": 0.64,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/003_03.png",
+		  "rect": [0.07103, 0.50922, 0.85794, 0.40395],
+		  "enter": "bottom",
+		  "delay": 0.34,
+		  "duration": 0.66,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_004_belongings",
+	  "hold": 8.5,
+	  "atmosphere": "none",
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/004_01.png",
+		  "rect": [0.07103, 0.05683, 0.85794, 0.37745],
+		  "enter": "top",
+		  "duration": 0.66,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/004_02.png",
+		  "rect": [0.07103, 0.44159, 0.31324, 0.47158],
+		  "enter": "left",
+		  "delay": 0.2,
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/004_03.png",
+		  "rect": [0.38787, 0.44159, 0.5411, 0.47158],
+		  "enter": "right",
+		  "delay": 0.38,
+		  "duration": 0.62,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_005_outside",
+	  "hold": 9.5,
+	  "atmosphere": "none",
+	  "sfx": "res://assets/audio/sfx/prison_gate.wav",
+	  "sfx_volume": -9.0,
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/005_01.png",
+		  "rect": [0.07103, 0.05683, 0.4264, 0.42406],
+		  "enter": "left",
+		  "duration": 0.56,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/005_02.png",
+		  "rect": [0.50206, 0.05683, 0.42691, 0.42406],
+		  "enter": "right",
+		  "delay": 0.16,
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/005_03.png",
+		  "rect": [0.07103, 0.48911, 0.4264, 0.42406],
+		  "enter": "left",
+		  "delay": 0.32,
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/005_04.png",
+		  "rect": [0.50206, 0.48911, 0.42691, 0.42406],
+		  "enter": "right",
+		  "delay": 0.48,
+		  "duration": 0.62,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_006_rumours",
+	  "hold": 12.0,
+	  "atmosphere": "none",
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/006_01.png",
+		  "rect": [0.07103, 0.05683, 0.4264, 0.42406],
+		  "enter": "left",
+		  "duration": 0.6,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/006_02.png",
+		  "rect": [0.50257, 0.05683, 0.4264, 0.42406],
+		  "enter": "right",
+		  "delay": 0.2,
+		  "duration": 0.6,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/006_03.png",
+		  "rect": [0.07103, 0.48911, 0.85794, 0.42406],
+		  "enter": "bottom",
+		  "delay": 0.4,
+		  "duration": 0.7,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_007_charming",
+	  "hold": 7.5,
+	  "atmosphere": "none",
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/007_01.png",
+		  "rect": [0.07103, 0.05683, 0.4264, 0.42406],
+		  "enter": "left",
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/007_02.png",
+		  "rect": [0.50309, 0.05683, 0.42589, 0.42406],
+		  "enter": "right",
+		  "delay": 0.2,
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/007_03.png",
+		  "rect": [0.07103, 0.48911, 0.85794, 0.42406],
+		  "enter": "bottom",
+		  "delay": 0.4,
+		  "duration": 0.7,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	},
+	{
+	  "id": "page_008_home",
+	  "hold": 7.5,
+	  "atmosphere": "none",
+	  "expand_to_gameplay": true,
+	  "expand_panel": 3,
+	  "panels": [
+		{
+		  "image": "res://assets/art/story/elias_release/008_01.png",
+		  "rect": [0.07103, 0.05683, 0.38731, 0.42406],
+		  "enter": "left",
+		  "duration": 0.58,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/008_02.png",
+		  "rect": [0.46297, 0.05683, 0.466, 0.42406],
+		  "enter": "right",
+		  "delay": 0.17,
+		  "duration": 0.6,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/008_03.png",
+		  "rect": [0.07103, 0.4882, 0.24226, 0.42406],
+		  "enter": "left",
+		  "delay": 0.34,
+		  "duration": 0.56,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		},
+		{
+		  "image": "res://assets/art/story/elias_release/008_04.png",
+		  "rect": [0.31792, 0.4882, 0.61105, 0.42406],
+		  "enter": "right",
+		  "delay": 0.5,
+		  "duration": 0.66,
+		  "zoom_to": 1.0,
+		  "border_width": 2,
+		  "border_color": "#d8cdbd"
+		}
+	  ]
+	}
+  ]
+}
