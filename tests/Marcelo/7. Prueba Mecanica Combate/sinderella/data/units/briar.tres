@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="BattleUnitData" format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/unit_data.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="skill"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/characters.png" id="atlas"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/dream.tres" id="s0"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/heal.tres" id="s1"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/small_shield.tres" id="s2"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/delay.tres" id="s3"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/cleanse.tres" id="s4"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/guard.tres" id="s5"]
+
+[sub_resource type="AtlasTexture" id="Sprite"]
+atlas = ExtResource("atlas")
+region = Rect2(1152, 0, 384, 512)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+id = "briar"
+display_name = "Briar"
+max_hp = 90
+strength = 20
+armor = 25
+wit = 40
+will = 40
+speed = 30
+starting_role = "Soñadora"
+texture = SubResource("Sprite")
+chroma_key = true
+tint = Color(0.72, 1.0, 0.84, 0.9)
+skills = Array[ExtResource("skill")]([ExtResource("s0"), ExtResource("s1"), ExtResource("s2"), ExtResource("s3"), ExtResource("s4"), ExtResource("s5")])

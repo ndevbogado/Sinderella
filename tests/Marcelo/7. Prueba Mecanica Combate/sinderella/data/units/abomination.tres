@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="BattleUnitData" format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/unit_data.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="skill"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/characters.png" id="atlas"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/roots.tres" id="s0"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/guard.tres" id="s1"]
+
+[sub_resource type="AtlasTexture" id="Sprite"]
+atlas = ExtResource("atlas")
+region = Rect2(1152, 512, 384, 512)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+id = "abomination"
+display_name = "Abominación"
+max_hp = 105
+strength = 30
+armor = 30
+wit = 25
+will = 25
+speed = 18
+starting_role = "Extra"
+texture = SubResource("Sprite")
+chroma_key = true
+skills = Array[ExtResource("skill")]([ExtResource("s0"), ExtResource("s1")])

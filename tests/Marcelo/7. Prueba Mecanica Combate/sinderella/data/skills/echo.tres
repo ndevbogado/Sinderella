@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BattleSkill" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/effect.gd" id="base"]
+[ext_resource type="Script" path="res://sinderella/scripts/effects/role.gd" id="fx0"]
+
+[sub_resource type="Resource" id="E0"]
+script = ExtResource("fx0")
+operation = "echo_caster"
+
+[resource]
+script = ExtResource("1")
+id = "echo"
+display_name = "Nombre impuesto"
+description = "Copia tu Papel principal como eco del objetivo. Intruso + Guardián crea Contradicción hasta el Desenlace."
+impulse_cost = 1
+impulse_gain = 0
+priority = 10
+target_rule = "any"
+requires_contradiction = false
+effects = Array[ExtResource("base")]([SubResource("E0")])
+

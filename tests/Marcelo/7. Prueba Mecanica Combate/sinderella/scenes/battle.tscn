@@ -1,0 +1,222 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/battle_screen.gd" id="1"]
+[ext_resource type="Resource" path="res://sinderella/data/encounter.tres" id="2"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/arena.png" id="3"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/characters.png" id="atlas"]
+[ext_resource type="Shader" path="res://sinderella/assets/chroma.gdshader" id="chroma"]
+
+[sub_resource type="ShaderMaterial" id="Key"]
+shader = ExtResource("chroma")
+
+[sub_resource type="AtlasTexture" id="Preview0"]
+atlas = ExtResource("atlas")
+region = Rect2(0, 0, 384, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview1"]
+atlas = ExtResource("atlas")
+region = Rect2(384, 0, 384, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview2"]
+atlas = ExtResource("atlas")
+region = Rect2(768, 0, 384, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview3"]
+atlas = ExtResource("atlas")
+region = Rect2(1152, 0, 384, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview4"]
+atlas = ExtResource("atlas")
+region = Rect2(0, 512, 405, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview5"]
+atlas = ExtResource("atlas")
+region = Rect2(405, 512, 363, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview6"]
+atlas = ExtResource("atlas")
+region = Rect2(768, 512, 384, 512)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Preview7"]
+atlas = ExtResource("atlas")
+region = Rect2(1152, 512, 384, 512)
+filter_clip = true
+
+[node name="Battle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+encounter = ExtResource("2")
+
+[node name="Background" type="TextureRect" parent="."]
+texture = ExtResource("3")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Vignette" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.01, 0.04, 0.05, 0.23)
+
+[node name="Arena" type="Control" parent="."]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 675.0
+mouse_filter = 2
+
+[node name="Slots" type="Node2D" parent="."]
+
+[node name="AllyFrontA" type="Marker2D" parent="Slots"]
+position = Vector2(560, 190)
+
+[node name="AllyFrontB" type="Marker2D" parent="Slots"]
+position = Vector2(560, 445)
+
+[node name="AllyBackA" type="Marker2D" parent="Slots"]
+position = Vector2(330, 190)
+
+[node name="AllyBackB" type="Marker2D" parent="Slots"]
+position = Vector2(330, 445)
+
+[node name="EnemyFrontA" type="Marker2D" parent="Slots"]
+position = Vector2(1070, 190)
+
+[node name="EnemyFrontB" type="Marker2D" parent="Slots"]
+position = Vector2(1070, 445)
+
+[node name="EnemyBackA" type="Marker2D" parent="Slots"]
+position = Vector2(1300, 190)
+
+[node name="EnemyBackB" type="Marker2D" parent="Slots"]
+position = Vector2(1300, 445)
+
+[node name="LawPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 16.0
+offset_right = 1305.0
+offset_bottom = 142.0
+
+[node name="Commands" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 176.0
+offset_right = 318.0
+offset_bottom = 686.0
+
+[node name="Party" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 697.0
+offset_right = 1167.0
+offset_bottom = 843.0
+theme_override_constants/separation = 10
+
+[node name="RoundControls" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1180.0
+offset_top = 697.0
+offset_right = 1582.0
+offset_bottom = 843.0
+
+[node name="StatusPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 852.0
+offset_right = 1582.0
+offset_bottom = 889.0
+
+[node name="Timeline" type="Label" parent="."]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 150.0
+offset_right = 1530.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 13
+horizontal_alignment = 1
+mouse_filter = 2
+
+[node name="Effects" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/AllyFrontA"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview0")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/AllyFrontB"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview1")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/AllyBackA"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview2")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/AllyBackB"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview3")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/EnemyFrontA"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview4")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/EnemyFrontB"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview5")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/EnemyBackA"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview6")
+
+[node name="EditorPreview" type="Sprite2D" parent="Slots/EnemyBackB"]
+texture_filter = 1
+material = SubResource("Key")
+position = Vector2(110, 116)
+scale = Vector2(0.336, 0.336)
+texture = SubResource("Preview7")

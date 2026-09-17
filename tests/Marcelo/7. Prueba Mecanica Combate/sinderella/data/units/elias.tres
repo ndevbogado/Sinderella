@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BattleUnitData" format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/unit_data.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="skill"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/characters.png" id="atlas"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/rally.tres" id="s0"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/cut.tres" id="s1"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/shield.tres" id="s2"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/small_shield.tres" id="s3"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/echo.tres" id="s4"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/guard.tres" id="s5"]
+
+[sub_resource type="AtlasTexture" id="Sprite"]
+atlas = ExtResource("atlas")
+region = Rect2(768, 0, 384, 512)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+id = "elias"
+display_name = "Elías"
+max_hp = 115
+strength = 30
+armor = 30
+wit = 30
+will = 35
+speed = 20
+starting_role = "Testigo"
+texture = SubResource("Sprite")
+chroma_key = true
+skills = Array[ExtResource("skill")]([ExtResource("s0"), ExtResource("s1"), ExtResource("s2"), ExtResource("s3"), ExtResource("s4"), ExtResource("s5")])

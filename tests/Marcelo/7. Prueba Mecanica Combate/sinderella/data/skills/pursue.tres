@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="BattleSkill" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/effect.gd" id="base"]
+[ext_resource type="Script" path="res://sinderella/scripts/effects/damage.gd" id="fx0"]
+
+[sub_resource type="Resource" id="E0"]
+script = ExtResource("fx0")
+power = 25
+marked_bonus = 1.3
+
+[resource]
+script = ExtResource("1")
+id = "pursue"
+display_name = "Persecución"
+description = "Potencia 25, multiplicada por 1,3 contra Marcado. Coste 1."
+impulse_cost = 1
+impulse_gain = 0
+priority = 0
+target_rule = "enemy"
+requires_contradiction = false
+effects = Array[ExtResource("base")]([SubResource("E0")])
+
