@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://boum2phhrda7a"]
+
+[ext_resource type="Texture2D" uid="uid://b7ya1wfachqqs" path="res://sprites/tilesets/environment/trees/tree_1.png" id="1_ata65"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dweb8"]
+atlas = ExtResource("1_ata65")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwicv"]
+atlas = ExtResource("1_ata65")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjm4c"]
+atlas = ExtResource("1_ata65")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6nht"]
+atlas = ExtResource("1_ata65")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjtw4"]
+atlas = ExtResource("1_ata65")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bk3e4"]
+atlas = ExtResource("1_ata65")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5k5dq"]
+atlas = ExtResource("1_ata65")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvkfa"]
+atlas = ExtResource("1_ata65")
+region = Rect2(1792, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4aka"]
+atlas = ExtResource("1_ata65")
+region = Rect2(2048, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iqncd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dweb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwicv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjm4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6nht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjtw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bk3e4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5k5dq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvkfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4aka")
+}],
+"loop": true,
+"name": &"wind",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ata65"]
+radius = 3.0980606
+height = 64.30128
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dweb8"]
+radius = 3.9641075
+height = 61.49743
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wwicv"]
+radius = 11.142883
+height = 42.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bk3e4"]
+height = 52.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sjm4c"]
+radius = 12.0
+height = 34.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5k5dq"]
+radius = 7.0
+height = 14.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uvkfa"]
+radius = 3.535534
+height = 21.588455
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v6nht"]
+radius = 6.6961517
+height = 25.052559
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jjtw4"]
+radius = 8.485283
+height = 18.384789
+
+[node name="AnimatedTree" type="Node2D" unique_id=1755024348]
+scale = Vector2(1.4, 1.4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=982318872]
+position = Vector2(6, 43.92)
+sprite_frames = SubResource("SpriteFrames_iqncd")
+animation = &"wind"
+autoplay = "wind"
+frame = 8
+frame_progress = 0.1569011
+offset = Vector2(0, -121.92)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1917879091]
+position = Vector2(19, 106.92)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=523772598]
+position = Vector2(-53, -98)
+rotation = -2.0943952
+shape = SubResource("CapsuleShape2D_ata65")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1728055926]
+position = Vector2(-2.0000005, -93.00001)
+rotation = -3.6651917
+shape = SubResource("CapsuleShape2D_dweb8")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=12938168]
+position = Vector2(2, -116)
+rotation = -4.712389
+shape = SubResource("CapsuleShape2D_wwicv")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D" unique_id=303072442]
+position = Vector2(-31, -118)
+rotation = -4.712389
+shape = SubResource("CapsuleShape2D_bk3e4")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1578950699]
+position = Vector2(12, -107.92)
+rotation = -4.712389
+shape = SubResource("CapsuleShape2D_sjm4c")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D" unique_id=1923610447]
+position = Vector2(32, -104.92)
+rotation = -4.712389
+shape = SubResource("CapsuleShape2D_5k5dq")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D" unique_id=1642093499]
+position = Vector2(9.999996, -93.91999)
+rotation = -4.1887903
+shape = SubResource("CapsuleShape2D_uvkfa")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=804409798]
+position = Vector2(-63.000004, -110)
+rotation = -2.0943952
+shape = SubResource("CapsuleShape2D_v6nht")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=53428585]
+position = Vector2(-16.000002, -92)
+rotation = -2.3561945
+shape = SubResource("CapsuleShape2D_jjtw4")

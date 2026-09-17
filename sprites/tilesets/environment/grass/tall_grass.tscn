@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b4rve15vjv7w6"]
+
+[ext_resource type="Script" uid="uid://ctbbiwmrwdvv0" path="res://tall_grass.gd" id="1_wo6kd"]
+[ext_resource type="Texture2D" uid="uid://b36lj44eqtlfu" path="res://sprites/tilesets/environment/grass/pasto_alto.png" id="2_j26ql"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6farv"]
+atlas = ExtResource("2_j26ql")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i5ci"]
+atlas = ExtResource("2_j26ql")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1jfb"]
+atlas = ExtResource("2_j26ql")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmm14"]
+atlas = ExtResource("2_j26ql")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xl6ce"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6farv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5i5ci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1jfb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmm14")
+}],
+"loop": false,
+"name": &"rustle",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2p2h8"]
+size = Vector2(20, 7)
+
+[node name="TallGrass" type="Area2D" unique_id=1984127577]
+script = ExtResource("1_wo6kd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1089270361]
+position = Vector2(0, -10)
+scale = Vector2(1.2, 1.4)
+sprite_frames = SubResource("SpriteFrames_xl6ce")
+animation = &"rustle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=279019995]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_2p2h8")

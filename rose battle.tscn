@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://cvbgnokibeg1h"]
+
+[ext_resource type="Texture2D" uid="uid://ca5axla6huiyg" path="res://sprites/characters/prueba.png" id="1_eqi7g"]
+[ext_resource type="Script" uid="uid://bs7vc5n8f14jx" path="res://rose_battle.gd" id="2_wlt80"]
+[ext_resource type="Texture2D" uid="uid://t7yx6x1yh4v5" path="res://sprites/characters/asdsadasdadas.png" id="3_1o2ka"]
+[ext_resource type="Texture2D" uid="uid://dua8oi8sj0f34" path="res://sprites/characters/briar/briar_attack.png" id="3_l0yvl"]
+[ext_resource type="Texture2D" uid="uid://bpqxbtmpbtqh6" path="res://sprites/characters/hp_ally_under.png" id="4_0i1mh"]
+[ext_resource type="Texture2D" uid="uid://d25h7w4auywot" path="res://sprites/characters/hp_ally_over.png" id="5_w31hn"]
+[ext_resource type="Texture2D" uid="uid://csybyj5b57un" path="res://sprites/characters/hp_fill_green.png" id="6_0pkrp"]
+[ext_resource type="Texture2D" uid="uid://d12gurf5jq5rl" path="res://sprites/characters/hp_enemy_under.png" id="7_aiwob"]
+[ext_resource type="Texture2D" uid="uid://7qe02rvckp4o" path="res://sprites/characters/hp_enemy_over.png" id="8_l0yvl"]
+[ext_resource type="Texture2D" uid="uid://8nbje4fufhyj" path="res://sprites/characters/hp_fill_red.png" id="9_x2h5v"]
+[ext_resource type="Texture2D" uid="uid://bbfannjfr7nut" path="res://sprites/ui/perfect_hit_bar/perfect_hit_bar.png" id="11_unetb"]
+[ext_resource type="Texture2D" uid="uid://cgnvwff80d2qs" path="res://sprites/ui/perfect_hit_bar/perfect_hit_needle.png" id="12_4g50x"]
+[ext_resource type="Texture2D" uid="uid://bd17gh1cuw6um" path="res://sprites/ui/perfect_hit_bar/perfect_hit_flash.png" id="13_a5axo"]
+[ext_resource type="Texture2D" uid="uid://iimlaf8doq58" path="res://sprites/backgrounds/battle/rose_battle_bg.png" id="14_4g50x"]
+[ext_resource type="AudioStream" uid="uid://dm2qbq1lfjb1y" path="res://audio/music/battle/battle_elite_music.mp3" id="15_a5axo"]
+[ext_resource type="Script" uid="uid://5lov6e7ifs1f" path="res://stage_motion_test.gd" id="16_4tj61"]
+[ext_resource type="Texture2D" uid="uid://bdrtm0jxhosds" path="res://sprites/backgrounds/battle/perspective_test/upper_background.png" id="17_dsd36"]
+[ext_resource type="Shader" uid="uid://bltgbo83ns04l" path="res://perspective_floor.gdshader" id="18_66j82"]
+[ext_resource type="Texture2D" uid="uid://m2jbi6vxe1td" path="res://sprites/backgrounds/battle/perspective_test/floor_background.png" id="19_5jf51"]
+[ext_resource type="Script" uid="uid://bedripguavgrd" path="res://mouse_camera.gd" id="20_dsd36"]
+[ext_resource type="AudioStream" uid="uid://ccp5l43xlwy34" path="res://audio/sfx/perfect_hit_kalimba.wav" id="21_66j82"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1o2ka"]
+atlas = ExtResource("1_eqi7g")
+region = Rect2(0, 0, 132, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3sq03"]
+atlas = ExtResource("1_eqi7g")
+region = Rect2(132, 0, 132, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cj3m6"]
+atlas = ExtResource("1_eqi7g")
+region = Rect2(264, 0, 132, 132)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0i1mh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l0yvl")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_1o2ka")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_3sq03")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_cj3m6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7jctv"]
+shader = ExtResource("18_66j82")
+shader_parameter/scroll_offset = 0.0
+shader_parameter/horizon_y = 0.5
+shader_parameter/far_factor = 0.08
+shader_parameter/near_factor = 1.0
+shader_parameter/perspective_curve = 1.45
+
+[node name="Rose" type="Node2D" unique_id=1557626895]
+script = ExtResource("2_wlt80")
+perfect_zoom_out_time = 0.32
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1432272444]
+
+[node name="Asdsadasdadas" type="Sprite2D" parent="Node2D" unique_id=540621665]
+position = Vector2(1372, 431)
+scale = Vector2(0.5, 0.435)
+texture = ExtResource("3_1o2ka")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D" unique_id=1446528208]
+position = Vector2(646, 848)
+scale = Vector2(2.4, 2.4)
+sprite_frames = SubResource("SpriteFrames_0i1mh")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=52170296]
+layer = 10
+
+[node name="playerhp" type="TextureProgressBar" parent="UI" unique_id=875161712]
+offset_left = 1044.0
+offset_top = 852.0
+offset_right = 2580.0
+offset_bottom = 1582.0
+scale = Vector2(0.38, 0.38)
+max_value = 1000.0
+value = 1000.0
+texture_under = ExtResource("4_0i1mh")
+texture_over = ExtResource("5_w31hn")
+texture_progress = ExtResource("6_0pkrp")
+texture_progress_offset = Vector2(300, 154)
+metadata/_edit_use_anchors_ = true
+
+[node name="enemyhp" type="TextureProgressBar" parent="UI" unique_id=873428963]
+offset_left = 191.0
+offset_right = 1727.0
+offset_bottom = 730.0
+scale = Vector2(0.38, 0.38)
+max_value = 1000.0
+value = 1000.0
+fill_mode = 1
+texture_under = ExtResource("7_aiwob")
+texture_over = ExtResource("8_l0yvl")
+texture_progress = ExtResource("9_x2h5v")
+texture_progress_offset = Vector2(120, 464)
+metadata/_edit_use_anchors_ = true
+
+[node name="perfect_hit_bar" type="Control" parent="UI" unique_id=995530520]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Bar" type="TextureRect" parent="UI/perfect_hit_bar" unique_id=669561212]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("11_unetb")
+
+[node name="Needle" type="TextureRect" parent="UI/perfect_hit_bar" unique_id=1070504997]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_4g50x")
+
+[node name="Flash" type="TextureRect" parent="UI/perfect_hit_bar" unique_id=2033999524]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("13_a5axo")
+
+[node name="BattleBackground" type="Sprite2D" parent="." unique_id=1359729596]
+visible = false
+z_index = -10
+position = Vector2(597, 511)
+scale = Vector2(2.0821939, 1.9279175)
+texture = ExtResource("14_4g50x")
+
+[node name="BattleMusic" type="AudioStreamPlayer" parent="." unique_id=2065112925]
+stream = ExtResource("15_a5axo")
+volume_db = -32.591
+autoplay = true
+
+[node name="LyricsLayer" type="Node2D" parent="." unique_id=1731577837]
+
+[node name="LyricLabel" type="Label" parent="LyricsLayer" unique_id=1625223902]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StageTest" type="Node2D" parent="." unique_id=247810893]
+script = ExtResource("16_4tj61")
+
+[node name="UpperBackground" type="Sprite2D" parent="StageTest" unique_id=1629325438]
+z_index = -20
+position = Vector2(-502, -621)
+scale = Vector2(2, 2)
+texture = ExtResource("17_dsd36")
+centered = false
+
+[node name="PerspectiveFloor" type="Sprite2D" parent="StageTest" unique_id=1954050710]
+z_index = -10
+texture_repeat = 2
+material = SubResource("ShaderMaterial_7jctv")
+position = Vector2(-502, -621)
+scale = Vector2(2, 2)
+texture = ExtResource("19_5jf51")
+centered = false
+
+[node name="MouseCamera" type="Camera2D" parent="." unique_id=1038934056]
+position = Vector2(960, 540)
+script = ExtResource("20_dsd36")
+
+[node name="PerfectHitSound" type="AudioStreamPlayer" parent="." unique_id=566957256]
+stream = ExtResource("21_66j82")
