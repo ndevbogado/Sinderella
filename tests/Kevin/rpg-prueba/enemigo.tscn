@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://02al67bg0hp1"]
+
+[ext_resource type="Texture2D" uid="uid://bun3pgtiplm82" path="res://SPRITES/asdsadasdadas.png" id="1_becj5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_moxti"]
+size = Vector2(609, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5tj2"]
+atlas = ExtResource("1_becj5")
+region = Rect2(0, 0, 920, 721)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mk0sj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5tj2")
+}],
+"loop": 2,
+"name": &"bicho",
+"speed": 5.0
+}]
+
+[node name="enemigo" type="Node2D" unique_id=441722075]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=591280996]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=54024495]
+position = Vector2(-8.5, 277)
+shape = SubResource("RectangleShape2D_moxti")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1618446143]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_mk0sj")
+animation = &"bicho"
