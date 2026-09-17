@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BattleSkill" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/effect.gd" id="base"]
+[ext_resource type="Script" path="res://sinderella/scripts/effects/shield.gd" id="fx0"]
+
+[sub_resource type="Resource" id="E0"]
+script = ExtResource("fx0")
+power = 14
+
+[resource]
+script = ExtResource("1")
+id = "small_shield"
+display_name = "Amparo"
+description = "Escudo de potencia 14 a un aliado hasta el cierre de la próxima ronda."
+impulse_cost = 0
+impulse_gain = 0
+priority = 0
+target_rule = "ally"
+requires_contradiction = false
+effects = Array[ExtResource("base")]([SubResource("E0")])
+

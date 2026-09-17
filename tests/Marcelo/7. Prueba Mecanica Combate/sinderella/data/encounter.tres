@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="BattleEncounter" format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/encounter.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/unit_data.gd" id="unit"]
+[ext_resource type="Script" path="res://sinderella/scripts/law.gd" id="law"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/arena.png" id="bg"]
+[ext_resource type="Resource" path="res://sinderella/data/units/cinderella.tres" id="u0"]
+[ext_resource type="Resource" path="res://sinderella/data/units/red.tres" id="u1"]
+[ext_resource type="Resource" path="res://sinderella/data/units/elias.tres" id="u2"]
+[ext_resource type="Resource" path="res://sinderella/data/units/briar.tres" id="u3"]
+[ext_resource type="Resource" path="res://sinderella/data/units/knight.tres" id="u4"]
+[ext_resource type="Resource" path="res://sinderella/data/units/executioner.tres" id="u5"]
+[ext_resource type="Resource" path="res://sinderella/data/units/scribe.tres" id="u6"]
+[ext_resource type="Resource" path="res://sinderella/data/units/abomination.tres" id="u7"]
+
+[sub_resource type="Resource" id="Law"]
+script = ExtResource("law")
+
+[resource]
+script = ExtResource("1")
+background = ExtResource("bg")
+law = SubResource("Law")
+allies = Array[ExtResource("unit")]([ExtResource("u0"), ExtResource("u1"), ExtResource("u2"), ExtResource("u3")])
+enemies = Array[ExtResource("unit")]([ExtResource("u4"), ExtResource("u5"), ExtResource("u6"), ExtResource("u7")])
+

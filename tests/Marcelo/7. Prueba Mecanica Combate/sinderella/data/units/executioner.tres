@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="BattleUnitData" format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/unit_data.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="skill"]
+[ext_resource type="Texture2D" path="res://sinderella/assets/characters.png" id="atlas"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/axe.tres" id="s0"]
+[ext_resource type="Resource" path="res://sinderella/data/skills/thorn.tres" id="s1"]
+
+[sub_resource type="AtlasTexture" id="Sprite"]
+atlas = ExtResource("atlas")
+region = Rect2(405, 512, 363, 512)
+filter_clip = true
+
+[resource]
+script = ExtResource("1")
+id = "executioner"
+display_name = "Verdugo"
+max_hp = 90
+strength = 35
+armor = 25
+wit = 20
+will = 25
+speed = 28
+starting_role = "Extra"
+texture = SubResource("Sprite")
+chroma_key = true
+skills = Array[ExtResource("skill")]([ExtResource("s0"), ExtResource("s1")])

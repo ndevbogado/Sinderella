@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="BattleSkill" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/effect.gd" id="base"]
+[ext_resource type="Script" path="res://sinderella/scripts/effects/guard.gd" id="fx0"]
+
+[sub_resource type="Resource" id="E0"]
+script = ExtResource("fx0")
+
+[resource]
+script = ExtResource("1")
+id = "guard"
+display_name = "Guardia"
+description = "Reduce 40% del daño hasta tu próxima acción. Genera 1 Impulso."
+impulse_cost = 0
+impulse_gain = 1
+priority = 20
+target_rule = "self"
+requires_contradiction = false
+effects = Array[ExtResource("base")]([SubResource("E0")])
+

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BattleSkill" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://sinderella/scripts/skill.gd" id="1"]
+[ext_resource type="Script" path="res://sinderella/scripts/effect.gd" id="base"]
+[ext_resource type="Script" path="res://sinderella/scripts/effects/beat.gd" id="fx0"]
+
+[sub_resource type="Resource" id="E0"]
+script = ExtResource("fx0")
+change = -1
+
+[resource]
+script = ExtResource("1")
+id = "delay"
+display_name = "Demorar el cuento"
+description = "Retrocede un Compás. Coste 2. Una vez por bando y ciclo; no usable en Compás I."
+impulse_cost = 2
+impulse_gain = 0
+priority = 10
+target_rule = "self"
+requires_contradiction = false
+effects = Array[ExtResource("base")]([SubResource("E0")])
+
