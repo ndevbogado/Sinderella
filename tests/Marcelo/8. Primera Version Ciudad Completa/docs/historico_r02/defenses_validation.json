@@ -1,0 +1,26 @@
+{
+  "revision": "B.1.2",
+  "diagonal_face_samples": 1728,
+  "uncovered_samples": [],
+  "river_openings": [
+    {
+      "side": 3,
+      "clear": true,
+      "blocked_samples": []
+    },
+    {
+      "side": 7,
+      "clear": true,
+      "blocked_samples": []
+    }
+  ],
+  "original_navigation_layers_unchanged": {
+    "base.bin": true,
+    "overlay.bin": true,
+    "colision.bin": true,
+    "agua.bin": true
+  },
+  "passed": true,
+  "world_diagonal_join_samples": 1496,
+  "world_uncovered_samples": []
+}

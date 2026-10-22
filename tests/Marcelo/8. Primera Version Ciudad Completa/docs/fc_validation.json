@@ -1,0 +1,13 @@
+{
+  "dimensions": [
+    9600,
+    9720
+  ],
+  "doors_checked": 197,
+  "doors_reachable": 197,
+  "pois_connected": 22,
+  "residents_checked": 388,
+  "character_unchanged": true,
+  "errors": [],
+  "passed": true
+}

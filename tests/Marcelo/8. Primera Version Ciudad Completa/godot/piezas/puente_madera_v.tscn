@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/puente_madera_v.png" id="1_c15ib"]
+
+[node name="puente_madera_v" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "puente_madera_v"
+metadata/nombre = "Puente de madera vertical"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_c15ib")
+centered = false
+offset = Vector2(-64, -320)
+region_enabled = true
+region_rect = Rect2(0, 0, 128, 320)

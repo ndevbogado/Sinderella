@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/muralla_repetible_v.png" id="1_ojer8"]
+
+[node name="muralla_repetible_v" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "muralla_repetible_v"
+metadata/nombre = "Muralla / tramo vertical repetible"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_ojer8")
+centered = false
+offset = Vector2(-32, -64)
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)
+
+[node name="Colision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-24, -64, 32, -64, 32, 0, -24, 0)

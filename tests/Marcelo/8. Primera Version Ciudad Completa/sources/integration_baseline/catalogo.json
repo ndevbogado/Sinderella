@@ -1,0 +1,4183 @@
+{
+  "version": "3.4.0",
+  "tile_size": 32,
+  "viewport": [
+    960,
+    540
+  ],
+  "assets": [
+    {
+      "id": "casa_01",
+      "label": "Vivienda de entramado",
+      "group": "arquitectura",
+      "file": "assets/casa_01.png",
+      "width": 192,
+      "height": 288,
+      "content_rect": [
+        18,
+        2,
+        156,
+        284
+      ],
+      "anchor": [
+        96,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            37,
+            196
+          ],
+          [
+            155,
+            196
+          ],
+          [
+            155,
+            284
+          ],
+          [
+            37,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "casa_02",
+      "label": "Casa mercantil",
+      "group": "arquitectura",
+      "file": "assets/casa_02.png",
+      "width": 320,
+      "height": 288,
+      "content_rect": [
+        14,
+        2,
+        292,
+        284
+      ],
+      "anchor": [
+        160,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            49,
+            196
+          ],
+          [
+            271,
+            196
+          ],
+          [
+            271,
+            284
+          ],
+          [
+            49,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "herbolario",
+      "label": "Herbolario",
+      "group": "arquitectura",
+      "file": "assets/herbolario.png",
+      "width": 224,
+      "height": 288,
+      "content_rect": [
+        15,
+        2,
+        194,
+        284
+      ],
+      "anchor": [
+        112,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            38,
+            196
+          ],
+          [
+            186,
+            196
+          ],
+          [
+            186,
+            284
+          ],
+          [
+            38,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "posada",
+      "label": "Posada de la Rosa",
+      "group": "arquitectura",
+      "file": "assets/posada.png",
+      "width": 320,
+      "height": 288,
+      "content_rect": [
+        17,
+        2,
+        285,
+        284
+      ],
+      "anchor": [
+        160,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            51,
+            196
+          ],
+          [
+            268,
+            196
+          ],
+          [
+            268,
+            284
+          ],
+          [
+            51,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "herreria",
+      "label": "Herrería",
+      "group": "arquitectura",
+      "file": "assets/herreria.png",
+      "width": 320,
+      "height": 288,
+      "content_rect": [
+        9,
+        2,
+        302,
+        284
+      ],
+      "anchor": [
+        160,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            45,
+            196
+          ],
+          [
+            275,
+            196
+          ],
+          [
+            275,
+            284
+          ],
+          [
+            45,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "gremio",
+      "label": "Casa del gremio",
+      "group": "arquitectura",
+      "file": "assets/gremio.png",
+      "width": 256,
+      "height": 320,
+      "content_rect": [
+        2,
+        11,
+        252,
+        307
+      ],
+      "anchor": [
+        128,
+        320
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            32,
+            221
+          ],
+          [
+            224,
+            221
+          ],
+          [
+            224,
+            316
+          ],
+          [
+            32,
+            316
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "puesto_frutas",
+      "label": "Puesto de frutas",
+      "group": "decoracion",
+      "file": "assets/puesto_frutas.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        2,
+        6,
+        124,
+        120
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            17,
+            88
+          ],
+          [
+            111,
+            88
+          ],
+          [
+            111,
+            124
+          ],
+          [
+            17,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        0,
+        0,
+        320,
+        327
+      ]
+    },
+    {
+      "id": "puesto_libros",
+      "label": "Puesto de libros y telas",
+      "group": "decoracion",
+      "file": "assets/puesto_libros.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        5,
+        2,
+        118,
+        124
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            19,
+            87
+          ],
+          [
+            109,
+            87
+          ],
+          [
+            109,
+            124
+          ],
+          [
+            19,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        328,
+        0,
+        300,
+        327
+      ]
+    },
+    {
+      "id": "carro",
+      "label": "Carro de reparto",
+      "group": "decoracion",
+      "file": "assets/carro.png",
+      "width": 128,
+      "height": 96,
+      "content_rect": [
+        3,
+        2,
+        122,
+        92
+      ],
+      "anchor": [
+        64,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            18,
+            64
+          ],
+          [
+            110,
+            64
+          ],
+          [
+            110,
+            92
+          ],
+          [
+            18,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        630,
+        0,
+        305,
+        327
+      ]
+    },
+    {
+      "id": "fuente",
+      "label": "Fuente de la Rosa",
+      "group": "decoracion",
+      "file": "assets/fuente.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        2,
+        2,
+        124,
+        124
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            17,
+            87
+          ],
+          [
+            111,
+            87
+          ],
+          [
+            111,
+            124
+          ],
+          [
+            17,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        938,
+        0,
+        316,
+        327
+      ]
+    },
+    {
+      "id": "arbol",
+      "label": "Árbol frondoso",
+      "group": "decoracion",
+      "file": "assets/arbol.png",
+      "width": 192,
+      "height": 224,
+      "content_rect": [
+        2,
+        21,
+        188,
+        201
+      ],
+      "anchor": [
+        96,
+        224
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            79,
+            196
+          ],
+          [
+            113,
+            196
+          ],
+          [
+            113,
+            220
+          ],
+          [
+            79,
+            220
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        0,
+        328,
+        322,
+        340
+      ]
+    },
+    {
+      "id": "cipres",
+      "label": "Ciprés",
+      "group": "decoracion",
+      "file": "assets/cipres.png",
+      "width": 96,
+      "height": 192,
+      "content_rect": [
+        12,
+        2,
+        72,
+        188
+      ],
+      "anchor": [
+        48,
+        192
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            41.5,
+            165
+          ],
+          [
+            54.5,
+            165
+          ],
+          [
+            54.5,
+            188
+          ],
+          [
+            41.5,
+            188
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        350,
+        328,
+        240,
+        340
+      ]
+    },
+    {
+      "id": "jardinera",
+      "label": "Jardinera de rosas",
+      "group": "decoracion",
+      "file": "assets/jardinera.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        2,
+        92,
+        60
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            42
+          ],
+          [
+            83,
+            42
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        630,
+        365,
+        305,
+        282
+      ]
+    },
+    {
+      "id": "seto",
+      "label": "Seto",
+      "group": "decoracion",
+      "file": "assets/seto.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        19,
+        92,
+        43
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            47
+          ],
+          [
+            83,
+            47
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        941,
+        397,
+        313,
+        250
+      ]
+    },
+    {
+      "id": "farola",
+      "label": "Farola",
+      "group": "decoracion",
+      "file": "assets/farola.png",
+      "width": 64,
+      "height": 128,
+      "content_rect": [
+        11,
+        18,
+        41,
+        108
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            27,
+            92
+          ],
+          [
+            37,
+            92
+          ],
+          [
+            37,
+            124
+          ],
+          [
+            27,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        44,
+        667,
+        228,
+        338
+      ]
+    },
+    {
+      "id": "estandarte",
+      "label": "Estandarte real",
+      "group": "decoracion",
+      "file": "assets/estandarte.png",
+      "width": 64,
+      "height": 160,
+      "content_rect": [
+        2,
+        25,
+        60,
+        133
+      ],
+      "anchor": [
+        32,
+        160
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            26.5,
+            116
+          ],
+          [
+            37.5,
+            116
+          ],
+          [
+            37.5,
+            156
+          ],
+          [
+            26.5,
+            156
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        342,
+        667,
+        243,
+        349
+      ]
+    },
+    {
+      "id": "pozo",
+      "label": "Pozo",
+      "group": "decoracion",
+      "file": "assets/pozo.png",
+      "width": 96,
+      "height": 128,
+      "content_rect": [
+        2,
+        14,
+        92,
+        112
+      ],
+      "anchor": [
+        48,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            90
+          ],
+          [
+            83,
+            90
+          ],
+          [
+            83,
+            124
+          ],
+          [
+            13,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        635,
+        665,
+        291,
+        340
+      ]
+    },
+    {
+      "id": "banco",
+      "label": "Banco",
+      "group": "decoracion",
+      "file": "assets/banco.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        3,
+        92,
+        59
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            42
+          ],
+          [
+            83,
+            42
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        940,
+        760,
+        314,
+        207
+      ]
+    },
+    {
+      "id": "cajon",
+      "label": "Cajón",
+      "group": "decoracion",
+      "file": "assets/cajon.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        10,
+        19,
+        44,
+        43
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            15,
+            47
+          ],
+          [
+            49,
+            47
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            15,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        35,
+        1025,
+        250,
+        229
+      ]
+    },
+    {
+      "id": "barriles",
+      "label": "Barriles",
+      "group": "decoracion",
+      "file": "assets/barriles.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        2,
+        8,
+        60,
+        54
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            9,
+            44
+          ],
+          [
+            55,
+            44
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            9,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        338,
+        1025,
+        278,
+        229
+      ]
+    },
+    {
+      "id": "sacos",
+      "label": "Sacos",
+      "group": "decoracion",
+      "file": "assets/sacos.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        2,
+        19,
+        60,
+        43
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            9,
+            47
+          ],
+          [
+            55,
+            47
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            9,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        631,
+        1025,
+        290,
+        229
+      ]
+    },
+    {
+      "id": "cartel",
+      "label": "Cartel de la Rosa",
+      "group": "decoracion",
+      "file": "assets/cartel.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        2,
+        21,
+        60,
+        73
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            9,
+            70
+          ],
+          [
+            55,
+            70
+          ],
+          [
+            55,
+            92
+          ],
+          [
+            9,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        960,
+        968,
+        294,
+        286
+      ]
+    },
+    {
+      "id": "muralla_h",
+      "label": "Muralla horizontal",
+      "group": "defensas",
+      "file": "assets/muralla_h.png",
+      "width": 288,
+      "height": 160,
+      "content_rect": [
+        2,
+        22,
+        284,
+        136
+      ],
+      "anchor": [
+        144,
+        160
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            36,
+            108
+          ],
+          [
+            252,
+            108
+          ],
+          [
+            252,
+            156
+          ],
+          [
+            36,
+            156
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        35,
+        145,
+        620,
+        333
+      ]
+    },
+    {
+      "id": "muralla_v",
+      "label": "Muralla vertical",
+      "group": "defensas",
+      "file": "assets/muralla_v.png",
+      "width": 96,
+      "height": 288,
+      "content_rect": [
+        2,
+        2,
+        91,
+        284
+      ],
+      "anchor": [
+        48,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            40
+          ],
+          [
+            82,
+            40
+          ],
+          [
+            82,
+            284
+          ],
+          [
+            13,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        742,
+        0,
+        238,
+        549
+      ]
+    },
+    {
+      "id": "torre_muralla",
+      "label": "Torre de esquina",
+      "group": "defensas",
+      "file": "assets/torre_muralla.png",
+      "width": 160,
+      "height": 256,
+      "content_rect": [
+        5,
+        2,
+        150,
+        252
+      ],
+      "anchor": [
+        80,
+        256
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            23,
+            189
+          ],
+          [
+            137,
+            189
+          ],
+          [
+            137,
+            252
+          ],
+          [
+            23,
+            252
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        1150,
+        0,
+        371,
+        530
+      ]
+    },
+    {
+      "id": "porton_abierto",
+      "label": "Portón abierto",
+      "group": "defensas",
+      "file": "assets/porton_abierto.png",
+      "width": 352,
+      "height": 320,
+      "content_rect": [
+        2,
+        13,
+        348,
+        305
+      ],
+      "anchor": [
+        176,
+        320
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            44,
+            224
+          ],
+          [
+            130,
+            224
+          ],
+          [
+            130,
+            316
+          ],
+          [
+            44,
+            316
+          ]
+        ],
+        [
+          [
+            222,
+            224
+          ],
+          [
+            308,
+            224
+          ],
+          [
+            308,
+            316
+          ],
+          [
+            222,
+            316
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        0,
+        488,
+        584,
+        522
+      ]
+    },
+    {
+      "id": "puente_h",
+      "label": "Puente este-oeste",
+      "group": "defensas",
+      "file": "assets/puente_h.png",
+      "width": 256,
+      "height": 128,
+      "content_rect": [
+        2,
+        13,
+        252,
+        113
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        587,
+        630,
+        552,
+        311
+      ]
+    },
+    {
+      "id": "escalera",
+      "label": "Escalinata",
+      "group": "defensas",
+      "file": "assets/escalera.png",
+      "width": 160,
+      "height": 192,
+      "content_rect": [
+        2,
+        13,
+        156,
+        177
+      ],
+      "anchor": [
+        80,
+        192
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        1150,
+        545,
+        386,
+        458
+      ]
+    },
+    {
+      "id": "muralla_repetible_h",
+      "label": "Muralla / tramo repetible",
+      "group": "defensas",
+      "file": "assets/muralla_repetible_h.png",
+      "width": 64,
+      "height": 128,
+      "content_rect": [
+        0,
+        0,
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            8,
+            75
+          ],
+          [
+            56,
+            75
+          ],
+          [
+            56,
+            126
+          ],
+          [
+            8,
+            126
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        267,
+        199,
+        118,
+        246
+      ]
+    },
+    {
+      "id": "muralla_repetible_v",
+      "label": "Muralla / tramo vertical repetible",
+      "group": "defensas",
+      "file": "assets/muralla_repetible_v.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            8,
+            1
+          ],
+          [
+            56,
+            1
+          ],
+          [
+            56,
+            62
+          ],
+          [
+            8,
+            62
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        779,
+        64,
+        143,
+        117
+      ]
+    },
+    {
+      "id": "puerta",
+      "label": "Puerta de madera",
+      "group": "detalles",
+      "file": "assets/puerta.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        2,
+        26,
+        60,
+        68
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        25,
+        0,
+        320,
+        350
+      ]
+    },
+    {
+      "id": "ventana",
+      "label": "Ventana gótica",
+      "group": "detalles",
+      "file": "assets/ventana.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        10,
+        24,
+        44,
+        70
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        354,
+        0,
+        245,
+        350
+      ]
+    },
+    {
+      "id": "buhardilla",
+      "label": "Buhardilla verde",
+      "group": "detalles",
+      "file": "assets/buhardilla.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        7,
+        2,
+        82,
+        92
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        628,
+        0,
+        307,
+        350
+      ]
+    },
+    {
+      "id": "bandera_mural",
+      "label": "Bandera mural",
+      "group": "detalles",
+      "file": "assets/bandera_mural.png",
+      "width": 32,
+      "height": 64,
+      "content_rect": [
+        2,
+        10,
+        28,
+        52
+      ],
+      "anchor": [
+        16,
+        64
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        966,
+        0,
+        265,
+        350
+      ]
+    },
+    {
+      "id": "raiz_h",
+      "label": "Raíz horizontal",
+      "group": "detalles",
+      "file": "assets/raiz_h.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        28,
+        92,
+        34
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        0,
+        376,
+        400,
+        236
+      ]
+    },
+    {
+      "id": "raiz_v",
+      "label": "Raíz vertical",
+      "group": "detalles",
+      "file": "assets/raiz_v.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        13,
+        2,
+        38,
+        92
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        425,
+        350,
+        193,
+        345
+      ]
+    },
+    {
+      "id": "raiz_l",
+      "label": "Raíz curva",
+      "group": "detalles",
+      "file": "assets/raiz_l.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        10,
+        18,
+        75,
+        76
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        632,
+        369,
+        303,
+        326
+      ]
+    },
+    {
+      "id": "raiz_t",
+      "label": "Raíz ramificada",
+      "group": "detalles",
+      "file": "assets/raiz_t.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        2,
+        10,
+        92,
+        84
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        936,
+        360,
+        318,
+        335
+      ]
+    },
+    {
+      "id": "rosas",
+      "label": "Rosal bajo",
+      "group": "detalles",
+      "file": "assets/rosas.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        10,
+        19,
+        44,
+        43
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        25,
+        695,
+        300,
+        230
+      ]
+    },
+    {
+      "id": "arbusto",
+      "label": "Arbusto",
+      "group": "detalles",
+      "file": "assets/arbusto.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        10,
+        18,
+        44,
+        44
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": true,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            15,
+            40
+          ],
+          [
+            49,
+            40
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            15,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        363,
+        708,
+        236,
+        217
+      ]
+    },
+    {
+      "id": "escombros",
+      "label": "Piedras sueltas",
+      "group": "detalles",
+      "file": "assets/escombros.png",
+      "width": 64,
+      "height": 32,
+      "content_rect": [
+        12,
+        2,
+        40,
+        28
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        624,
+        704,
+        310,
+        223
+      ]
+    },
+    {
+      "id": "desague",
+      "label": "Desagüe",
+      "group": "detalles",
+      "file": "assets/desague.png",
+      "width": 32,
+      "height": 32,
+      "content_rect": [
+        2,
+        2,
+        28,
+        28
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        953,
+        694,
+        298,
+        235
+      ]
+    },
+    {
+      "id": "baranda_h",
+      "label": "Baranda horizontal",
+      "group": "detalles",
+      "file": "assets/baranda_h.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        8,
+        92,
+        54
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            41
+          ],
+          [
+            83,
+            41
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        25,
+        970,
+        367,
+        258
+      ]
+    },
+    {
+      "id": "baranda_v",
+      "label": "Baranda vertical",
+      "group": "detalles",
+      "file": "assets/baranda_v.png",
+      "width": 32,
+      "height": 96,
+      "content_rect": [
+        2,
+        6,
+        28,
+        88
+      ],
+      "anchor": [
+        16,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            5,
+            61
+          ],
+          [
+            27,
+            61
+          ],
+          [
+            27,
+            92
+          ],
+          [
+            5,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        416,
+        930,
+        168,
+        299
+      ]
+    },
+    {
+      "id": "antorcha",
+      "label": "Farol mural",
+      "group": "detalles",
+      "file": "assets/antorcha.png",
+      "width": 32,
+      "height": 64,
+      "content_rect": [
+        2,
+        19,
+        28,
+        43
+      ],
+      "anchor": [
+        16,
+        64
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        634,
+        941,
+        271,
+        288
+      ]
+    },
+    {
+      "id": "hojas_porton",
+      "label": "Hojas del portón cerrado",
+      "group": "detalles",
+      "file": "assets/hojas_porton.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        2,
+        12,
+        92,
+        82
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            63
+          ],
+          [
+            83,
+            63
+          ],
+          [
+            83,
+            92
+          ],
+          [
+            13,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        916,
+        933,
+        338,
+        305
+      ]
+    },
+    {
+      "id": "castillo_integrado",
+      "label": "Castillo y Torre Central de Briar",
+      "group": "nuevos",
+      "file": "assets/castillo_integrado.png",
+      "width": 1024,
+      "height": 1088,
+      "anchor": [
+        512,
+        1088
+      ],
+      "content_rect": [
+        2,
+        5,
+        1020,
+        1081
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            124.39999999999999,
+            785.3199999999999
+          ],
+          [
+            899.6,
+            785.3199999999999
+          ],
+          [
+            899.6,
+            1084
+          ],
+          [
+            124.39999999999999,
+            1084
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "catedral",
+      "label": "Catedral de la Rosa",
+      "group": "nuevos",
+      "file": "assets/catedral.png",
+      "width": 512,
+      "height": 736,
+      "anchor": [
+        256,
+        736
+      ],
+      "content_rect": [
+        43,
+        2,
+        425,
+        732
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            94,
+            531.04
+          ],
+          [
+            417,
+            531.04
+          ],
+          [
+            417,
+            732
+          ],
+          [
+            94,
+            732
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "biblioteca",
+      "label": "Gran Biblioteca",
+      "group": "nuevos",
+      "file": "assets/biblioteca.png",
+      "width": 512,
+      "height": 576,
+      "anchor": [
+        256,
+        576
+      ],
+      "content_rect": [
+        29,
+        2,
+        454,
+        572
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            83.47999999999999,
+            415.84
+          ],
+          [
+            428.52,
+            415.84
+          ],
+          [
+            428.52,
+            572
+          ],
+          [
+            83.47999999999999,
+            572
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "mando_ejercito",
+      "label": "Centro de Mando del Ejército",
+      "group": "nuevos",
+      "file": "assets/mando_ejercito.png",
+      "width": 512,
+      "height": 576,
+      "anchor": [
+        256,
+        576
+      ],
+      "content_rect": [
+        53,
+        2,
+        405,
+        572
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            101.6,
+            415.84
+          ],
+          [
+            409.4,
+            415.84
+          ],
+          [
+            409.4,
+            572
+          ],
+          [
+            101.6,
+            572
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "puente_madera_h",
+      "label": "Puente de madera horizontal",
+      "group": "nuevos",
+      "file": "assets/puente_madera_h.png",
+      "width": 256,
+      "height": 160,
+      "anchor": [
+        128,
+        160
+      ],
+      "content_rect": [
+        2,
+        11,
+        252,
+        147
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "puente_piedra_h",
+      "label": "Puente de piedra horizontal",
+      "group": "nuevos",
+      "file": "assets/puente_piedra_h.png",
+      "width": 256,
+      "height": 160,
+      "anchor": [
+        128,
+        160
+      ],
+      "content_rect": [
+        2,
+        19,
+        252,
+        139
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "puerta_rio",
+      "label": "Arco de paso del río",
+      "group": "nuevos",
+      "file": "assets/puerta_rio.png",
+      "width": 640,
+      "height": 448,
+      "anchor": [
+        320,
+        448
+      ],
+      "content_rect": [
+        14,
+        2,
+        611,
+        444
+      ],
+      "solid": false,
+      "ground": false,
+      "collision_polygons": []
+    },
+    {
+      "id": "puente_madera_v",
+      "label": "Puente de madera vertical",
+      "group": "nuevos",
+      "file": "assets/puente_madera_v.png",
+      "width": 128,
+      "height": 320,
+      "anchor": [
+        64,
+        320
+      ],
+      "content_rect": [
+        11,
+        2,
+        106,
+        316
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "puente_piedra_v",
+      "label": "Puente de piedra vertical",
+      "group": "nuevos",
+      "file": "assets/puente_piedra_v.png",
+      "width": 128,
+      "height": 320,
+      "anchor": [
+        64,
+        320
+      ],
+      "content_rect": [
+        9,
+        2,
+        110,
+        316
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "muelle",
+      "label": "Muelle de madera",
+      "group": "nuevos",
+      "file": "assets/muelle.png",
+      "width": 256,
+      "height": 288,
+      "anchor": [
+        128,
+        288
+      ],
+      "content_rect": [
+        2,
+        62,
+        252,
+        224
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "b1_casa_01",
+      "label": "Vivienda diagonal",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_01.png",
+      "width": 320,
+      "height": 352,
+      "anchor": [
+        160,
+        352
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            38.4,
+            272
+          ],
+          [
+            281.6,
+            272
+          ],
+          [
+            281.6,
+            346
+          ],
+          [
+            38.4,
+            346
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_02",
+      "label": "Panadería",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_02.png",
+      "width": 352,
+      "height": 352,
+      "anchor": [
+        176,
+        352
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            42.239999999999995,
+            272
+          ],
+          [
+            309.76,
+            272
+          ],
+          [
+            309.76,
+            346
+          ],
+          [
+            42.239999999999995,
+            346
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_03",
+      "label": "Posada del Puente",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_03.png",
+      "width": 416,
+      "height": 416,
+      "anchor": [
+        208,
+        416
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            49.92,
+            336
+          ],
+          [
+            366.08,
+            336
+          ],
+          [
+            366.08,
+            410
+          ],
+          [
+            49.92,
+            410
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_04",
+      "label": "Herbolario diagonal",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_04.png",
+      "width": 320,
+      "height": 384,
+      "anchor": [
+        160,
+        384
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            38.4,
+            304
+          ],
+          [
+            281.6,
+            304
+          ],
+          [
+            281.6,
+            378
+          ],
+          [
+            38.4,
+            378
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_05",
+      "label": "Taller artesanal",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_05.png",
+      "width": 384,
+      "height": 384,
+      "anchor": [
+        192,
+        384
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            46.08,
+            304
+          ],
+          [
+            337.92,
+            304
+          ],
+          [
+            337.92,
+            378
+          ],
+          [
+            46.08,
+            378
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_06",
+      "label": "Casas unidas",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_06.png",
+      "width": 416,
+      "height": 384,
+      "anchor": [
+        208,
+        384
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            49.92,
+            304
+          ],
+          [
+            366.08,
+            304
+          ],
+          [
+            366.08,
+            378
+          ],
+          [
+            49.92,
+            378
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_07",
+      "label": "Vivienda con patio",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_07.png",
+      "width": 320,
+      "height": 352,
+      "anchor": [
+        160,
+        352
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            38.4,
+            272
+          ],
+          [
+            281.6,
+            272
+          ],
+          [
+            281.6,
+            346
+          ],
+          [
+            38.4,
+            346
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_08",
+      "label": "Librería de barrio",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_08.png",
+      "width": 352,
+      "height": 352,
+      "anchor": [
+        176,
+        352
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            42.239999999999995,
+            272
+          ],
+          [
+            309.76,
+            272
+          ],
+          [
+            309.76,
+            346
+          ],
+          [
+            42.239999999999995,
+            346
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_09",
+      "label": "Casa del mercader",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_09.png",
+      "width": 416,
+      "height": 416,
+      "anchor": [
+        208,
+        416
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            49.92,
+            336
+          ],
+          [
+            366.08,
+            336
+          ],
+          [
+            366.08,
+            410
+          ],
+          [
+            49.92,
+            410
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_10",
+      "label": "Almacén fluvial",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_10.png",
+      "width": 320,
+      "height": 384,
+      "anchor": [
+        160,
+        384
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            38.4,
+            304
+          ],
+          [
+            281.6,
+            304
+          ],
+          [
+            281.6,
+            378
+          ],
+          [
+            38.4,
+            378
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_11",
+      "label": "Tienda de telas",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_11.png",
+      "width": 384,
+      "height": 384,
+      "anchor": [
+        192,
+        384
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            46.08,
+            304
+          ],
+          [
+            337.92,
+            304
+          ],
+          [
+            337.92,
+            378
+          ],
+          [
+            46.08,
+            378
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_casa_12",
+      "label": "Forja de barrio",
+      "group": "b1_arquitectura",
+      "file": "assets/b1_casa_12.png",
+      "width": 416,
+      "height": 384,
+      "anchor": [
+        208,
+        384
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            49.92,
+            304
+          ],
+          [
+            366.08,
+            304
+          ],
+          [
+            366.08,
+            378
+          ],
+          [
+            49.92,
+            378
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "b1_puente_piedra",
+      "label": "Puente diagonal de piedra",
+      "group": "b1_rio_defensas",
+      "file": "assets/b1_puente_piedra.png",
+      "width": 768,
+      "height": 512,
+      "anchor": [
+        384,
+        512
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "b1_puente_madera",
+      "label": "Puente diagonal de madera",
+      "group": "b1_rio_defensas",
+      "file": "assets/b1_puente_madera.png",
+      "width": 768,
+      "height": 512,
+      "anchor": [
+        384,
+        512
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "b1_barca_carga",
+      "label": "Barca de carga",
+      "group": "b1_rio_defensas",
+      "file": "assets/b1_barca_carga.png",
+      "width": 192,
+      "height": 160,
+      "anchor": [
+        96,
+        160
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "b1_barca_pesca",
+      "label": "Barca de pesca",
+      "group": "b1_rio_defensas",
+      "file": "assets/b1_barca_pesca.png",
+      "width": 128,
+      "height": 128,
+      "anchor": [
+        64,
+        128
+      ],
+      "solid": false,
+      "ground": true,
+      "collision_polygons": []
+    },
+    {
+      "id": "b1_muralla_ne",
+      "label": "Muralla diagonal ascendente · estilo original",
+      "width": 256,
+      "height": 416,
+      "baseline": {
+        "slope": -1,
+        "intercept": 400
+      },
+      "world_anchor": [
+        128,
+        272
+      ],
+      "connection_points": [
+        [
+          0,
+          400
+        ],
+        [
+          256,
+          144
+        ]
+      ],
+      "depth_slices": 32,
+      "wall_height": 144,
+      "group": "defensas_b12",
+      "file": "assets/b1_muralla_ne.png",
+      "anchor": [
+        128,
+        416
+      ],
+      "solid": false,
+      "ground": false,
+      "collision_polygons": []
+    },
+    {
+      "id": "b1_muralla_se",
+      "label": "Muralla diagonal descendente · estilo original",
+      "width": 256,
+      "height": 416,
+      "baseline": {
+        "slope": 1,
+        "intercept": 144
+      },
+      "world_anchor": [
+        128,
+        272
+      ],
+      "connection_points": [
+        [
+          0,
+          144
+        ],
+        [
+          256,
+          400
+        ]
+      ],
+      "depth_slices": 32,
+      "wall_height": 144,
+      "group": "defensas_b12",
+      "file": "assets/b1_muralla_se.png",
+      "anchor": [
+        128,
+        416
+      ],
+      "solid": false,
+      "ground": false,
+      "collision_polygons": []
+    },
+    {
+      "id": "b12_arco_rio_ne",
+      "label": "Arco fluvial diagonal · Briar",
+      "width": 640,
+      "height": 800,
+      "baseline": {
+        "slope": -1,
+        "intercept": 784
+      },
+      "world_anchor": [
+        344,
+        440
+      ],
+      "connection_points": [
+        [
+          0,
+          784
+        ],
+        [
+          640,
+          144
+        ]
+      ],
+      "depth_slices": 32,
+      "wall_height": 144,
+      "group": "defensas_b12",
+      "file": "assets/b12_arco_rio_ne.png",
+      "anchor": [
+        320,
+        800
+      ],
+      "solid": false,
+      "ground": false,
+      "collision_polygons": []
+    },
+    {
+      "id": "b12_puerta_este",
+      "label": "Puerta este · paso lateral",
+      "width": 256,
+      "height": 640,
+      "world_anchor": [
+        128,
+        360
+      ],
+      "connection_points": [
+        [
+          128,
+          100
+        ],
+        [
+          128,
+          590
+        ]
+      ],
+      "wall_axis": "north-south",
+      "passage_axis": "east-west",
+      "group": "defensas_b12",
+      "file": "assets/b12_puerta_este.png",
+      "anchor": [
+        128,
+        640
+      ],
+      "solid": false,
+      "ground": false,
+      "collision_polygons": []
+    },
+    {
+      "id": "b12_puerta_oeste",
+      "label": "Puerta oeste · paso lateral",
+      "width": 256,
+      "height": 640,
+      "world_anchor": [
+        128,
+        360
+      ],
+      "connection_points": [
+        [
+          128,
+          100
+        ],
+        [
+          128,
+          582
+        ]
+      ],
+      "wall_axis": "north-south",
+      "passage_axis": "east-west",
+      "group": "defensas_b12",
+      "file": "assets/b12_puerta_oeste.png",
+      "anchor": [
+        128,
+        640
+      ],
+      "solid": false,
+      "ground": false,
+      "collision_polygons": []
+    }
+  ],
+  "materials": [
+    {
+      "id": 0,
+      "name": "Piedra de calle",
+      "file": "terrenos/materiales/01_piedra_calle.png",
+      "atlas_id": 0
+    },
+    {
+      "id": 1,
+      "name": "Adoquín irregular",
+      "file": "terrenos/materiales/02_adoquin.png",
+      "atlas_id": 4
+    },
+    {
+      "id": 2,
+      "name": "Sendero de tierra",
+      "file": "terrenos/materiales/03_sendero.png",
+      "atlas_id": 8
+    },
+    {
+      "id": 3,
+      "name": "Césped",
+      "file": "terrenos/materiales/04_cesped.png",
+      "atlas_id": 12
+    },
+    {
+      "id": 4,
+      "name": "Losas de plaza",
+      "file": "terrenos/materiales/05_losas_plaza.png",
+      "atlas_id": 16
+    },
+    {
+      "id": 5,
+      "name": "Piedra con musgo",
+      "file": "terrenos/materiales/06_piedra_musgo.png",
+      "atlas_id": 20
+    },
+    {
+      "id": 6,
+      "name": "Tierra de jardín",
+      "file": "terrenos/materiales/07_tierra_jardin.png",
+      "atlas_id": 24
+    },
+    {
+      "id": 7,
+      "name": "Agua del río",
+      "file": "terrenos/materiales/08_agua.png",
+      "atlas_id": 28
+    },
+    {
+      "id": 8,
+      "name": "Grava",
+      "file": "terrenos/materiales/09_grava.png",
+      "atlas_id": 32
+    },
+    {
+      "id": 9,
+      "name": "Madera horizontal",
+      "file": "terrenos/materiales/10_madera_h.png",
+      "atlas_id": 36
+    },
+    {
+      "id": 10,
+      "name": "Madera vertical",
+      "file": "terrenos/materiales/11_madera_v.png",
+      "atlas_id": 40
+    },
+    {
+      "id": 11,
+      "name": "Pizarra",
+      "file": "terrenos/materiales/12_pizarra.png",
+      "atlas_id": 44
+    },
+    {
+      "id": 12,
+      "name": "Mosaico verde",
+      "file": "terrenos/materiales/13_mosaico_verde.png",
+      "atlas_id": 48
+    },
+    {
+      "id": 13,
+      "name": "Terracota",
+      "file": "terrenos/materiales/14_terracota.png",
+      "atlas_id": 52
+    },
+    {
+      "id": 14,
+      "name": "Hierba y tierra",
+      "file": "terrenos/materiales/15_hierba_tierra.png",
+      "atlas_id": 56
+    },
+    {
+      "id": 15,
+      "name": "Pétalos sobre piedra",
+      "file": "terrenos/materiales/16_petalos.png",
+      "atlas_id": 60
+    }
+  ],
+  "transitions": [
+    {
+      "family": "piedra",
+      "index": 0,
+      "mask": 0,
+      "file": "terrenos/transiciones_piedra/01_mascara_0.png"
+    },
+    {
+      "family": "piedra",
+      "index": 1,
+      "mask": 1,
+      "file": "terrenos/transiciones_piedra/02_mascara_1.png"
+    },
+    {
+      "family": "piedra",
+      "index": 2,
+      "mask": 2,
+      "file": "terrenos/transiciones_piedra/03_mascara_2.png"
+    },
+    {
+      "family": "piedra",
+      "index": 3,
+      "mask": 3,
+      "file": "terrenos/transiciones_piedra/04_mascara_3.png"
+    },
+    {
+      "family": "piedra",
+      "index": 4,
+      "mask": 4,
+      "file": "terrenos/transiciones_piedra/05_mascara_4.png"
+    },
+    {
+      "family": "piedra",
+      "index": 5,
+      "mask": 5,
+      "file": "terrenos/transiciones_piedra/06_mascara_5.png"
+    },
+    {
+      "family": "piedra",
+      "index": 6,
+      "mask": 6,
+      "file": "terrenos/transiciones_piedra/07_mascara_6.png"
+    },
+    {
+      "family": "piedra",
+      "index": 7,
+      "mask": 7,
+      "file": "terrenos/transiciones_piedra/08_mascara_7.png"
+    },
+    {
+      "family": "piedra",
+      "index": 8,
+      "mask": 8,
+      "file": "terrenos/transiciones_piedra/09_mascara_8.png"
+    },
+    {
+      "family": "piedra",
+      "index": 9,
+      "mask": 9,
+      "file": "terrenos/transiciones_piedra/10_mascara_9.png"
+    },
+    {
+      "family": "piedra",
+      "index": 10,
+      "mask": 10,
+      "file": "terrenos/transiciones_piedra/11_mascara_10.png"
+    },
+    {
+      "family": "piedra",
+      "index": 11,
+      "mask": 11,
+      "file": "terrenos/transiciones_piedra/12_mascara_11.png"
+    },
+    {
+      "family": "piedra",
+      "index": 12,
+      "mask": 12,
+      "file": "terrenos/transiciones_piedra/13_mascara_12.png"
+    },
+    {
+      "family": "piedra",
+      "index": 13,
+      "mask": 13,
+      "file": "terrenos/transiciones_piedra/14_mascara_13.png"
+    },
+    {
+      "family": "piedra",
+      "index": 14,
+      "mask": 14,
+      "file": "terrenos/transiciones_piedra/15_mascara_14.png"
+    },
+    {
+      "family": "piedra",
+      "index": 15,
+      "mask": 15,
+      "file": "terrenos/transiciones_piedra/16_mascara_15.png"
+    },
+    {
+      "family": "piedra",
+      "index": 16,
+      "mask": 19,
+      "file": "terrenos/transiciones_piedra/17_mascara_19.png"
+    },
+    {
+      "family": "piedra",
+      "index": 17,
+      "mask": 23,
+      "file": "terrenos/transiciones_piedra/18_mascara_23.png"
+    },
+    {
+      "family": "piedra",
+      "index": 18,
+      "mask": 27,
+      "file": "terrenos/transiciones_piedra/19_mascara_27.png"
+    },
+    {
+      "family": "piedra",
+      "index": 19,
+      "mask": 31,
+      "file": "terrenos/transiciones_piedra/20_mascara_31.png"
+    },
+    {
+      "family": "piedra",
+      "index": 20,
+      "mask": 38,
+      "file": "terrenos/transiciones_piedra/21_mascara_38.png"
+    },
+    {
+      "family": "piedra",
+      "index": 21,
+      "mask": 39,
+      "file": "terrenos/transiciones_piedra/22_mascara_39.png"
+    },
+    {
+      "family": "piedra",
+      "index": 22,
+      "mask": 46,
+      "file": "terrenos/transiciones_piedra/23_mascara_46.png"
+    },
+    {
+      "family": "piedra",
+      "index": 23,
+      "mask": 47,
+      "file": "terrenos/transiciones_piedra/24_mascara_47.png"
+    },
+    {
+      "family": "piedra",
+      "index": 24,
+      "mask": 55,
+      "file": "terrenos/transiciones_piedra/25_mascara_55.png"
+    },
+    {
+      "family": "piedra",
+      "index": 25,
+      "mask": 63,
+      "file": "terrenos/transiciones_piedra/26_mascara_63.png"
+    },
+    {
+      "family": "piedra",
+      "index": 26,
+      "mask": 76,
+      "file": "terrenos/transiciones_piedra/27_mascara_76.png"
+    },
+    {
+      "family": "piedra",
+      "index": 27,
+      "mask": 77,
+      "file": "terrenos/transiciones_piedra/28_mascara_77.png"
+    },
+    {
+      "family": "piedra",
+      "index": 28,
+      "mask": 78,
+      "file": "terrenos/transiciones_piedra/29_mascara_78.png"
+    },
+    {
+      "family": "piedra",
+      "index": 29,
+      "mask": 79,
+      "file": "terrenos/transiciones_piedra/30_mascara_79.png"
+    },
+    {
+      "family": "piedra",
+      "index": 30,
+      "mask": 95,
+      "file": "terrenos/transiciones_piedra/31_mascara_95.png"
+    },
+    {
+      "family": "piedra",
+      "index": 31,
+      "mask": 110,
+      "file": "terrenos/transiciones_piedra/32_mascara_110.png"
+    },
+    {
+      "family": "piedra",
+      "index": 32,
+      "mask": 111,
+      "file": "terrenos/transiciones_piedra/33_mascara_111.png"
+    },
+    {
+      "family": "piedra",
+      "index": 33,
+      "mask": 127,
+      "file": "terrenos/transiciones_piedra/34_mascara_127.png"
+    },
+    {
+      "family": "piedra",
+      "index": 34,
+      "mask": 137,
+      "file": "terrenos/transiciones_piedra/35_mascara_137.png"
+    },
+    {
+      "family": "piedra",
+      "index": 35,
+      "mask": 139,
+      "file": "terrenos/transiciones_piedra/36_mascara_139.png"
+    },
+    {
+      "family": "piedra",
+      "index": 36,
+      "mask": 141,
+      "file": "terrenos/transiciones_piedra/37_mascara_141.png"
+    },
+    {
+      "family": "piedra",
+      "index": 37,
+      "mask": 143,
+      "file": "terrenos/transiciones_piedra/38_mascara_143.png"
+    },
+    {
+      "family": "piedra",
+      "index": 38,
+      "mask": 155,
+      "file": "terrenos/transiciones_piedra/39_mascara_155.png"
+    },
+    {
+      "family": "piedra",
+      "index": 39,
+      "mask": 159,
+      "file": "terrenos/transiciones_piedra/40_mascara_159.png"
+    },
+    {
+      "family": "piedra",
+      "index": 40,
+      "mask": 175,
+      "file": "terrenos/transiciones_piedra/41_mascara_175.png"
+    },
+    {
+      "family": "piedra",
+      "index": 41,
+      "mask": 191,
+      "file": "terrenos/transiciones_piedra/42_mascara_191.png"
+    },
+    {
+      "family": "piedra",
+      "index": 42,
+      "mask": 205,
+      "file": "terrenos/transiciones_piedra/43_mascara_205.png"
+    },
+    {
+      "family": "piedra",
+      "index": 43,
+      "mask": 207,
+      "file": "terrenos/transiciones_piedra/44_mascara_207.png"
+    },
+    {
+      "family": "piedra",
+      "index": 44,
+      "mask": 223,
+      "file": "terrenos/transiciones_piedra/45_mascara_223.png"
+    },
+    {
+      "family": "piedra",
+      "index": 45,
+      "mask": 239,
+      "file": "terrenos/transiciones_piedra/46_mascara_239.png"
+    },
+    {
+      "family": "piedra",
+      "index": 46,
+      "mask": 255,
+      "file": "terrenos/transiciones_piedra/47_mascara_255.png"
+    },
+    {
+      "family": "tierra",
+      "index": 0,
+      "mask": 0,
+      "file": "terrenos/transiciones_tierra/01_mascara_0.png"
+    },
+    {
+      "family": "tierra",
+      "index": 1,
+      "mask": 1,
+      "file": "terrenos/transiciones_tierra/02_mascara_1.png"
+    },
+    {
+      "family": "tierra",
+      "index": 2,
+      "mask": 2,
+      "file": "terrenos/transiciones_tierra/03_mascara_2.png"
+    },
+    {
+      "family": "tierra",
+      "index": 3,
+      "mask": 3,
+      "file": "terrenos/transiciones_tierra/04_mascara_3.png"
+    },
+    {
+      "family": "tierra",
+      "index": 4,
+      "mask": 4,
+      "file": "terrenos/transiciones_tierra/05_mascara_4.png"
+    },
+    {
+      "family": "tierra",
+      "index": 5,
+      "mask": 5,
+      "file": "terrenos/transiciones_tierra/06_mascara_5.png"
+    },
+    {
+      "family": "tierra",
+      "index": 6,
+      "mask": 6,
+      "file": "terrenos/transiciones_tierra/07_mascara_6.png"
+    },
+    {
+      "family": "tierra",
+      "index": 7,
+      "mask": 7,
+      "file": "terrenos/transiciones_tierra/08_mascara_7.png"
+    },
+    {
+      "family": "tierra",
+      "index": 8,
+      "mask": 8,
+      "file": "terrenos/transiciones_tierra/09_mascara_8.png"
+    },
+    {
+      "family": "tierra",
+      "index": 9,
+      "mask": 9,
+      "file": "terrenos/transiciones_tierra/10_mascara_9.png"
+    },
+    {
+      "family": "tierra",
+      "index": 10,
+      "mask": 10,
+      "file": "terrenos/transiciones_tierra/11_mascara_10.png"
+    },
+    {
+      "family": "tierra",
+      "index": 11,
+      "mask": 11,
+      "file": "terrenos/transiciones_tierra/12_mascara_11.png"
+    },
+    {
+      "family": "tierra",
+      "index": 12,
+      "mask": 12,
+      "file": "terrenos/transiciones_tierra/13_mascara_12.png"
+    },
+    {
+      "family": "tierra",
+      "index": 13,
+      "mask": 13,
+      "file": "terrenos/transiciones_tierra/14_mascara_13.png"
+    },
+    {
+      "family": "tierra",
+      "index": 14,
+      "mask": 14,
+      "file": "terrenos/transiciones_tierra/15_mascara_14.png"
+    },
+    {
+      "family": "tierra",
+      "index": 15,
+      "mask": 15,
+      "file": "terrenos/transiciones_tierra/16_mascara_15.png"
+    },
+    {
+      "family": "tierra",
+      "index": 16,
+      "mask": 19,
+      "file": "terrenos/transiciones_tierra/17_mascara_19.png"
+    },
+    {
+      "family": "tierra",
+      "index": 17,
+      "mask": 23,
+      "file": "terrenos/transiciones_tierra/18_mascara_23.png"
+    },
+    {
+      "family": "tierra",
+      "index": 18,
+      "mask": 27,
+      "file": "terrenos/transiciones_tierra/19_mascara_27.png"
+    },
+    {
+      "family": "tierra",
+      "index": 19,
+      "mask": 31,
+      "file": "terrenos/transiciones_tierra/20_mascara_31.png"
+    },
+    {
+      "family": "tierra",
+      "index": 20,
+      "mask": 38,
+      "file": "terrenos/transiciones_tierra/21_mascara_38.png"
+    },
+    {
+      "family": "tierra",
+      "index": 21,
+      "mask": 39,
+      "file": "terrenos/transiciones_tierra/22_mascara_39.png"
+    },
+    {
+      "family": "tierra",
+      "index": 22,
+      "mask": 46,
+      "file": "terrenos/transiciones_tierra/23_mascara_46.png"
+    },
+    {
+      "family": "tierra",
+      "index": 23,
+      "mask": 47,
+      "file": "terrenos/transiciones_tierra/24_mascara_47.png"
+    },
+    {
+      "family": "tierra",
+      "index": 24,
+      "mask": 55,
+      "file": "terrenos/transiciones_tierra/25_mascara_55.png"
+    },
+    {
+      "family": "tierra",
+      "index": 25,
+      "mask": 63,
+      "file": "terrenos/transiciones_tierra/26_mascara_63.png"
+    },
+    {
+      "family": "tierra",
+      "index": 26,
+      "mask": 76,
+      "file": "terrenos/transiciones_tierra/27_mascara_76.png"
+    },
+    {
+      "family": "tierra",
+      "index": 27,
+      "mask": 77,
+      "file": "terrenos/transiciones_tierra/28_mascara_77.png"
+    },
+    {
+      "family": "tierra",
+      "index": 28,
+      "mask": 78,
+      "file": "terrenos/transiciones_tierra/29_mascara_78.png"
+    },
+    {
+      "family": "tierra",
+      "index": 29,
+      "mask": 79,
+      "file": "terrenos/transiciones_tierra/30_mascara_79.png"
+    },
+    {
+      "family": "tierra",
+      "index": 30,
+      "mask": 95,
+      "file": "terrenos/transiciones_tierra/31_mascara_95.png"
+    },
+    {
+      "family": "tierra",
+      "index": 31,
+      "mask": 110,
+      "file": "terrenos/transiciones_tierra/32_mascara_110.png"
+    },
+    {
+      "family": "tierra",
+      "index": 32,
+      "mask": 111,
+      "file": "terrenos/transiciones_tierra/33_mascara_111.png"
+    },
+    {
+      "family": "tierra",
+      "index": 33,
+      "mask": 127,
+      "file": "terrenos/transiciones_tierra/34_mascara_127.png"
+    },
+    {
+      "family": "tierra",
+      "index": 34,
+      "mask": 137,
+      "file": "terrenos/transiciones_tierra/35_mascara_137.png"
+    },
+    {
+      "family": "tierra",
+      "index": 35,
+      "mask": 139,
+      "file": "terrenos/transiciones_tierra/36_mascara_139.png"
+    },
+    {
+      "family": "tierra",
+      "index": 36,
+      "mask": 141,
+      "file": "terrenos/transiciones_tierra/37_mascara_141.png"
+    },
+    {
+      "family": "tierra",
+      "index": 37,
+      "mask": 143,
+      "file": "terrenos/transiciones_tierra/38_mascara_143.png"
+    },
+    {
+      "family": "tierra",
+      "index": 38,
+      "mask": 155,
+      "file": "terrenos/transiciones_tierra/39_mascara_155.png"
+    },
+    {
+      "family": "tierra",
+      "index": 39,
+      "mask": 159,
+      "file": "terrenos/transiciones_tierra/40_mascara_159.png"
+    },
+    {
+      "family": "tierra",
+      "index": 40,
+      "mask": 175,
+      "file": "terrenos/transiciones_tierra/41_mascara_175.png"
+    },
+    {
+      "family": "tierra",
+      "index": 41,
+      "mask": 191,
+      "file": "terrenos/transiciones_tierra/42_mascara_191.png"
+    },
+    {
+      "family": "tierra",
+      "index": 42,
+      "mask": 205,
+      "file": "terrenos/transiciones_tierra/43_mascara_205.png"
+    },
+    {
+      "family": "tierra",
+      "index": 43,
+      "mask": 207,
+      "file": "terrenos/transiciones_tierra/44_mascara_207.png"
+    },
+    {
+      "family": "tierra",
+      "index": 44,
+      "mask": 223,
+      "file": "terrenos/transiciones_tierra/45_mascara_223.png"
+    },
+    {
+      "family": "tierra",
+      "index": 45,
+      "mask": 239,
+      "file": "terrenos/transiciones_tierra/46_mascara_239.png"
+    },
+    {
+      "family": "tierra",
+      "index": 46,
+      "mask": 255,
+      "file": "terrenos/transiciones_tierra/47_mascara_255.png"
+    },
+    {
+      "family": "agua",
+      "index": 0,
+      "mask": 0,
+      "file": "terrenos/transiciones_agua/01_mascara_0.png"
+    },
+    {
+      "family": "agua",
+      "index": 1,
+      "mask": 1,
+      "file": "terrenos/transiciones_agua/02_mascara_1.png"
+    },
+    {
+      "family": "agua",
+      "index": 2,
+      "mask": 2,
+      "file": "terrenos/transiciones_agua/03_mascara_2.png"
+    },
+    {
+      "family": "agua",
+      "index": 3,
+      "mask": 3,
+      "file": "terrenos/transiciones_agua/04_mascara_3.png"
+    },
+    {
+      "family": "agua",
+      "index": 4,
+      "mask": 4,
+      "file": "terrenos/transiciones_agua/05_mascara_4.png"
+    },
+    {
+      "family": "agua",
+      "index": 5,
+      "mask": 5,
+      "file": "terrenos/transiciones_agua/06_mascara_5.png"
+    },
+    {
+      "family": "agua",
+      "index": 6,
+      "mask": 6,
+      "file": "terrenos/transiciones_agua/07_mascara_6.png"
+    },
+    {
+      "family": "agua",
+      "index": 7,
+      "mask": 7,
+      "file": "terrenos/transiciones_agua/08_mascara_7.png"
+    },
+    {
+      "family": "agua",
+      "index": 8,
+      "mask": 8,
+      "file": "terrenos/transiciones_agua/09_mascara_8.png"
+    },
+    {
+      "family": "agua",
+      "index": 9,
+      "mask": 9,
+      "file": "terrenos/transiciones_agua/10_mascara_9.png"
+    },
+    {
+      "family": "agua",
+      "index": 10,
+      "mask": 10,
+      "file": "terrenos/transiciones_agua/11_mascara_10.png"
+    },
+    {
+      "family": "agua",
+      "index": 11,
+      "mask": 11,
+      "file": "terrenos/transiciones_agua/12_mascara_11.png"
+    },
+    {
+      "family": "agua",
+      "index": 12,
+      "mask": 12,
+      "file": "terrenos/transiciones_agua/13_mascara_12.png"
+    },
+    {
+      "family": "agua",
+      "index": 13,
+      "mask": 13,
+      "file": "terrenos/transiciones_agua/14_mascara_13.png"
+    },
+    {
+      "family": "agua",
+      "index": 14,
+      "mask": 14,
+      "file": "terrenos/transiciones_agua/15_mascara_14.png"
+    },
+    {
+      "family": "agua",
+      "index": 15,
+      "mask": 15,
+      "file": "terrenos/transiciones_agua/16_mascara_15.png"
+    },
+    {
+      "family": "agua",
+      "index": 16,
+      "mask": 19,
+      "file": "terrenos/transiciones_agua/17_mascara_19.png"
+    },
+    {
+      "family": "agua",
+      "index": 17,
+      "mask": 23,
+      "file": "terrenos/transiciones_agua/18_mascara_23.png"
+    },
+    {
+      "family": "agua",
+      "index": 18,
+      "mask": 27,
+      "file": "terrenos/transiciones_agua/19_mascara_27.png"
+    },
+    {
+      "family": "agua",
+      "index": 19,
+      "mask": 31,
+      "file": "terrenos/transiciones_agua/20_mascara_31.png"
+    },
+    {
+      "family": "agua",
+      "index": 20,
+      "mask": 38,
+      "file": "terrenos/transiciones_agua/21_mascara_38.png"
+    },
+    {
+      "family": "agua",
+      "index": 21,
+      "mask": 39,
+      "file": "terrenos/transiciones_agua/22_mascara_39.png"
+    },
+    {
+      "family": "agua",
+      "index": 22,
+      "mask": 46,
+      "file": "terrenos/transiciones_agua/23_mascara_46.png"
+    },
+    {
+      "family": "agua",
+      "index": 23,
+      "mask": 47,
+      "file": "terrenos/transiciones_agua/24_mascara_47.png"
+    },
+    {
+      "family": "agua",
+      "index": 24,
+      "mask": 55,
+      "file": "terrenos/transiciones_agua/25_mascara_55.png"
+    },
+    {
+      "family": "agua",
+      "index": 25,
+      "mask": 63,
+      "file": "terrenos/transiciones_agua/26_mascara_63.png"
+    },
+    {
+      "family": "agua",
+      "index": 26,
+      "mask": 76,
+      "file": "terrenos/transiciones_agua/27_mascara_76.png"
+    },
+    {
+      "family": "agua",
+      "index": 27,
+      "mask": 77,
+      "file": "terrenos/transiciones_agua/28_mascara_77.png"
+    },
+    {
+      "family": "agua",
+      "index": 28,
+      "mask": 78,
+      "file": "terrenos/transiciones_agua/29_mascara_78.png"
+    },
+    {
+      "family": "agua",
+      "index": 29,
+      "mask": 79,
+      "file": "terrenos/transiciones_agua/30_mascara_79.png"
+    },
+    {
+      "family": "agua",
+      "index": 30,
+      "mask": 95,
+      "file": "terrenos/transiciones_agua/31_mascara_95.png"
+    },
+    {
+      "family": "agua",
+      "index": 31,
+      "mask": 110,
+      "file": "terrenos/transiciones_agua/32_mascara_110.png"
+    },
+    {
+      "family": "agua",
+      "index": 32,
+      "mask": 111,
+      "file": "terrenos/transiciones_agua/33_mascara_111.png"
+    },
+    {
+      "family": "agua",
+      "index": 33,
+      "mask": 127,
+      "file": "terrenos/transiciones_agua/34_mascara_127.png"
+    },
+    {
+      "family": "agua",
+      "index": 34,
+      "mask": 137,
+      "file": "terrenos/transiciones_agua/35_mascara_137.png"
+    },
+    {
+      "family": "agua",
+      "index": 35,
+      "mask": 139,
+      "file": "terrenos/transiciones_agua/36_mascara_139.png"
+    },
+    {
+      "family": "agua",
+      "index": 36,
+      "mask": 141,
+      "file": "terrenos/transiciones_agua/37_mascara_141.png"
+    },
+    {
+      "family": "agua",
+      "index": 37,
+      "mask": 143,
+      "file": "terrenos/transiciones_agua/38_mascara_143.png"
+    },
+    {
+      "family": "agua",
+      "index": 38,
+      "mask": 155,
+      "file": "terrenos/transiciones_agua/39_mascara_155.png"
+    },
+    {
+      "family": "agua",
+      "index": 39,
+      "mask": 159,
+      "file": "terrenos/transiciones_agua/40_mascara_159.png"
+    },
+    {
+      "family": "agua",
+      "index": 40,
+      "mask": 175,
+      "file": "terrenos/transiciones_agua/41_mascara_175.png"
+    },
+    {
+      "family": "agua",
+      "index": 41,
+      "mask": 191,
+      "file": "terrenos/transiciones_agua/42_mascara_191.png"
+    },
+    {
+      "family": "agua",
+      "index": 42,
+      "mask": 205,
+      "file": "terrenos/transiciones_agua/43_mascara_205.png"
+    },
+    {
+      "family": "agua",
+      "index": 43,
+      "mask": 207,
+      "file": "terrenos/transiciones_agua/44_mascara_207.png"
+    },
+    {
+      "family": "agua",
+      "index": 44,
+      "mask": 223,
+      "file": "terrenos/transiciones_agua/45_mascara_223.png"
+    },
+    {
+      "family": "agua",
+      "index": 45,
+      "mask": 239,
+      "file": "terrenos/transiciones_agua/46_mascara_239.png"
+    },
+    {
+      "family": "agua",
+      "index": 46,
+      "mask": 255,
+      "file": "terrenos/transiciones_agua/47_mascara_255.png"
+    }
+  ],
+  "player": {
+    "name": "Elías",
+    "file": "assets/elias_64.png",
+    "cell": [
+      64,
+      64
+    ],
+    "columns": 17,
+    "rows": [
+      "sur",
+      "oeste",
+      "este",
+      "norte"
+    ],
+    "frames_per_direction": 8,
+    "idle_frame": 16,
+    "fps": 12,
+    "run_fps": 16,
+    "walk_speed": 160,
+    "run_speed": 320,
+    "max_character_height": 58,
+    "anchor": [
+      32,
+      64
+    ],
+    "animations": {
+      "walk": {
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "fps": 12,
+        "loop": true
+      },
+      "run": {
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "fps": 16,
+        "loop": true
+      },
+      "idle": {
+        "frames": [
+          16
+        ],
+        "fps": 1,
+        "loop": false
+      }
+    }
+  },
+  "npcs": {
+    "file": "assets/habitantes_64.png",
+    "cell": [
+      64,
+      64
+    ],
+    "columns": 8,
+    "rows": [
+      "Comerciante",
+      "Guardia",
+      "Estibador",
+      "Vecina",
+      "Estudiante",
+      "Jardinera"
+    ],
+    "direction_columns": {
+      "sur": 0,
+      "oeste": 2,
+      "este": 4,
+      "norte": 6
+    },
+    "frames_per_direction": 2,
+    "fps": 6
+  },
+  "world": {
+    "screens": [
+      15,
+      27
+    ],
+    "pixels": [
+      14400,
+      14580
+    ]
+  },
+  "diagonal_atlases": [
+    "atlases/b1_piedra_16.png",
+    "atlases/b1_tierra_16.png",
+    "atlases/b1_agua_16.png"
+  ],
+  "diagonal_transitions": [
+    {
+      "family": "piedra",
+      "index": 0,
+      "mask": 0,
+      "file": "terrenos/diagonales_piedra/00.png"
+    },
+    {
+      "family": "piedra",
+      "index": 1,
+      "mask": 1,
+      "file": "terrenos/diagonales_piedra/01.png"
+    },
+    {
+      "family": "piedra",
+      "index": 2,
+      "mask": 2,
+      "file": "terrenos/diagonales_piedra/02.png"
+    },
+    {
+      "family": "piedra",
+      "index": 3,
+      "mask": 3,
+      "file": "terrenos/diagonales_piedra/03.png"
+    },
+    {
+      "family": "piedra",
+      "index": 4,
+      "mask": 4,
+      "file": "terrenos/diagonales_piedra/04.png"
+    },
+    {
+      "family": "piedra",
+      "index": 5,
+      "mask": 5,
+      "file": "terrenos/diagonales_piedra/05.png"
+    },
+    {
+      "family": "piedra",
+      "index": 6,
+      "mask": 6,
+      "file": "terrenos/diagonales_piedra/06.png"
+    },
+    {
+      "family": "piedra",
+      "index": 7,
+      "mask": 7,
+      "file": "terrenos/diagonales_piedra/07.png"
+    },
+    {
+      "family": "piedra",
+      "index": 8,
+      "mask": 8,
+      "file": "terrenos/diagonales_piedra/08.png"
+    },
+    {
+      "family": "piedra",
+      "index": 9,
+      "mask": 9,
+      "file": "terrenos/diagonales_piedra/09.png"
+    },
+    {
+      "family": "piedra",
+      "index": 10,
+      "mask": 10,
+      "file": "terrenos/diagonales_piedra/10.png"
+    },
+    {
+      "family": "piedra",
+      "index": 11,
+      "mask": 11,
+      "file": "terrenos/diagonales_piedra/11.png"
+    },
+    {
+      "family": "piedra",
+      "index": 12,
+      "mask": 12,
+      "file": "terrenos/diagonales_piedra/12.png"
+    },
+    {
+      "family": "piedra",
+      "index": 13,
+      "mask": 13,
+      "file": "terrenos/diagonales_piedra/13.png"
+    },
+    {
+      "family": "piedra",
+      "index": 14,
+      "mask": 14,
+      "file": "terrenos/diagonales_piedra/14.png"
+    },
+    {
+      "family": "piedra",
+      "index": 15,
+      "mask": 15,
+      "file": "terrenos/diagonales_piedra/15.png"
+    },
+    {
+      "family": "tierra",
+      "index": 0,
+      "mask": 0,
+      "file": "terrenos/diagonales_tierra/00.png"
+    },
+    {
+      "family": "tierra",
+      "index": 1,
+      "mask": 1,
+      "file": "terrenos/diagonales_tierra/01.png"
+    },
+    {
+      "family": "tierra",
+      "index": 2,
+      "mask": 2,
+      "file": "terrenos/diagonales_tierra/02.png"
+    },
+    {
+      "family": "tierra",
+      "index": 3,
+      "mask": 3,
+      "file": "terrenos/diagonales_tierra/03.png"
+    },
+    {
+      "family": "tierra",
+      "index": 4,
+      "mask": 4,
+      "file": "terrenos/diagonales_tierra/04.png"
+    },
+    {
+      "family": "tierra",
+      "index": 5,
+      "mask": 5,
+      "file": "terrenos/diagonales_tierra/05.png"
+    },
+    {
+      "family": "tierra",
+      "index": 6,
+      "mask": 6,
+      "file": "terrenos/diagonales_tierra/06.png"
+    },
+    {
+      "family": "tierra",
+      "index": 7,
+      "mask": 7,
+      "file": "terrenos/diagonales_tierra/07.png"
+    },
+    {
+      "family": "tierra",
+      "index": 8,
+      "mask": 8,
+      "file": "terrenos/diagonales_tierra/08.png"
+    },
+    {
+      "family": "tierra",
+      "index": 9,
+      "mask": 9,
+      "file": "terrenos/diagonales_tierra/09.png"
+    },
+    {
+      "family": "tierra",
+      "index": 10,
+      "mask": 10,
+      "file": "terrenos/diagonales_tierra/10.png"
+    },
+    {
+      "family": "tierra",
+      "index": 11,
+      "mask": 11,
+      "file": "terrenos/diagonales_tierra/11.png"
+    },
+    {
+      "family": "tierra",
+      "index": 12,
+      "mask": 12,
+      "file": "terrenos/diagonales_tierra/12.png"
+    },
+    {
+      "family": "tierra",
+      "index": 13,
+      "mask": 13,
+      "file": "terrenos/diagonales_tierra/13.png"
+    },
+    {
+      "family": "tierra",
+      "index": 14,
+      "mask": 14,
+      "file": "terrenos/diagonales_tierra/14.png"
+    },
+    {
+      "family": "tierra",
+      "index": 15,
+      "mask": 15,
+      "file": "terrenos/diagonales_tierra/15.png"
+    },
+    {
+      "family": "agua",
+      "index": 0,
+      "mask": 0,
+      "file": "terrenos/diagonales_agua/00.png"
+    },
+    {
+      "family": "agua",
+      "index": 1,
+      "mask": 1,
+      "file": "terrenos/diagonales_agua/01.png"
+    },
+    {
+      "family": "agua",
+      "index": 2,
+      "mask": 2,
+      "file": "terrenos/diagonales_agua/02.png"
+    },
+    {
+      "family": "agua",
+      "index": 3,
+      "mask": 3,
+      "file": "terrenos/diagonales_agua/03.png"
+    },
+    {
+      "family": "agua",
+      "index": 4,
+      "mask": 4,
+      "file": "terrenos/diagonales_agua/04.png"
+    },
+    {
+      "family": "agua",
+      "index": 5,
+      "mask": 5,
+      "file": "terrenos/diagonales_agua/05.png"
+    },
+    {
+      "family": "agua",
+      "index": 6,
+      "mask": 6,
+      "file": "terrenos/diagonales_agua/06.png"
+    },
+    {
+      "family": "agua",
+      "index": 7,
+      "mask": 7,
+      "file": "terrenos/diagonales_agua/07.png"
+    },
+    {
+      "family": "agua",
+      "index": 8,
+      "mask": 8,
+      "file": "terrenos/diagonales_agua/08.png"
+    },
+    {
+      "family": "agua",
+      "index": 9,
+      "mask": 9,
+      "file": "terrenos/diagonales_agua/09.png"
+    },
+    {
+      "family": "agua",
+      "index": 10,
+      "mask": 10,
+      "file": "terrenos/diagonales_agua/10.png"
+    },
+    {
+      "family": "agua",
+      "index": 11,
+      "mask": 11,
+      "file": "terrenos/diagonales_agua/11.png"
+    },
+    {
+      "family": "agua",
+      "index": 12,
+      "mask": 12,
+      "file": "terrenos/diagonales_agua/12.png"
+    },
+    {
+      "family": "agua",
+      "index": 13,
+      "mask": 13,
+      "file": "terrenos/diagonales_agua/13.png"
+    },
+    {
+      "family": "agua",
+      "index": 14,
+      "mask": 14,
+      "file": "terrenos/diagonales_agua/14.png"
+    },
+    {
+      "family": "agua",
+      "index": 15,
+      "mask": 15,
+      "file": "terrenos/diagonales_agua/15.png"
+    }
+  ]
+}

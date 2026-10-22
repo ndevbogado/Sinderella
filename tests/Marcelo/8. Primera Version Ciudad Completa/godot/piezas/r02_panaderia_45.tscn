@@ -1,0 +1,106 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/panaderia_45.png" id="1_3ga4j"]
+
+[node name="r02_panaderia_45" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "r02_panaderia_45"
+metadata/nombre = "Panadería diagonal"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_3ga4j")
+centered = false
+offset = Vector2(-196, -420)
+region_enabled = true
+region_rect = Rect2(0, 0, 392, 424)
+
+[node name="Colision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-4, -172, 4, -172, 4, -164, -4, -164)
+
+[node name="Forma_001" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-20, -164, 20, -164, 20, -156, -20, -156)
+
+[node name="Forma_002" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-36, -156, 36, -156, 36, -148, -36, -148)
+
+[node name="Forma_003" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-52, -148, 52, -148, 52, -140, -52, -140)
+
+[node name="Forma_004" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-68, -140, 68, -140, 68, -132, -68, -132)
+
+[node name="Forma_005" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-84, -132, 84, -132, 84, -124, -84, -124)
+
+[node name="Forma_006" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-108, -124, 108, -124, 108, -116, -108, -116)
+
+[node name="Forma_007" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-124, -116, 124, -116, 124, -108, -124, -108)
+
+[node name="Forma_008" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-140, -108, 140, -108, 140, -100, -140, -100)
+
+[node name="Forma_009" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-156, -100, 156, -100, 156, -92, -156, -92)
+
+[node name="Forma_010" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-172, -92, 172, -92, 172, -84, -172, -84)
+
+[node name="Forma_011" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-156, -84, 156, -84, 156, -76, -156, -76)
+
+[node name="Forma_012" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-140, -76, 140, -76, 140, -68, -140, -68)
+
+[node name="Forma_013" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-124, -68, 124, -68, 124, -60, -124, -60)
+
+[node name="Forma_014" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-108, -60, 108, -60, 108, -52, -108, -52)
+
+[node name="Forma_015" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-92, -52, 92, -52, 92, -44, -92, -44)
+
+[node name="Forma_016" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-84, -44, 84, -44, 84, -36, -84, -36)
+
+[node name="Forma_017" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-68, -36, 68, -36, 68, -28, -68, -28)
+
+[node name="Forma_018" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-52, -28, 52, -28, 52, -20, -52, -20)
+
+[node name="Forma_019" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-36, -20, 36, -20, 36, -12, -36, -12)
+
+[node name="Forma_020" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-20, -12, 20, -12, 20, -4, -20, -4)
+
+[node name="Forma_021" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)

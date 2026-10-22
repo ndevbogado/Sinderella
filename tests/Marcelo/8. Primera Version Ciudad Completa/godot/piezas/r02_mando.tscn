@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/mando.png" id="1_l804c"]
+
+[node name="r02_mando" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "r02_mando"
+metadata/nombre = "Centro de Mando del Ejército"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_l804c")
+centered = false
+offset = Vector2(-712, -900)
+region_enabled = true
+region_rect = Rect2(0, 0, 1424, 904)
+
+[node name="Colision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-584, -300, 584, -300, 584, -12, -584, -12)

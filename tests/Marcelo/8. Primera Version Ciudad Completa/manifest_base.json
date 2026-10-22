@@ -1,0 +1,5316 @@
+{
+  "version": "1.0.0",
+  "title": "Briar · Kit modular de ciudad",
+  "native_tile_size": 32,
+  "viewport": [
+    960,
+    540
+  ],
+  "character_max_height": 64,
+  "pixel_filter": "nearest",
+  "alpha": "binary",
+  "projection": "orthogonal 3/4, camera from south",
+  "light": "upper left",
+  "assets": [
+    {
+      "id": "casa_01",
+      "label": "Vivienda de entramado",
+      "group": "arquitectura",
+      "file": "assets/casa_01.png",
+      "width": 192,
+      "height": 288,
+      "content_rect": [
+        18,
+        2,
+        156,
+        284
+      ],
+      "anchor": [
+        96,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            37,
+            196
+          ],
+          [
+            155,
+            196
+          ],
+          [
+            155,
+            284
+          ],
+          [
+            37,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "casa_02",
+      "label": "Casa mercantil",
+      "group": "arquitectura",
+      "file": "assets/casa_02.png",
+      "width": 320,
+      "height": 288,
+      "content_rect": [
+        14,
+        2,
+        292,
+        284
+      ],
+      "anchor": [
+        160,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            49,
+            196
+          ],
+          [
+            271,
+            196
+          ],
+          [
+            271,
+            284
+          ],
+          [
+            49,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "herbolario",
+      "label": "Herbolario",
+      "group": "arquitectura",
+      "file": "assets/herbolario.png",
+      "width": 224,
+      "height": 288,
+      "content_rect": [
+        15,
+        2,
+        194,
+        284
+      ],
+      "anchor": [
+        112,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            38,
+            196
+          ],
+          [
+            186,
+            196
+          ],
+          [
+            186,
+            284
+          ],
+          [
+            38,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "posada",
+      "label": "Posada de la Rosa",
+      "group": "arquitectura",
+      "file": "assets/posada.png",
+      "width": 320,
+      "height": 288,
+      "content_rect": [
+        17,
+        2,
+        285,
+        284
+      ],
+      "anchor": [
+        160,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            51,
+            196
+          ],
+          [
+            268,
+            196
+          ],
+          [
+            268,
+            284
+          ],
+          [
+            51,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "herreria",
+      "label": "Herrería",
+      "group": "arquitectura",
+      "file": "assets/herreria.png",
+      "width": 320,
+      "height": 288,
+      "content_rect": [
+        9,
+        2,
+        302,
+        284
+      ],
+      "anchor": [
+        160,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            45,
+            196
+          ],
+          [
+            275,
+            196
+          ],
+          [
+            275,
+            284
+          ],
+          [
+            45,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "gremio",
+      "label": "Casa del gremio",
+      "group": "arquitectura",
+      "file": "assets/gremio.png",
+      "width": 256,
+      "height": 320,
+      "content_rect": [
+        2,
+        11,
+        252,
+        307
+      ],
+      "anchor": [
+        128,
+        320
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            32,
+            221
+          ],
+          [
+            224,
+            221
+          ],
+          [
+            224,
+            316
+          ],
+          [
+            32,
+            316
+          ]
+        ]
+      ],
+      "source_sheet": "sources/viviendas.png",
+      "source_rect": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "puesto_frutas",
+      "label": "Puesto de frutas",
+      "group": "decoracion",
+      "file": "assets/puesto_frutas.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        2,
+        6,
+        124,
+        120
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            17,
+            88
+          ],
+          [
+            111,
+            88
+          ],
+          [
+            111,
+            124
+          ],
+          [
+            17,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        0,
+        0,
+        320,
+        327
+      ]
+    },
+    {
+      "id": "puesto_libros",
+      "label": "Puesto de libros y telas",
+      "group": "decoracion",
+      "file": "assets/puesto_libros.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        5,
+        2,
+        118,
+        124
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            19,
+            87
+          ],
+          [
+            109,
+            87
+          ],
+          [
+            109,
+            124
+          ],
+          [
+            19,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        328,
+        0,
+        300,
+        327
+      ]
+    },
+    {
+      "id": "carro",
+      "label": "Carro de reparto",
+      "group": "decoracion",
+      "file": "assets/carro.png",
+      "width": 128,
+      "height": 96,
+      "content_rect": [
+        3,
+        2,
+        122,
+        92
+      ],
+      "anchor": [
+        64,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            18,
+            64
+          ],
+          [
+            110,
+            64
+          ],
+          [
+            110,
+            92
+          ],
+          [
+            18,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        630,
+        0,
+        305,
+        327
+      ]
+    },
+    {
+      "id": "fuente",
+      "label": "Fuente de la Rosa",
+      "group": "decoracion",
+      "file": "assets/fuente.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        2,
+        2,
+        124,
+        124
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            17,
+            87
+          ],
+          [
+            111,
+            87
+          ],
+          [
+            111,
+            124
+          ],
+          [
+            17,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        938,
+        0,
+        316,
+        327
+      ]
+    },
+    {
+      "id": "arbol",
+      "label": "Árbol frondoso",
+      "group": "decoracion",
+      "file": "assets/arbol.png",
+      "width": 192,
+      "height": 224,
+      "content_rect": [
+        2,
+        21,
+        188,
+        201
+      ],
+      "anchor": [
+        96,
+        224
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            79,
+            196
+          ],
+          [
+            113,
+            196
+          ],
+          [
+            113,
+            220
+          ],
+          [
+            79,
+            220
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        0,
+        328,
+        322,
+        340
+      ]
+    },
+    {
+      "id": "cipres",
+      "label": "Ciprés",
+      "group": "decoracion",
+      "file": "assets/cipres.png",
+      "width": 96,
+      "height": 192,
+      "content_rect": [
+        12,
+        2,
+        72,
+        188
+      ],
+      "anchor": [
+        48,
+        192
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            41.5,
+            165
+          ],
+          [
+            54.5,
+            165
+          ],
+          [
+            54.5,
+            188
+          ],
+          [
+            41.5,
+            188
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        350,
+        328,
+        240,
+        340
+      ]
+    },
+    {
+      "id": "jardinera",
+      "label": "Jardinera de rosas",
+      "group": "decoracion",
+      "file": "assets/jardinera.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        2,
+        92,
+        60
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            42
+          ],
+          [
+            83,
+            42
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        630,
+        365,
+        305,
+        282
+      ]
+    },
+    {
+      "id": "seto",
+      "label": "Seto",
+      "group": "decoracion",
+      "file": "assets/seto.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        19,
+        92,
+        43
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            47
+          ],
+          [
+            83,
+            47
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        941,
+        397,
+        313,
+        250
+      ]
+    },
+    {
+      "id": "farola",
+      "label": "Farola",
+      "group": "decoracion",
+      "file": "assets/farola.png",
+      "width": 64,
+      "height": 128,
+      "content_rect": [
+        11,
+        18,
+        41,
+        108
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            27,
+            92
+          ],
+          [
+            37,
+            92
+          ],
+          [
+            37,
+            124
+          ],
+          [
+            27,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        44,
+        667,
+        228,
+        338
+      ]
+    },
+    {
+      "id": "estandarte",
+      "label": "Estandarte real",
+      "group": "decoracion",
+      "file": "assets/estandarte.png",
+      "width": 64,
+      "height": 160,
+      "content_rect": [
+        2,
+        25,
+        60,
+        133
+      ],
+      "anchor": [
+        32,
+        160
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            26.5,
+            116
+          ],
+          [
+            37.5,
+            116
+          ],
+          [
+            37.5,
+            156
+          ],
+          [
+            26.5,
+            156
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        342,
+        667,
+        243,
+        349
+      ]
+    },
+    {
+      "id": "pozo",
+      "label": "Pozo",
+      "group": "decoracion",
+      "file": "assets/pozo.png",
+      "width": 96,
+      "height": 128,
+      "content_rect": [
+        2,
+        14,
+        92,
+        112
+      ],
+      "anchor": [
+        48,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            90
+          ],
+          [
+            83,
+            90
+          ],
+          [
+            83,
+            124
+          ],
+          [
+            13,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        635,
+        665,
+        291,
+        340
+      ]
+    },
+    {
+      "id": "banco",
+      "label": "Banco",
+      "group": "decoracion",
+      "file": "assets/banco.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        3,
+        92,
+        59
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            42
+          ],
+          [
+            83,
+            42
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        940,
+        760,
+        314,
+        207
+      ]
+    },
+    {
+      "id": "cajon",
+      "label": "Cajón",
+      "group": "decoracion",
+      "file": "assets/cajon.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        10,
+        19,
+        44,
+        43
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            15,
+            47
+          ],
+          [
+            49,
+            47
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            15,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        35,
+        1025,
+        250,
+        229
+      ]
+    },
+    {
+      "id": "barriles",
+      "label": "Barriles",
+      "group": "decoracion",
+      "file": "assets/barriles.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        2,
+        8,
+        60,
+        54
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            9,
+            44
+          ],
+          [
+            55,
+            44
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            9,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        338,
+        1025,
+        278,
+        229
+      ]
+    },
+    {
+      "id": "sacos",
+      "label": "Sacos",
+      "group": "decoracion",
+      "file": "assets/sacos.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        2,
+        19,
+        60,
+        43
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            9,
+            47
+          ],
+          [
+            55,
+            47
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            9,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        631,
+        1025,
+        290,
+        229
+      ]
+    },
+    {
+      "id": "cartel",
+      "label": "Cartel de la Rosa",
+      "group": "decoracion",
+      "file": "assets/cartel.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        2,
+        21,
+        60,
+        73
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            9,
+            70
+          ],
+          [
+            55,
+            70
+          ],
+          [
+            55,
+            92
+          ],
+          [
+            9,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        960,
+        968,
+        294,
+        286
+      ]
+    },
+    {
+      "id": "muralla_h",
+      "label": "Muralla horizontal",
+      "group": "defensas",
+      "file": "assets/muralla_h.png",
+      "width": 288,
+      "height": 160,
+      "content_rect": [
+        2,
+        22,
+        284,
+        136
+      ],
+      "anchor": [
+        144,
+        160
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            36,
+            108
+          ],
+          [
+            252,
+            108
+          ],
+          [
+            252,
+            156
+          ],
+          [
+            36,
+            156
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        35,
+        145,
+        620,
+        333
+      ]
+    },
+    {
+      "id": "muralla_v",
+      "label": "Muralla vertical",
+      "group": "defensas",
+      "file": "assets/muralla_v.png",
+      "width": 96,
+      "height": 288,
+      "content_rect": [
+        2,
+        2,
+        91,
+        284
+      ],
+      "anchor": [
+        48,
+        288
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            40
+          ],
+          [
+            82,
+            40
+          ],
+          [
+            82,
+            284
+          ],
+          [
+            13,
+            284
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        742,
+        0,
+        238,
+        549
+      ]
+    },
+    {
+      "id": "torre_muralla",
+      "label": "Torre de esquina",
+      "group": "defensas",
+      "file": "assets/torre_muralla.png",
+      "width": 160,
+      "height": 256,
+      "content_rect": [
+        5,
+        2,
+        150,
+        252
+      ],
+      "anchor": [
+        80,
+        256
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            23,
+            189
+          ],
+          [
+            137,
+            189
+          ],
+          [
+            137,
+            252
+          ],
+          [
+            23,
+            252
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        1150,
+        0,
+        371,
+        530
+      ]
+    },
+    {
+      "id": "porton_abierto",
+      "label": "Portón abierto",
+      "group": "defensas",
+      "file": "assets/porton_abierto.png",
+      "width": 352,
+      "height": 320,
+      "content_rect": [
+        2,
+        13,
+        348,
+        305
+      ],
+      "anchor": [
+        176,
+        320
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            44,
+            224
+          ],
+          [
+            130,
+            224
+          ],
+          [
+            130,
+            316
+          ],
+          [
+            44,
+            316
+          ]
+        ],
+        [
+          [
+            222,
+            224
+          ],
+          [
+            308,
+            224
+          ],
+          [
+            308,
+            316
+          ],
+          [
+            222,
+            316
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        0,
+        488,
+        584,
+        522
+      ]
+    },
+    {
+      "id": "puente_h",
+      "label": "Puente este-oeste",
+      "group": "defensas",
+      "file": "assets/puente_h.png",
+      "width": 256,
+      "height": 128,
+      "content_rect": [
+        2,
+        13,
+        252,
+        113
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        587,
+        630,
+        552,
+        311
+      ]
+    },
+    {
+      "id": "escalera",
+      "label": "Escalinata",
+      "group": "defensas",
+      "file": "assets/escalera.png",
+      "width": 160,
+      "height": 192,
+      "content_rect": [
+        2,
+        13,
+        156,
+        177
+      ],
+      "anchor": [
+        80,
+        192
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        1150,
+        545,
+        386,
+        458
+      ]
+    },
+    {
+      "id": "muralla_repetible_h",
+      "label": "Muralla / tramo repetible",
+      "group": "defensas",
+      "file": "assets/muralla_repetible_h.png",
+      "width": 64,
+      "height": 128,
+      "content_rect": [
+        0,
+        0,
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            8,
+            75
+          ],
+          [
+            56,
+            75
+          ],
+          [
+            56,
+            126
+          ],
+          [
+            8,
+            126
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        267,
+        199,
+        118,
+        246
+      ]
+    },
+    {
+      "id": "muralla_repetible_v",
+      "label": "Muralla / tramo vertical repetible",
+      "group": "defensas",
+      "file": "assets/muralla_repetible_v.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            8,
+            1
+          ],
+          [
+            56,
+            1
+          ],
+          [
+            56,
+            62
+          ],
+          [
+            8,
+            62
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        779,
+        64,
+        143,
+        117
+      ]
+    },
+    {
+      "id": "castillo",
+      "label": "Castillo de Briar",
+      "group": "monumentos",
+      "file": "assets/castillo.png",
+      "width": 448,
+      "height": 448,
+      "content_rect": [
+        3,
+        2,
+        441,
+        444
+      ],
+      "anchor": [
+        224,
+        448
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            56,
+            324
+          ],
+          [
+            391,
+            324
+          ],
+          [
+            391,
+            444
+          ],
+          [
+            56,
+            444
+          ]
+        ]
+      ],
+      "source_sheet": "sources/monumentos.png",
+      "source_rect": [
+        0,
+        0,
+        1045,
+        1024
+      ]
+    },
+    {
+      "id": "torre_briar",
+      "label": "Torre ceremonial de Briar",
+      "group": "monumentos",
+      "file": "assets/torre_briar.png",
+      "width": 192,
+      "height": 448,
+      "content_rect": [
+        15,
+        2,
+        162,
+        444
+      ],
+      "anchor": [
+        96,
+        448
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            34,
+            377
+          ],
+          [
+            158,
+            377
+          ],
+          [
+            158,
+            444
+          ],
+          [
+            34,
+            444
+          ]
+        ]
+      ],
+      "source_sheet": "sources/monumentos.png",
+      "source_rect": [
+        1100,
+        0,
+        436,
+        1024
+      ]
+    },
+    {
+      "id": "puerta",
+      "label": "Puerta de madera",
+      "group": "detalles",
+      "file": "assets/puerta.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        2,
+        26,
+        60,
+        68
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        25,
+        0,
+        320,
+        350
+      ]
+    },
+    {
+      "id": "ventana",
+      "label": "Ventana gótica",
+      "group": "detalles",
+      "file": "assets/ventana.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        10,
+        24,
+        44,
+        70
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        354,
+        0,
+        245,
+        350
+      ]
+    },
+    {
+      "id": "buhardilla",
+      "label": "Buhardilla verde",
+      "group": "detalles",
+      "file": "assets/buhardilla.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        7,
+        2,
+        82,
+        92
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        628,
+        0,
+        307,
+        350
+      ]
+    },
+    {
+      "id": "bandera_mural",
+      "label": "Bandera mural",
+      "group": "detalles",
+      "file": "assets/bandera_mural.png",
+      "width": 32,
+      "height": 64,
+      "content_rect": [
+        2,
+        10,
+        28,
+        52
+      ],
+      "anchor": [
+        16,
+        64
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        966,
+        0,
+        265,
+        350
+      ]
+    },
+    {
+      "id": "raiz_h",
+      "label": "Raíz horizontal",
+      "group": "detalles",
+      "file": "assets/raiz_h.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        28,
+        92,
+        34
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        0,
+        376,
+        400,
+        236
+      ]
+    },
+    {
+      "id": "raiz_v",
+      "label": "Raíz vertical",
+      "group": "detalles",
+      "file": "assets/raiz_v.png",
+      "width": 64,
+      "height": 96,
+      "content_rect": [
+        13,
+        2,
+        38,
+        92
+      ],
+      "anchor": [
+        32,
+        96
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        425,
+        350,
+        193,
+        345
+      ]
+    },
+    {
+      "id": "raiz_l",
+      "label": "Raíz curva",
+      "group": "detalles",
+      "file": "assets/raiz_l.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        10,
+        18,
+        75,
+        76
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        632,
+        369,
+        303,
+        326
+      ]
+    },
+    {
+      "id": "raiz_t",
+      "label": "Raíz ramificada",
+      "group": "detalles",
+      "file": "assets/raiz_t.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        2,
+        10,
+        92,
+        84
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        936,
+        360,
+        318,
+        335
+      ]
+    },
+    {
+      "id": "rosas",
+      "label": "Rosal bajo",
+      "group": "detalles",
+      "file": "assets/rosas.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        10,
+        19,
+        44,
+        43
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        25,
+        695,
+        300,
+        230
+      ]
+    },
+    {
+      "id": "arbusto",
+      "label": "Arbusto",
+      "group": "detalles",
+      "file": "assets/arbusto.png",
+      "width": 64,
+      "height": 64,
+      "content_rect": [
+        10,
+        18,
+        44,
+        44
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "ground": true,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            15,
+            40
+          ],
+          [
+            49,
+            40
+          ],
+          [
+            49,
+            60
+          ],
+          [
+            15,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        363,
+        708,
+        236,
+        217
+      ]
+    },
+    {
+      "id": "escombros",
+      "label": "Piedras sueltas",
+      "group": "detalles",
+      "file": "assets/escombros.png",
+      "width": 64,
+      "height": 32,
+      "content_rect": [
+        12,
+        2,
+        40,
+        28
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        624,
+        704,
+        310,
+        223
+      ]
+    },
+    {
+      "id": "desague",
+      "label": "Desagüe",
+      "group": "detalles",
+      "file": "assets/desague.png",
+      "width": 32,
+      "height": 32,
+      "content_rect": [
+        2,
+        2,
+        28,
+        28
+      ],
+      "anchor": [
+        16,
+        32
+      ],
+      "ground": true,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        953,
+        694,
+        298,
+        235
+      ]
+    },
+    {
+      "id": "baranda_h",
+      "label": "Baranda horizontal",
+      "group": "detalles",
+      "file": "assets/baranda_h.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        8,
+        92,
+        54
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            41
+          ],
+          [
+            83,
+            41
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        25,
+        970,
+        367,
+        258
+      ]
+    },
+    {
+      "id": "baranda_v",
+      "label": "Baranda vertical",
+      "group": "detalles",
+      "file": "assets/baranda_v.png",
+      "width": 32,
+      "height": 96,
+      "content_rect": [
+        2,
+        6,
+        28,
+        88
+      ],
+      "anchor": [
+        16,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            5,
+            61
+          ],
+          [
+            27,
+            61
+          ],
+          [
+            27,
+            92
+          ],
+          [
+            5,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        416,
+        930,
+        168,
+        299
+      ]
+    },
+    {
+      "id": "antorcha",
+      "label": "Farol mural",
+      "group": "detalles",
+      "file": "assets/antorcha.png",
+      "width": 32,
+      "height": 64,
+      "content_rect": [
+        2,
+        19,
+        28,
+        43
+      ],
+      "anchor": [
+        16,
+        64
+      ],
+      "ground": false,
+      "solid": false,
+      "collision_polygons": [],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        634,
+        941,
+        271,
+        288
+      ]
+    },
+    {
+      "id": "hojas_porton",
+      "label": "Hojas del portón cerrado",
+      "group": "detalles",
+      "file": "assets/hojas_porton.png",
+      "width": 96,
+      "height": 96,
+      "content_rect": [
+        2,
+        12,
+        92,
+        82
+      ],
+      "anchor": [
+        48,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            63
+          ],
+          [
+            83,
+            63
+          ],
+          [
+            83,
+            92
+          ],
+          [
+            13,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/detalles.png",
+      "source_rect": [
+        916,
+        933,
+        338,
+        305
+      ]
+    }
+  ],
+  "atlases": [
+    {
+      "name": "arquitectura",
+      "file": "atlases/arquitectura.png",
+      "width": 1024,
+      "height": 640,
+      "items": [
+        {
+          "id": "casa_01",
+          "label": "Vivienda de entramado",
+          "group": "arquitectura",
+          "file": "assets/casa_01.png",
+          "width": 192,
+          "height": 288,
+          "content_rect": [
+            18,
+            2,
+            156,
+            284
+          ],
+          "anchor": [
+            96,
+            288
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                37,
+                196
+              ],
+              [
+                155,
+                196
+              ],
+              [
+                155,
+                284
+              ],
+              [
+                37,
+                284
+              ]
+            ]
+          ],
+          "source_sheet": "sources/viviendas.png",
+          "source_rect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            192,
+            288
+          ],
+          "atlas_coords": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "casa_02",
+          "label": "Casa mercantil",
+          "group": "arquitectura",
+          "file": "assets/casa_02.png",
+          "width": 320,
+          "height": 288,
+          "content_rect": [
+            14,
+            2,
+            292,
+            284
+          ],
+          "anchor": [
+            160,
+            288
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                49,
+                196
+              ],
+              [
+                271,
+                196
+              ],
+              [
+                271,
+                284
+              ],
+              [
+                49,
+                284
+              ]
+            ]
+          ],
+          "source_sheet": "sources/viviendas.png",
+          "source_rect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "atlas_rect": [
+            224,
+            0,
+            320,
+            288
+          ],
+          "atlas_coords": [
+            7,
+            0
+          ]
+        },
+        {
+          "id": "herbolario",
+          "label": "Herbolario",
+          "group": "arquitectura",
+          "file": "assets/herbolario.png",
+          "width": 224,
+          "height": 288,
+          "content_rect": [
+            15,
+            2,
+            194,
+            284
+          ],
+          "anchor": [
+            112,
+            288
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                38,
+                196
+              ],
+              [
+                186,
+                196
+              ],
+              [
+                186,
+                284
+              ],
+              [
+                38,
+                284
+              ]
+            ]
+          ],
+          "source_sheet": "sources/viviendas.png",
+          "source_rect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "atlas_rect": [
+            576,
+            0,
+            224,
+            288
+          ],
+          "atlas_coords": [
+            18,
+            0
+          ]
+        },
+        {
+          "id": "posada",
+          "label": "Posada de la Rosa",
+          "group": "arquitectura",
+          "file": "assets/posada.png",
+          "width": 320,
+          "height": 288,
+          "content_rect": [
+            17,
+            2,
+            285,
+            284
+          ],
+          "anchor": [
+            160,
+            288
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                51,
+                196
+              ],
+              [
+                268,
+                196
+              ],
+              [
+                268,
+                284
+              ],
+              [
+                51,
+                284
+              ]
+            ]
+          ],
+          "source_sheet": "sources/viviendas.png",
+          "source_rect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "atlas_rect": [
+            0,
+            320,
+            320,
+            288
+          ],
+          "atlas_coords": [
+            0,
+            10
+          ]
+        },
+        {
+          "id": "herreria",
+          "label": "Herrería",
+          "group": "arquitectura",
+          "file": "assets/herreria.png",
+          "width": 320,
+          "height": 288,
+          "content_rect": [
+            9,
+            2,
+            302,
+            284
+          ],
+          "anchor": [
+            160,
+            288
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                45,
+                196
+              ],
+              [
+                275,
+                196
+              ],
+              [
+                275,
+                284
+              ],
+              [
+                45,
+                284
+              ]
+            ]
+          ],
+          "source_sheet": "sources/viviendas.png",
+          "source_rect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "atlas_rect": [
+            352,
+            320,
+            320,
+            288
+          ],
+          "atlas_coords": [
+            11,
+            10
+          ]
+        },
+        {
+          "id": "gremio",
+          "label": "Casa del gremio",
+          "group": "arquitectura",
+          "file": "assets/gremio.png",
+          "width": 256,
+          "height": 320,
+          "content_rect": [
+            2,
+            11,
+            252,
+            307
+          ],
+          "anchor": [
+            128,
+            320
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                32,
+                221
+              ],
+              [
+                224,
+                221
+              ],
+              [
+                224,
+                316
+              ],
+              [
+                32,
+                316
+              ]
+            ]
+          ],
+          "source_sheet": "sources/viviendas.png",
+          "source_rect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "atlas_rect": [
+            704,
+            320,
+            256,
+            320
+          ],
+          "atlas_coords": [
+            22,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "name": "decoracion",
+      "file": "atlases/decoracion.png",
+      "width": 1024,
+      "height": 544,
+      "items": [
+        {
+          "id": "puesto_frutas",
+          "label": "Puesto de frutas",
+          "group": "decoracion",
+          "file": "assets/puesto_frutas.png",
+          "width": 128,
+          "height": 128,
+          "content_rect": [
+            2,
+            6,
+            124,
+            120
+          ],
+          "anchor": [
+            64,
+            128
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                17,
+                88
+              ],
+              [
+                111,
+                88
+              ],
+              [
+                111,
+                124
+              ],
+              [
+                17,
+                124
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            0,
+            0,
+            320,
+            327
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "atlas_coords": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "puesto_libros",
+          "label": "Puesto de libros y telas",
+          "group": "decoracion",
+          "file": "assets/puesto_libros.png",
+          "width": 128,
+          "height": 128,
+          "content_rect": [
+            5,
+            2,
+            118,
+            124
+          ],
+          "anchor": [
+            64,
+            128
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                19,
+                87
+              ],
+              [
+                109,
+                87
+              ],
+              [
+                109,
+                124
+              ],
+              [
+                19,
+                124
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            328,
+            0,
+            300,
+            327
+          ],
+          "atlas_rect": [
+            160,
+            0,
+            128,
+            128
+          ],
+          "atlas_coords": [
+            5,
+            0
+          ]
+        },
+        {
+          "id": "carro",
+          "label": "Carro de reparto",
+          "group": "decoracion",
+          "file": "assets/carro.png",
+          "width": 128,
+          "height": 96,
+          "content_rect": [
+            3,
+            2,
+            122,
+            92
+          ],
+          "anchor": [
+            64,
+            96
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                18,
+                64
+              ],
+              [
+                110,
+                64
+              ],
+              [
+                110,
+                92
+              ],
+              [
+                18,
+                92
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            630,
+            0,
+            305,
+            327
+          ],
+          "atlas_rect": [
+            320,
+            0,
+            128,
+            96
+          ],
+          "atlas_coords": [
+            10,
+            0
+          ]
+        },
+        {
+          "id": "fuente",
+          "label": "Fuente de la Rosa",
+          "group": "decoracion",
+          "file": "assets/fuente.png",
+          "width": 128,
+          "height": 128,
+          "content_rect": [
+            2,
+            2,
+            124,
+            124
+          ],
+          "anchor": [
+            64,
+            128
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                17,
+                87
+              ],
+              [
+                111,
+                87
+              ],
+              [
+                111,
+                124
+              ],
+              [
+                17,
+                124
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            938,
+            0,
+            316,
+            327
+          ],
+          "atlas_rect": [
+            480,
+            0,
+            128,
+            128
+          ],
+          "atlas_coords": [
+            15,
+            0
+          ]
+        },
+        {
+          "id": "arbol",
+          "label": "Árbol frondoso",
+          "group": "decoracion",
+          "file": "assets/arbol.png",
+          "width": 192,
+          "height": 224,
+          "content_rect": [
+            2,
+            21,
+            188,
+            201
+          ],
+          "anchor": [
+            96,
+            224
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                79,
+                196
+              ],
+              [
+                113,
+                196
+              ],
+              [
+                113,
+                220
+              ],
+              [
+                79,
+                220
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            0,
+            328,
+            322,
+            340
+          ],
+          "atlas_rect": [
+            640,
+            0,
+            192,
+            224
+          ],
+          "atlas_coords": [
+            20,
+            0
+          ]
+        },
+        {
+          "id": "cipres",
+          "label": "Ciprés",
+          "group": "decoracion",
+          "file": "assets/cipres.png",
+          "width": 96,
+          "height": 192,
+          "content_rect": [
+            12,
+            2,
+            72,
+            188
+          ],
+          "anchor": [
+            48,
+            192
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                41.5,
+                165
+              ],
+              [
+                54.5,
+                165
+              ],
+              [
+                54.5,
+                188
+              ],
+              [
+                41.5,
+                188
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            350,
+            328,
+            240,
+            340
+          ],
+          "atlas_rect": [
+            864,
+            0,
+            96,
+            192
+          ],
+          "atlas_coords": [
+            27,
+            0
+          ]
+        },
+        {
+          "id": "jardinera",
+          "label": "Jardinera de rosas",
+          "group": "decoracion",
+          "file": "assets/jardinera.png",
+          "width": 96,
+          "height": 64,
+          "content_rect": [
+            2,
+            2,
+            92,
+            60
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                42
+              ],
+              [
+                83,
+                42
+              ],
+              [
+                83,
+                60
+              ],
+              [
+                13,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            630,
+            365,
+            305,
+            282
+          ],
+          "atlas_rect": [
+            0,
+            256,
+            96,
+            64
+          ],
+          "atlas_coords": [
+            0,
+            8
+          ]
+        },
+        {
+          "id": "seto",
+          "label": "Seto",
+          "group": "decoracion",
+          "file": "assets/seto.png",
+          "width": 96,
+          "height": 64,
+          "content_rect": [
+            2,
+            19,
+            92,
+            43
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                47
+              ],
+              [
+                83,
+                47
+              ],
+              [
+                83,
+                60
+              ],
+              [
+                13,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            941,
+            397,
+            313,
+            250
+          ],
+          "atlas_rect": [
+            128,
+            256,
+            96,
+            64
+          ],
+          "atlas_coords": [
+            4,
+            8
+          ]
+        },
+        {
+          "id": "farola",
+          "label": "Farola",
+          "group": "decoracion",
+          "file": "assets/farola.png",
+          "width": 64,
+          "height": 128,
+          "content_rect": [
+            11,
+            18,
+            41,
+            108
+          ],
+          "anchor": [
+            32,
+            128
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                27,
+                92
+              ],
+              [
+                37,
+                92
+              ],
+              [
+                37,
+                124
+              ],
+              [
+                27,
+                124
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            44,
+            667,
+            228,
+            338
+          ],
+          "atlas_rect": [
+            256,
+            256,
+            64,
+            128
+          ],
+          "atlas_coords": [
+            8,
+            8
+          ]
+        },
+        {
+          "id": "estandarte",
+          "label": "Estandarte real",
+          "group": "decoracion",
+          "file": "assets/estandarte.png",
+          "width": 64,
+          "height": 160,
+          "content_rect": [
+            2,
+            25,
+            60,
+            133
+          ],
+          "anchor": [
+            32,
+            160
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                26.5,
+                116
+              ],
+              [
+                37.5,
+                116
+              ],
+              [
+                37.5,
+                156
+              ],
+              [
+                26.5,
+                156
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            342,
+            667,
+            243,
+            349
+          ],
+          "atlas_rect": [
+            352,
+            256,
+            64,
+            160
+          ],
+          "atlas_coords": [
+            11,
+            8
+          ]
+        },
+        {
+          "id": "pozo",
+          "label": "Pozo",
+          "group": "decoracion",
+          "file": "assets/pozo.png",
+          "width": 96,
+          "height": 128,
+          "content_rect": [
+            2,
+            14,
+            92,
+            112
+          ],
+          "anchor": [
+            48,
+            128
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                90
+              ],
+              [
+                83,
+                90
+              ],
+              [
+                83,
+                124
+              ],
+              [
+                13,
+                124
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            635,
+            665,
+            291,
+            340
+          ],
+          "atlas_rect": [
+            448,
+            256,
+            96,
+            128
+          ],
+          "atlas_coords": [
+            14,
+            8
+          ]
+        },
+        {
+          "id": "banco",
+          "label": "Banco",
+          "group": "decoracion",
+          "file": "assets/banco.png",
+          "width": 96,
+          "height": 64,
+          "content_rect": [
+            2,
+            3,
+            92,
+            59
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                42
+              ],
+              [
+                83,
+                42
+              ],
+              [
+                83,
+                60
+              ],
+              [
+                13,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            940,
+            760,
+            314,
+            207
+          ],
+          "atlas_rect": [
+            576,
+            256,
+            96,
+            64
+          ],
+          "atlas_coords": [
+            18,
+            8
+          ]
+        },
+        {
+          "id": "cajon",
+          "label": "Cajón",
+          "group": "decoracion",
+          "file": "assets/cajon.png",
+          "width": 64,
+          "height": 64,
+          "content_rect": [
+            10,
+            19,
+            44,
+            43
+          ],
+          "anchor": [
+            32,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                15,
+                47
+              ],
+              [
+                49,
+                47
+              ],
+              [
+                49,
+                60
+              ],
+              [
+                15,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            35,
+            1025,
+            250,
+            229
+          ],
+          "atlas_rect": [
+            704,
+            256,
+            64,
+            64
+          ],
+          "atlas_coords": [
+            22,
+            8
+          ]
+        },
+        {
+          "id": "barriles",
+          "label": "Barriles",
+          "group": "decoracion",
+          "file": "assets/barriles.png",
+          "width": 64,
+          "height": 64,
+          "content_rect": [
+            2,
+            8,
+            60,
+            54
+          ],
+          "anchor": [
+            32,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                9,
+                44
+              ],
+              [
+                55,
+                44
+              ],
+              [
+                55,
+                60
+              ],
+              [
+                9,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            338,
+            1025,
+            278,
+            229
+          ],
+          "atlas_rect": [
+            800,
+            256,
+            64,
+            64
+          ],
+          "atlas_coords": [
+            25,
+            8
+          ]
+        },
+        {
+          "id": "sacos",
+          "label": "Sacos",
+          "group": "decoracion",
+          "file": "assets/sacos.png",
+          "width": 64,
+          "height": 64,
+          "content_rect": [
+            2,
+            19,
+            60,
+            43
+          ],
+          "anchor": [
+            32,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                9,
+                47
+              ],
+              [
+                55,
+                47
+              ],
+              [
+                55,
+                60
+              ],
+              [
+                9,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            631,
+            1025,
+            290,
+            229
+          ],
+          "atlas_rect": [
+            896,
+            256,
+            64,
+            64
+          ],
+          "atlas_coords": [
+            28,
+            8
+          ]
+        },
+        {
+          "id": "cartel",
+          "label": "Cartel de la Rosa",
+          "group": "decoracion",
+          "file": "assets/cartel.png",
+          "width": 64,
+          "height": 96,
+          "content_rect": [
+            2,
+            21,
+            60,
+            73
+          ],
+          "anchor": [
+            32,
+            96
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                9,
+                70
+              ],
+              [
+                55,
+                70
+              ],
+              [
+                55,
+                92
+              ],
+              [
+                9,
+                92
+              ]
+            ]
+          ],
+          "source_sheet": "sources/decoracion.png",
+          "source_rect": [
+            960,
+            968,
+            294,
+            286
+          ],
+          "atlas_rect": [
+            0,
+            448,
+            64,
+            96
+          ],
+          "atlas_coords": [
+            0,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "name": "defensas",
+      "file": "atlases/defensas.png",
+      "width": 1024,
+      "height": 544,
+      "items": [
+        {
+          "id": "muralla_h",
+          "label": "Muralla horizontal",
+          "group": "defensas",
+          "file": "assets/muralla_h.png",
+          "width": 288,
+          "height": 160,
+          "content_rect": [
+            2,
+            22,
+            284,
+            136
+          ],
+          "anchor": [
+            144,
+            160
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                36,
+                108
+              ],
+              [
+                252,
+                108
+              ],
+              [
+                252,
+                156
+              ],
+              [
+                36,
+                156
+              ]
+            ]
+          ],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            35,
+            145,
+            620,
+            333
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            288,
+            160
+          ],
+          "atlas_coords": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "muralla_v",
+          "label": "Muralla vertical",
+          "group": "defensas",
+          "file": "assets/muralla_v.png",
+          "width": 96,
+          "height": 288,
+          "content_rect": [
+            2,
+            2,
+            91,
+            284
+          ],
+          "anchor": [
+            48,
+            288
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                40
+              ],
+              [
+                82,
+                40
+              ],
+              [
+                82,
+                284
+              ],
+              [
+                13,
+                284
+              ]
+            ]
+          ],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            742,
+            0,
+            238,
+            549
+          ],
+          "atlas_rect": [
+            320,
+            0,
+            96,
+            288
+          ],
+          "atlas_coords": [
+            10,
+            0
+          ]
+        },
+        {
+          "id": "torre_muralla",
+          "label": "Torre de esquina",
+          "group": "defensas",
+          "file": "assets/torre_muralla.png",
+          "width": 160,
+          "height": 256,
+          "content_rect": [
+            5,
+            2,
+            150,
+            252
+          ],
+          "anchor": [
+            80,
+            256
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                23,
+                189
+              ],
+              [
+                137,
+                189
+              ],
+              [
+                137,
+                252
+              ],
+              [
+                23,
+                252
+              ]
+            ]
+          ],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            1150,
+            0,
+            371,
+            530
+          ],
+          "atlas_rect": [
+            448,
+            0,
+            160,
+            256
+          ],
+          "atlas_coords": [
+            14,
+            0
+          ]
+        },
+        {
+          "id": "porton_abierto",
+          "label": "Portón abierto",
+          "group": "defensas",
+          "file": "assets/porton_abierto.png",
+          "width": 352,
+          "height": 320,
+          "content_rect": [
+            2,
+            13,
+            348,
+            305
+          ],
+          "anchor": [
+            176,
+            320
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                44,
+                224
+              ],
+              [
+                130,
+                224
+              ],
+              [
+                130,
+                316
+              ],
+              [
+                44,
+                316
+              ]
+            ],
+            [
+              [
+                222,
+                224
+              ],
+              [
+                308,
+                224
+              ],
+              [
+                308,
+                316
+              ],
+              [
+                222,
+                316
+              ]
+            ]
+          ],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            0,
+            488,
+            584,
+            522
+          ],
+          "atlas_rect": [
+            640,
+            0,
+            352,
+            320
+          ],
+          "atlas_coords": [
+            20,
+            0
+          ]
+        },
+        {
+          "id": "puente_h",
+          "label": "Puente este-oeste",
+          "group": "defensas",
+          "file": "assets/puente_h.png",
+          "width": 256,
+          "height": 128,
+          "content_rect": [
+            2,
+            13,
+            252,
+            113
+          ],
+          "anchor": [
+            128,
+            128
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            587,
+            630,
+            552,
+            311
+          ],
+          "atlas_rect": [
+            0,
+            352,
+            256,
+            128
+          ],
+          "atlas_coords": [
+            0,
+            11
+          ]
+        },
+        {
+          "id": "escalera",
+          "label": "Escalinata",
+          "group": "defensas",
+          "file": "assets/escalera.png",
+          "width": 160,
+          "height": 192,
+          "content_rect": [
+            2,
+            13,
+            156,
+            177
+          ],
+          "anchor": [
+            80,
+            192
+          ],
+          "ground": false,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            1150,
+            545,
+            386,
+            458
+          ],
+          "atlas_rect": [
+            288,
+            352,
+            160,
+            192
+          ],
+          "atlas_coords": [
+            9,
+            11
+          ]
+        },
+        {
+          "id": "muralla_repetible_h",
+          "label": "Muralla / tramo repetible",
+          "group": "defensas",
+          "file": "assets/muralla_repetible_h.png",
+          "width": 64,
+          "height": 128,
+          "content_rect": [
+            0,
+            0,
+            64,
+            128
+          ],
+          "anchor": [
+            32,
+            128
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                8,
+                75
+              ],
+              [
+                56,
+                75
+              ],
+              [
+                56,
+                126
+              ],
+              [
+                8,
+                126
+              ]
+            ]
+          ],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            267,
+            199,
+            118,
+            246
+          ],
+          "atlas_rect": [
+            480,
+            352,
+            64,
+            128
+          ],
+          "atlas_coords": [
+            15,
+            11
+          ]
+        },
+        {
+          "id": "muralla_repetible_v",
+          "label": "Muralla / tramo vertical repetible",
+          "group": "defensas",
+          "file": "assets/muralla_repetible_v.png",
+          "width": 64,
+          "height": 64,
+          "content_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                8,
+                1
+              ],
+              [
+                56,
+                1
+              ],
+              [
+                56,
+                62
+              ],
+              [
+                8,
+                62
+              ]
+            ]
+          ],
+          "source_sheet": "sources/defensas.png",
+          "source_rect": [
+            779,
+            64,
+            143,
+            117
+          ],
+          "atlas_rect": [
+            576,
+            352,
+            64,
+            64
+          ],
+          "atlas_coords": [
+            18,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "name": "monumentos",
+      "file": "atlases/monumentos.png",
+      "width": 1024,
+      "height": 448,
+      "items": [
+        {
+          "id": "castillo",
+          "label": "Castillo de Briar",
+          "group": "monumentos",
+          "file": "assets/castillo.png",
+          "width": 448,
+          "height": 448,
+          "content_rect": [
+            3,
+            2,
+            441,
+            444
+          ],
+          "anchor": [
+            224,
+            448
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                56,
+                324
+              ],
+              [
+                391,
+                324
+              ],
+              [
+                391,
+                444
+              ],
+              [
+                56,
+                444
+              ]
+            ]
+          ],
+          "source_sheet": "sources/monumentos.png",
+          "source_rect": [
+            0,
+            0,
+            1045,
+            1024
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            448,
+            448
+          ],
+          "atlas_coords": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "torre_briar",
+          "label": "Torre ceremonial de Briar",
+          "group": "monumentos",
+          "file": "assets/torre_briar.png",
+          "width": 192,
+          "height": 448,
+          "content_rect": [
+            15,
+            2,
+            162,
+            444
+          ],
+          "anchor": [
+            96,
+            448
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                34,
+                377
+              ],
+              [
+                158,
+                377
+              ],
+              [
+                158,
+                444
+              ],
+              [
+                34,
+                444
+              ]
+            ]
+          ],
+          "source_sheet": "sources/monumentos.png",
+          "source_rect": [
+            1100,
+            0,
+            436,
+            1024
+          ],
+          "atlas_rect": [
+            480,
+            0,
+            192,
+            448
+          ],
+          "atlas_coords": [
+            15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "detalles",
+      "file": "atlases/detalles.png",
+      "width": 1024,
+      "height": 224,
+      "items": [
+        {
+          "id": "puerta",
+          "label": "Puerta de madera",
+          "group": "detalles",
+          "file": "assets/puerta.png",
+          "width": 64,
+          "height": 96,
+          "content_rect": [
+            2,
+            26,
+            60,
+            68
+          ],
+          "anchor": [
+            32,
+            96
+          ],
+          "ground": false,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            25,
+            0,
+            320,
+            350
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            64,
+            96
+          ],
+          "atlas_coords": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "ventana",
+          "label": "Ventana gótica",
+          "group": "detalles",
+          "file": "assets/ventana.png",
+          "width": 64,
+          "height": 96,
+          "content_rect": [
+            10,
+            24,
+            44,
+            70
+          ],
+          "anchor": [
+            32,
+            96
+          ],
+          "ground": false,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            354,
+            0,
+            245,
+            350
+          ],
+          "atlas_rect": [
+            96,
+            0,
+            64,
+            96
+          ],
+          "atlas_coords": [
+            3,
+            0
+          ]
+        },
+        {
+          "id": "buhardilla",
+          "label": "Buhardilla verde",
+          "group": "detalles",
+          "file": "assets/buhardilla.png",
+          "width": 96,
+          "height": 96,
+          "content_rect": [
+            7,
+            2,
+            82,
+            92
+          ],
+          "anchor": [
+            48,
+            96
+          ],
+          "ground": false,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            628,
+            0,
+            307,
+            350
+          ],
+          "atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "atlas_coords": [
+            6,
+            0
+          ]
+        },
+        {
+          "id": "bandera_mural",
+          "label": "Bandera mural",
+          "group": "detalles",
+          "file": "assets/bandera_mural.png",
+          "width": 32,
+          "height": 64,
+          "content_rect": [
+            2,
+            10,
+            28,
+            52
+          ],
+          "anchor": [
+            16,
+            64
+          ],
+          "ground": false,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            966,
+            0,
+            265,
+            350
+          ],
+          "atlas_rect": [
+            320,
+            0,
+            32,
+            64
+          ],
+          "atlas_coords": [
+            10,
+            0
+          ]
+        },
+        {
+          "id": "raiz_h",
+          "label": "Raíz horizontal",
+          "group": "detalles",
+          "file": "assets/raiz_h.png",
+          "width": 96,
+          "height": 64,
+          "content_rect": [
+            2,
+            28,
+            92,
+            34
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            0,
+            376,
+            400,
+            236
+          ],
+          "atlas_rect": [
+            384,
+            0,
+            96,
+            64
+          ],
+          "atlas_coords": [
+            12,
+            0
+          ]
+        },
+        {
+          "id": "raiz_v",
+          "label": "Raíz vertical",
+          "group": "detalles",
+          "file": "assets/raiz_v.png",
+          "width": 64,
+          "height": 96,
+          "content_rect": [
+            13,
+            2,
+            38,
+            92
+          ],
+          "anchor": [
+            32,
+            96
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            425,
+            350,
+            193,
+            345
+          ],
+          "atlas_rect": [
+            512,
+            0,
+            64,
+            96
+          ],
+          "atlas_coords": [
+            16,
+            0
+          ]
+        },
+        {
+          "id": "raiz_l",
+          "label": "Raíz curva",
+          "group": "detalles",
+          "file": "assets/raiz_l.png",
+          "width": 96,
+          "height": 96,
+          "content_rect": [
+            10,
+            18,
+            75,
+            76
+          ],
+          "anchor": [
+            48,
+            96
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            632,
+            369,
+            303,
+            326
+          ],
+          "atlas_rect": [
+            608,
+            0,
+            96,
+            96
+          ],
+          "atlas_coords": [
+            19,
+            0
+          ]
+        },
+        {
+          "id": "raiz_t",
+          "label": "Raíz ramificada",
+          "group": "detalles",
+          "file": "assets/raiz_t.png",
+          "width": 96,
+          "height": 96,
+          "content_rect": [
+            2,
+            10,
+            92,
+            84
+          ],
+          "anchor": [
+            48,
+            96
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            936,
+            360,
+            318,
+            335
+          ],
+          "atlas_rect": [
+            736,
+            0,
+            96,
+            96
+          ],
+          "atlas_coords": [
+            23,
+            0
+          ]
+        },
+        {
+          "id": "rosas",
+          "label": "Rosal bajo",
+          "group": "detalles",
+          "file": "assets/rosas.png",
+          "width": 64,
+          "height": 64,
+          "content_rect": [
+            10,
+            19,
+            44,
+            43
+          ],
+          "anchor": [
+            32,
+            64
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            25,
+            695,
+            300,
+            230
+          ],
+          "atlas_rect": [
+            864,
+            0,
+            64,
+            64
+          ],
+          "atlas_coords": [
+            27,
+            0
+          ]
+        },
+        {
+          "id": "arbusto",
+          "label": "Arbusto",
+          "group": "detalles",
+          "file": "assets/arbusto.png",
+          "width": 64,
+          "height": 64,
+          "content_rect": [
+            10,
+            18,
+            44,
+            44
+          ],
+          "anchor": [
+            32,
+            64
+          ],
+          "ground": true,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                15,
+                40
+              ],
+              [
+                49,
+                40
+              ],
+              [
+                49,
+                60
+              ],
+              [
+                15,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            363,
+            708,
+            236,
+            217
+          ],
+          "atlas_rect": [
+            960,
+            0,
+            64,
+            64
+          ],
+          "atlas_coords": [
+            30,
+            0
+          ]
+        },
+        {
+          "id": "escombros",
+          "label": "Piedras sueltas",
+          "group": "detalles",
+          "file": "assets/escombros.png",
+          "width": 64,
+          "height": 32,
+          "content_rect": [
+            12,
+            2,
+            40,
+            28
+          ],
+          "anchor": [
+            32,
+            32
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            624,
+            704,
+            310,
+            223
+          ],
+          "atlas_rect": [
+            0,
+            128,
+            64,
+            32
+          ],
+          "atlas_coords": [
+            0,
+            4
+          ]
+        },
+        {
+          "id": "desague",
+          "label": "Desagüe",
+          "group": "detalles",
+          "file": "assets/desague.png",
+          "width": 32,
+          "height": 32,
+          "content_rect": [
+            2,
+            2,
+            28,
+            28
+          ],
+          "anchor": [
+            16,
+            32
+          ],
+          "ground": true,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            953,
+            694,
+            298,
+            235
+          ],
+          "atlas_rect": [
+            96,
+            128,
+            32,
+            32
+          ],
+          "atlas_coords": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "baranda_h",
+          "label": "Baranda horizontal",
+          "group": "detalles",
+          "file": "assets/baranda_h.png",
+          "width": 96,
+          "height": 64,
+          "content_rect": [
+            2,
+            8,
+            92,
+            54
+          ],
+          "anchor": [
+            48,
+            64
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                41
+              ],
+              [
+                83,
+                41
+              ],
+              [
+                83,
+                60
+              ],
+              [
+                13,
+                60
+              ]
+            ]
+          ],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            25,
+            970,
+            367,
+            258
+          ],
+          "atlas_rect": [
+            160,
+            128,
+            96,
+            64
+          ],
+          "atlas_coords": [
+            5,
+            4
+          ]
+        },
+        {
+          "id": "baranda_v",
+          "label": "Baranda vertical",
+          "group": "detalles",
+          "file": "assets/baranda_v.png",
+          "width": 32,
+          "height": 96,
+          "content_rect": [
+            2,
+            6,
+            28,
+            88
+          ],
+          "anchor": [
+            16,
+            96
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                5,
+                61
+              ],
+              [
+                27,
+                61
+              ],
+              [
+                27,
+                92
+              ],
+              [
+                5,
+                92
+              ]
+            ]
+          ],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            416,
+            930,
+            168,
+            299
+          ],
+          "atlas_rect": [
+            288,
+            128,
+            32,
+            96
+          ],
+          "atlas_coords": [
+            9,
+            4
+          ]
+        },
+        {
+          "id": "antorcha",
+          "label": "Farol mural",
+          "group": "detalles",
+          "file": "assets/antorcha.png",
+          "width": 32,
+          "height": 64,
+          "content_rect": [
+            2,
+            19,
+            28,
+            43
+          ],
+          "anchor": [
+            16,
+            64
+          ],
+          "ground": false,
+          "solid": false,
+          "collision_polygons": [],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            634,
+            941,
+            271,
+            288
+          ],
+          "atlas_rect": [
+            352,
+            128,
+            32,
+            64
+          ],
+          "atlas_coords": [
+            11,
+            4
+          ]
+        },
+        {
+          "id": "hojas_porton",
+          "label": "Hojas del portón cerrado",
+          "group": "detalles",
+          "file": "assets/hojas_porton.png",
+          "width": 96,
+          "height": 96,
+          "content_rect": [
+            2,
+            12,
+            92,
+            82
+          ],
+          "anchor": [
+            48,
+            96
+          ],
+          "ground": false,
+          "solid": true,
+          "collision_polygons": [
+            [
+              [
+                13,
+                63
+              ],
+              [
+                83,
+                63
+              ],
+              [
+                83,
+                92
+              ],
+              [
+                13,
+                92
+              ]
+            ]
+          ],
+          "source_sheet": "sources/detalles.png",
+          "source_rect": [
+            916,
+            933,
+            338,
+            305
+          ],
+          "atlas_rect": [
+            416,
+            128,
+            96,
+            96
+          ],
+          "atlas_coords": [
+            13,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "terrain": [
+    {
+      "id": 0,
+      "name": "calle_piedra",
+      "variant": 0,
+      "atlas": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "name": "calle_piedra",
+      "variant": 1,
+      "atlas": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "calle_piedra",
+      "variant": 2,
+      "atlas": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "name": "calle_piedra",
+      "variant": 3,
+      "atlas": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "name": "adoquin",
+      "variant": 0,
+      "atlas": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "name": "adoquin",
+      "variant": 1,
+      "atlas": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "name": "adoquin",
+      "variant": 2,
+      "atlas": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "name": "adoquin",
+      "variant": 3,
+      "atlas": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "name": "sendero_tierra",
+      "variant": 0,
+      "atlas": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "name": "sendero_tierra",
+      "variant": 1,
+      "atlas": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "name": "sendero_tierra",
+      "variant": 2,
+      "atlas": [
+        10,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "name": "sendero_tierra",
+      "variant": 3,
+      "atlas": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "name": "cesped",
+      "variant": 0,
+      "atlas": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "name": "cesped",
+      "variant": 1,
+      "atlas": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "name": "cesped",
+      "variant": 2,
+      "atlas": [
+        14,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "name": "cesped",
+      "variant": 3,
+      "atlas": [
+        15,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "name": "plaza_clara",
+      "variant": 0,
+      "atlas": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 17,
+      "name": "plaza_clara",
+      "variant": 1,
+      "atlas": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "name": "plaza_clara",
+      "variant": 2,
+      "atlas": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 19,
+      "name": "plaza_clara",
+      "variant": 3,
+      "atlas": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": 20,
+      "name": "piedra_musgo",
+      "variant": 0,
+      "atlas": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": 21,
+      "name": "piedra_musgo",
+      "variant": 1,
+      "atlas": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": 22,
+      "name": "piedra_musgo",
+      "variant": 2,
+      "atlas": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "name": "piedra_musgo",
+      "variant": 3,
+      "atlas": [
+        7,
+        1
+      ]
+    },
+    {
+      "id": 24,
+      "name": "tierra_jardin",
+      "variant": 0,
+      "atlas": [
+        8,
+        1
+      ]
+    },
+    {
+      "id": 25,
+      "name": "tierra_jardin",
+      "variant": 1,
+      "atlas": [
+        9,
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "name": "tierra_jardin",
+      "variant": 2,
+      "atlas": [
+        10,
+        1
+      ]
+    },
+    {
+      "id": 27,
+      "name": "tierra_jardin",
+      "variant": 3,
+      "atlas": [
+        11,
+        1
+      ]
+    },
+    {
+      "id": 28,
+      "name": "agua",
+      "variant": 0,
+      "atlas": [
+        12,
+        1
+      ]
+    },
+    {
+      "id": 29,
+      "name": "agua",
+      "variant": 1,
+      "atlas": [
+        13,
+        1
+      ]
+    },
+    {
+      "id": 30,
+      "name": "agua",
+      "variant": 2,
+      "atlas": [
+        14,
+        1
+      ]
+    },
+    {
+      "id": 31,
+      "name": "agua",
+      "variant": 3,
+      "atlas": [
+        15,
+        1
+      ]
+    },
+    {
+      "id": 32,
+      "name": "grava",
+      "variant": 0,
+      "atlas": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 33,
+      "name": "grava",
+      "variant": 1,
+      "atlas": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 34,
+      "name": "grava",
+      "variant": 2,
+      "atlas": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 35,
+      "name": "grava",
+      "variant": 3,
+      "atlas": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": 36,
+      "name": "madera_h",
+      "variant": 0,
+      "atlas": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": 37,
+      "name": "madera_h",
+      "variant": 1,
+      "atlas": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": 38,
+      "name": "madera_h",
+      "variant": 2,
+      "atlas": [
+        6,
+        2
+      ]
+    },
+    {
+      "id": 39,
+      "name": "madera_h",
+      "variant": 3,
+      "atlas": [
+        7,
+        2
+      ]
+    },
+    {
+      "id": 40,
+      "name": "madera_v",
+      "variant": 0,
+      "atlas": [
+        8,
+        2
+      ]
+    },
+    {
+      "id": 41,
+      "name": "madera_v",
+      "variant": 1,
+      "atlas": [
+        9,
+        2
+      ]
+    },
+    {
+      "id": 42,
+      "name": "madera_v",
+      "variant": 2,
+      "atlas": [
+        10,
+        2
+      ]
+    },
+    {
+      "id": 43,
+      "name": "madera_v",
+      "variant": 3,
+      "atlas": [
+        11,
+        2
+      ]
+    },
+    {
+      "id": 44,
+      "name": "pizarra",
+      "variant": 0,
+      "atlas": [
+        12,
+        2
+      ]
+    },
+    {
+      "id": 45,
+      "name": "pizarra",
+      "variant": 1,
+      "atlas": [
+        13,
+        2
+      ]
+    },
+    {
+      "id": 46,
+      "name": "pizarra",
+      "variant": 2,
+      "atlas": [
+        14,
+        2
+      ]
+    },
+    {
+      "id": 47,
+      "name": "pizarra",
+      "variant": 3,
+      "atlas": [
+        15,
+        2
+      ]
+    },
+    {
+      "id": 48,
+      "name": "tejas_verdes",
+      "variant": 0,
+      "atlas": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": 49,
+      "name": "tejas_verdes",
+      "variant": 1,
+      "atlas": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 50,
+      "name": "tejas_verdes",
+      "variant": 2,
+      "atlas": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 51,
+      "name": "tejas_verdes",
+      "variant": 3,
+      "atlas": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": 52,
+      "name": "mamposteria",
+      "variant": 0,
+      "atlas": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": 53,
+      "name": "mamposteria",
+      "variant": 1,
+      "atlas": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": 54,
+      "name": "mamposteria",
+      "variant": 2,
+      "atlas": [
+        6,
+        3
+      ]
+    },
+    {
+      "id": 55,
+      "name": "mamposteria",
+      "variant": 3,
+      "atlas": [
+        7,
+        3
+      ]
+    },
+    {
+      "id": 56,
+      "name": "hierba_tierra",
+      "variant": 0,
+      "atlas": [
+        8,
+        3
+      ]
+    },
+    {
+      "id": 57,
+      "name": "hierba_tierra",
+      "variant": 1,
+      "atlas": [
+        9,
+        3
+      ]
+    },
+    {
+      "id": 58,
+      "name": "hierba_tierra",
+      "variant": 2,
+      "atlas": [
+        10,
+        3
+      ]
+    },
+    {
+      "id": 59,
+      "name": "hierba_tierra",
+      "variant": 3,
+      "atlas": [
+        11,
+        3
+      ]
+    },
+    {
+      "id": 60,
+      "name": "petalos",
+      "variant": 0,
+      "atlas": [
+        12,
+        3
+      ]
+    },
+    {
+      "id": 61,
+      "name": "petalos",
+      "variant": 1,
+      "atlas": [
+        13,
+        3
+      ]
+    },
+    {
+      "id": 62,
+      "name": "petalos",
+      "variant": 2,
+      "atlas": [
+        14,
+        3
+      ]
+    },
+    {
+      "id": 63,
+      "name": "petalos",
+      "variant": 3,
+      "atlas": [
+        15,
+        3
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "name": "piedra",
+      "source_id": 1,
+      "file": "atlases/transicion_piedra_47.png",
+      "columns": 8,
+      "masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        23,
+        27,
+        31,
+        38,
+        39,
+        46,
+        47,
+        55,
+        63,
+        76,
+        77,
+        78,
+        79,
+        95,
+        110,
+        111,
+        127,
+        137,
+        139,
+        141,
+        143,
+        155,
+        159,
+        175,
+        191,
+        205,
+        207,
+        223,
+        239,
+        255
+      ]
+    },
+    {
+      "name": "tierra",
+      "source_id": 2,
+      "file": "atlases/transicion_tierra_47.png",
+      "columns": 8,
+      "masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        23,
+        27,
+        31,
+        38,
+        39,
+        46,
+        47,
+        55,
+        63,
+        76,
+        77,
+        78,
+        79,
+        95,
+        110,
+        111,
+        127,
+        137,
+        139,
+        141,
+        143,
+        155,
+        159,
+        175,
+        191,
+        205,
+        207,
+        223,
+        239,
+        255
+      ]
+    },
+    {
+      "name": "agua",
+      "source_id": 3,
+      "file": "atlases/transicion_agua_47.png",
+      "columns": 8,
+      "masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        23,
+        27,
+        31,
+        38,
+        39,
+        46,
+        47,
+        55,
+        63,
+        76,
+        77,
+        78,
+        79,
+        95,
+        110,
+        111,
+        127,
+        137,
+        139,
+        141,
+        143,
+        155,
+        159,
+        175,
+        191,
+        205,
+        207,
+        223,
+        239,
+        255
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "01_barrio_mercado",
+      "title": "Barrio del Mercado",
+      "file": "maps/01_barrio_mercado.json"
+    },
+    {
+      "id": "02_puerta_canal",
+      "title": "Puerta de la Ciudad y Canal",
+      "file": "maps/02_puerta_canal.json"
+    },
+    {
+      "id": "03_plaza_real",
+      "title": "Plaza Real y Torre de Briar",
+      "file": "maps/03_plaza_real.json"
+    }
+  ]
+}

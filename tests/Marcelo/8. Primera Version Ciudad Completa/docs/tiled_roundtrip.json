@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "unchanged_roundtrip": true,
+  "comparison": {
+    "objects": true,
+    "destinations": true,
+    "collision": true,
+    "residents": true,
+    "boats": true
+  },
+  "objects": 1766,
+  "destinations": 22,
+  "collision_bytes": 1458000,
+  "check_only": true
+}

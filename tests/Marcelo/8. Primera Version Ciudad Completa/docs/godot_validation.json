@@ -1,0 +1,60 @@
+{
+  "bridges_crossed": 7,
+  "engine": "4.5.1-stable (official)",
+  "failures": [],
+  "passed": true,
+  "player_animation": [
+    {
+      "direction": 0,
+      "frames": 8,
+      "mode": "walk",
+      "passed": true
+    },
+    {
+      "direction": 0,
+      "frames": 8,
+      "mode": "run",
+      "passed": true
+    },
+    {
+      "direction": 1,
+      "frames": 8,
+      "mode": "walk",
+      "passed": true
+    },
+    {
+      "direction": 1,
+      "frames": 8,
+      "mode": "run",
+      "passed": true
+    },
+    {
+      "direction": 2,
+      "frames": 8,
+      "mode": "walk",
+      "passed": true
+    },
+    {
+      "direction": 2,
+      "frames": 8,
+      "mode": "run",
+      "passed": true
+    },
+    {
+      "direction": 3,
+      "frames": 8,
+      "mode": "walk",
+      "passed": true
+    },
+    {
+      "direction": 3,
+      "frames": 8,
+      "mode": "run",
+      "passed": true
+    }
+  ],
+  "pois_visited": 22,
+  "residents": 388,
+  "residents_moved": 388,
+  "terrain_cells_loaded": 16
+}

@@ -1,0 +1,9 @@
+{
+  "chunk_size": 512,
+  "columns": 19,
+  "rows": 19,
+  "file_pattern": "terrenos/chunks/{x}_{y}.png",
+  "native_scale": 1,
+  "filter": "nearest",
+  "bytes": 158207730
+}

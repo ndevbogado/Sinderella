@@ -1,0 +1,10 @@
+{
+  "revision": "B.1.2",
+  "modules": 77,
+  "materials": 16,
+  "legacy_transitions": 141,
+  "diagonal_transitions": 48,
+  "native_dimensions_match_catalog": true,
+  "mismatches": [],
+  "passed": true
+}

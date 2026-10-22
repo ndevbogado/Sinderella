@@ -1,0 +1,271 @@
+{
+  "runtime": "Production HTML game engine running in Node.js with native canvas",
+  "browser_ui_tested": false,
+  "visits": [
+    {
+      "id": "castillo",
+      "passed": true
+    },
+    {
+      "id": "catedral",
+      "passed": true
+    },
+    {
+      "id": "mando",
+      "passed": true
+    },
+    {
+      "id": "universidad",
+      "passed": true
+    },
+    {
+      "id": "biblioteca",
+      "passed": true
+    },
+    {
+      "id": "pregones",
+      "passed": true
+    },
+    {
+      "id": "mercado",
+      "passed": true
+    },
+    {
+      "id": "fuente",
+      "passed": true
+    },
+    {
+      "id": "puente_1",
+      "passed": true
+    },
+    {
+      "id": "puente_2",
+      "passed": true
+    },
+    {
+      "id": "puente_3",
+      "passed": true
+    },
+    {
+      "id": "puente_4",
+      "passed": true
+    },
+    {
+      "id": "puente_5",
+      "passed": true
+    },
+    {
+      "id": "puente_6",
+      "passed": true
+    },
+    {
+      "id": "puente_7",
+      "passed": true
+    },
+    {
+      "id": "puerta_norte",
+      "passed": true
+    },
+    {
+      "id": "puerta_este",
+      "passed": true
+    },
+    {
+      "id": "puerta_sur",
+      "passed": true
+    },
+    {
+      "id": "puerta_oeste",
+      "passed": true
+    },
+    {
+      "id": "muelles",
+      "passed": true
+    },
+    {
+      "id": "bosque",
+      "passed": true
+    },
+    {
+      "id": "herreria",
+      "passed": true
+    }
+  ],
+  "bridges": [
+    {
+      "id": "puente_1",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_1",
+      "reverse": true,
+      "passed": true
+    },
+    {
+      "id": "puente_2",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_2",
+      "reverse": true,
+      "passed": true
+    },
+    {
+      "id": "puente_3",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_3",
+      "reverse": true,
+      "passed": true
+    },
+    {
+      "id": "puente_4",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_4",
+      "reverse": true,
+      "passed": true
+    },
+    {
+      "id": "puente_5",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_5",
+      "reverse": true,
+      "passed": true
+    },
+    {
+      "id": "puente_6",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_6",
+      "reverse": true,
+      "passed": true
+    },
+    {
+      "id": "puente_7",
+      "reverse": false,
+      "passed": true
+    },
+    {
+      "id": "puente_7",
+      "reverse": true,
+      "passed": true
+    }
+  ],
+  "gates": [
+    {
+      "id": "norte",
+      "sign": -1,
+      "passed": true
+    },
+    {
+      "id": "norte",
+      "sign": 1,
+      "passed": true
+    },
+    {
+      "id": "este",
+      "sign": -1,
+      "passed": true
+    },
+    {
+      "id": "este",
+      "sign": 1,
+      "passed": true
+    },
+    {
+      "id": "sur",
+      "sign": -1,
+      "passed": true
+    },
+    {
+      "id": "sur",
+      "sign": 1,
+      "passed": true
+    },
+    {
+      "id": "oeste",
+      "sign": -1,
+      "passed": true
+    },
+    {
+      "id": "oeste",
+      "sign": 1,
+      "passed": true
+    }
+  ],
+  "docks": [
+    {
+      "x": 4304,
+      "y": 6904,
+      "passed": true
+    },
+    {
+      "x": 5328,
+      "y": 6992,
+      "passed": true
+    }
+  ],
+  "animation": [
+    {
+      "dir": 0,
+      "running": false,
+      "passed": true
+    },
+    {
+      "dir": 0,
+      "running": true,
+      "passed": true
+    },
+    {
+      "dir": 1,
+      "running": false,
+      "passed": true
+    },
+    {
+      "dir": 1,
+      "running": true,
+      "passed": true
+    },
+    {
+      "dir": 2,
+      "running": false,
+      "passed": true
+    },
+    {
+      "dir": 2,
+      "running": true,
+      "passed": true
+    },
+    {
+      "dir": 3,
+      "running": false,
+      "passed": true
+    },
+    {
+      "dir": 3,
+      "running": true,
+      "passed": true
+    }
+  ],
+  "activity": {
+    "total": 388,
+    "moved": 385,
+    "blocked": []
+  },
+  "solidWater": true,
+  "cache_bounded": true,
+  "errors": [],
+  "passed": true
+}

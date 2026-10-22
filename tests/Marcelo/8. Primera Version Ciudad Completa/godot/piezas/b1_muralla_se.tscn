@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/b1_muralla_se.png" id="1_q0nef"]
+
+[node name="b1_muralla_se" type="Node2D" groups=["briar_objeto"]]
+y_sort_enabled = true
+metadata/_edit_group_ = true
+metadata/asset_id = "b1_muralla_se"
+metadata/nombre = "Muralla diagonal descendente · estilo original"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+position = Vector2(0, -256)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(-128, -160)
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 416)
+
+[node name="Profundidad_032" type="Sprite2D" parent="."]
+position = Vector2(0, -224)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(-96, -192)
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 416)
+
+[node name="Profundidad_064" type="Sprite2D" parent="."]
+position = Vector2(0, -192)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(-64, -224)
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 416)
+
+[node name="Profundidad_096" type="Sprite2D" parent="."]
+position = Vector2(0, -160)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(-32, -256)
+region_enabled = true
+region_rect = Rect2(96, 0, 32, 416)
+
+[node name="Profundidad_128" type="Sprite2D" parent="."]
+position = Vector2(0, -128)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(0, -288)
+region_enabled = true
+region_rect = Rect2(128, 0, 32, 416)
+
+[node name="Profundidad_160" type="Sprite2D" parent="."]
+position = Vector2(0, -96)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(32, -320)
+region_enabled = true
+region_rect = Rect2(160, 0, 32, 416)
+
+[node name="Profundidad_192" type="Sprite2D" parent="."]
+position = Vector2(0, -64)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(64, -352)
+region_enabled = true
+region_rect = Rect2(192, 0, 32, 416)
+
+[node name="Profundidad_224" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("1_q0nef")
+centered = false
+offset = Vector2(96, -384)
+region_enabled = true
+region_rect = Rect2(224, 0, 32, 416)

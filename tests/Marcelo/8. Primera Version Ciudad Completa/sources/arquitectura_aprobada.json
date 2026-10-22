@@ -1,0 +1,2441 @@
+{
+  "revision": 2,
+  "purpose": "Revisión artística independiente. No integrada en Godot.",
+  "viewport": [
+    960,
+    540
+  ],
+  "tile_size": 32,
+  "character": {
+    "file": "context/elias_64.png",
+    "cell": [
+      64,
+      64
+    ],
+    "idle_frame": 16,
+    "visible_height": 58
+  },
+  "street_angles_degrees": [
+    0,
+    45,
+    90,
+    135
+  ],
+  "assets": [
+    {
+      "id": "casa",
+      "label": "Vivienda de piedra y roble",
+      "door_clearance_px": 82,
+      "group": "edificaciones",
+      "orientation": "cardinal",
+      "source": "sources/casas_cardinales.png",
+      "source_component": 2,
+      "file": "assets/casa.png",
+      "width": 368,
+      "height": 360,
+      "content_rect": [
+        6,
+        4,
+        355,
+        352
+      ],
+      "anchor": [
+        184,
+        356
+      ],
+      "unique": false,
+      "foundation_root_overlay": "sotobosque_09",
+      "ground_footprint": [
+        [
+          20,
+          270
+        ],
+        [
+          348,
+          270
+        ],
+        [
+          348,
+          352
+        ],
+        [
+          20,
+          352
+        ]
+      ],
+      "door_anchor": [
+        224,
+        338
+      ]
+    },
+    {
+      "id": "panaderia",
+      "label": "Panadería",
+      "door_clearance_px": 95,
+      "group": "edificaciones",
+      "orientation": "cardinal",
+      "source": "sources/casas_cardinales.png",
+      "source_component": 1,
+      "file": "assets/panaderia.png",
+      "width": 400,
+      "height": 392,
+      "content_rect": [
+        5,
+        4,
+        390,
+        384
+      ],
+      "anchor": [
+        200,
+        388
+      ],
+      "unique": false,
+      "foundation_root_overlay": "sotobosque_09",
+      "ground_footprint": [
+        [
+          20,
+          302
+        ],
+        [
+          380,
+          302
+        ],
+        [
+          380,
+          384
+        ],
+        [
+          20,
+          384
+        ]
+      ],
+      "door_anchor": [
+        172,
+        370
+      ]
+    },
+    {
+      "id": "herreria",
+      "label": "Herrería",
+      "door_clearance_px": 94,
+      "group": "edificaciones",
+      "orientation": "cardinal",
+      "source": "sources/casas_cardinales.png",
+      "source_component": 3,
+      "file": "assets/herreria.png",
+      "width": 448,
+      "height": 392,
+      "content_rect": [
+        6,
+        4,
+        436,
+        384
+      ],
+      "anchor": [
+        224,
+        388
+      ],
+      "unique": false,
+      "foundation_root_overlay": "sotobosque_09",
+      "ground_footprint": [
+        [
+          20,
+          302
+        ],
+        [
+          428,
+          302
+        ],
+        [
+          428,
+          384
+        ],
+        [
+          20,
+          384
+        ]
+      ],
+      "door_anchor": [
+        314,
+        370
+      ]
+    },
+    {
+      "id": "posada",
+      "label": "Posada",
+      "door_clearance_px": 94,
+      "group": "edificaciones",
+      "orientation": "cardinal",
+      "source": "sources/casas_cardinales.png",
+      "source_component": 7,
+      "file": "assets/posada.png",
+      "width": 520,
+      "height": 472,
+      "content_rect": [
+        6,
+        4,
+        507,
+        464
+      ],
+      "anchor": [
+        260,
+        468
+      ],
+      "unique": false,
+      "foundation_root_overlay": "sotobosque_09",
+      "ground_footprint": [
+        [
+          20,
+          382
+        ],
+        [
+          500,
+          382
+        ],
+        [
+          500,
+          464
+        ],
+        [
+          20,
+          464
+        ]
+      ],
+      "door_anchor": [
+        312,
+        450
+      ]
+    },
+    {
+      "id": "herbolario",
+      "label": "Herbolario",
+      "door_clearance_px": 84,
+      "group": "edificaciones",
+      "orientation": "cardinal",
+      "source": "sources/casas_cardinales.png",
+      "source_component": 8,
+      "file": "assets/herbolario.png",
+      "width": 376,
+      "height": 360,
+      "content_rect": [
+        4,
+        4,
+        367,
+        352
+      ],
+      "anchor": [
+        188,
+        356
+      ],
+      "unique": false,
+      "foundation_root_overlay": "sotobosque_09",
+      "ground_footprint": [
+        [
+          20,
+          270
+        ],
+        [
+          356,
+          270
+        ],
+        [
+          356,
+          352
+        ],
+        [
+          20,
+          352
+        ]
+      ],
+      "door_anchor": [
+        162,
+        338
+      ]
+    },
+    {
+      "id": "almacen",
+      "label": "Almacén fluvial",
+      "door_clearance_px": 82,
+      "group": "edificaciones",
+      "orientation": "cardinal",
+      "source": "sources/casas_cardinales.png",
+      "source_component": 9,
+      "file": "assets/almacen.png",
+      "width": 480,
+      "height": 360,
+      "content_rect": [
+        6,
+        4,
+        468,
+        352
+      ],
+      "anchor": [
+        240,
+        356
+      ],
+      "unique": false,
+      "foundation_root_overlay": "sotobosque_09",
+      "ground_footprint": [
+        [
+          20,
+          270
+        ],
+        [
+          460,
+          270
+        ],
+        [
+          460,
+          352
+        ],
+        [
+          20,
+          352
+        ]
+      ],
+      "door_anchor": [
+        269,
+        338
+      ]
+    },
+    {
+      "id": "casa_45",
+      "label": "Vivienda diagonal",
+      "door_clearance_px": 80,
+      "group": "edificaciones",
+      "orientation": "diagonal_45",
+      "projection": {
+        "method": "authored diagonal camera",
+        "export": "uniform scale; integer rounding below 0.5 px",
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "source": "sources/casas_diagonales_r02.png",
+      "source_component": 1,
+      "file": "assets/casa_45.png",
+      "width": 392,
+      "height": 424,
+      "content_rect": [
+        6,
+        4,
+        380,
+        416
+      ],
+      "anchor": [
+        196,
+        420
+      ],
+      "unique": false,
+      "ground_footprint": [
+        [
+          196,
+          420
+        ],
+        [
+          27,
+          334
+        ],
+        [
+          196,
+          248
+        ],
+        [
+          365,
+          334
+        ]
+      ],
+      "door_anchor": [
+        103,
+        373
+      ]
+    },
+    {
+      "id": "panaderia_45",
+      "label": "Panadería diagonal",
+      "door_clearance_px": 84,
+      "group": "edificaciones",
+      "orientation": "diagonal_45",
+      "projection": {
+        "method": "authored diagonal camera",
+        "export": "uniform scale; integer rounding below 0.5 px",
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "source": "sources/casas_diagonales_r02.png",
+      "source_component": 2,
+      "file": "assets/panaderia_45.png",
+      "width": 392,
+      "height": 424,
+      "content_rect": [
+        4,
+        4,
+        384,
+        416
+      ],
+      "anchor": [
+        196,
+        420
+      ],
+      "unique": false,
+      "ground_footprint": [
+        [
+          196,
+          420
+        ],
+        [
+          27,
+          334
+        ],
+        [
+          196,
+          248
+        ],
+        [
+          365,
+          334
+        ]
+      ],
+      "door_anchor": [
+        103,
+        373
+      ]
+    },
+    {
+      "id": "libreria_45",
+      "label": "Librería diagonal",
+      "door_clearance_px": 99,
+      "group": "edificaciones",
+      "orientation": "diagonal_45",
+      "projection": {
+        "method": "authored diagonal camera",
+        "export": "uniform scale; integer rounding below 0.5 px",
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "source": "sources/casas_diagonales_r02.png",
+      "source_component": 3,
+      "file": "assets/libreria_45.png",
+      "width": 408,
+      "height": 424,
+      "content_rect": [
+        7,
+        4,
+        394,
+        416
+      ],
+      "anchor": [
+        204,
+        420
+      ],
+      "unique": false,
+      "ground_footprint": [
+        [
+          204,
+          420
+        ],
+        [
+          29,
+          330
+        ],
+        [
+          204,
+          240
+        ],
+        [
+          379,
+          330
+        ]
+      ],
+      "door_anchor": [
+        108,
+        370
+      ]
+    },
+    {
+      "id": "herreria_45",
+      "label": "Herrería diagonal",
+      "door_clearance_px": 94,
+      "group": "edificaciones",
+      "orientation": "diagonal_45",
+      "projection": {
+        "method": "authored diagonal camera",
+        "export": "uniform scale; integer rounding below 0.5 px",
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "source": "sources/casas_diagonales_r02.png",
+      "source_component": 4,
+      "file": "assets/herreria_45.png",
+      "width": 408,
+      "height": 424,
+      "content_rect": [
+        4,
+        4,
+        400,
+        416
+      ],
+      "anchor": [
+        204,
+        420
+      ],
+      "unique": false,
+      "ground_footprint": [
+        [
+          204,
+          420
+        ],
+        [
+          29,
+          330
+        ],
+        [
+          204,
+          240
+        ],
+        [
+          379,
+          330
+        ]
+      ],
+      "door_anchor": [
+        108,
+        370
+      ]
+    },
+    {
+      "id": "castillo",
+      "label": "Castillo y Torre de Briar",
+      "group": "monumentos",
+      "orientation": "cardinal",
+      "unique": true,
+      "max_instances": 1,
+      "door_clearance_px": 112,
+      "source": "sources/castillo.png",
+      "source_component": 1,
+      "file": "assets/castillo.png",
+      "width": 1240,
+      "height": 1256,
+      "content_rect": [
+        6,
+        4,
+        1227,
+        1248
+      ],
+      "anchor": [
+        620,
+        1252
+      ]
+    },
+    {
+      "id": "catedral",
+      "label": "Catedral de Briar",
+      "group": "monumentos",
+      "orientation": "cardinal",
+      "unique": true,
+      "max_instances": 1,
+      "door_clearance_px": 106,
+      "source": "sources/catedral.png",
+      "source_component": 1,
+      "file": "assets/catedral.png",
+      "width": 792,
+      "height": 1160,
+      "content_rect": [
+        5,
+        4,
+        782,
+        1152
+      ],
+      "anchor": [
+        396,
+        1156
+      ]
+    },
+    {
+      "id": "mando",
+      "label": "Centro de Mando del Ejército",
+      "group": "monumentos",
+      "orientation": "cardinal",
+      "unique": true,
+      "max_instances": 1,
+      "door_clearance_px": 100,
+      "source": "sources/mando.png",
+      "source_component": 1,
+      "file": "assets/mando.png",
+      "width": 1424,
+      "height": 904,
+      "content_rect": [
+        6,
+        4,
+        1412,
+        896
+      ],
+      "anchor": [
+        712,
+        900
+      ]
+    },
+    {
+      "id": "universidad",
+      "label": "Universidad de Briar",
+      "group": "monumentos",
+      "orientation": "cardinal",
+      "unique": true,
+      "max_instances": 1,
+      "door_clearance_px": 94,
+      "source": "sources/universidad.png",
+      "source_component": 1,
+      "file": "assets/universidad.png",
+      "width": 1512,
+      "height": 968,
+      "content_rect": [
+        6,
+        4,
+        1499,
+        960
+      ],
+      "anchor": [
+        756,
+        964
+      ]
+    },
+    {
+      "id": "arbol_01",
+      "label": "Roble antiguo",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 2,
+      "file": "assets/arbol_01.png",
+      "width": 592,
+      "height": 520,
+      "content_rect": [
+        7,
+        4,
+        578,
+        512
+      ],
+      "anchor": [
+        296,
+        516
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          296,
+          516
+        ],
+        "radius": 41
+      }
+    },
+    {
+      "id": "arbol_02",
+      "label": "Haya alta",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 1,
+      "file": "assets/arbol_02.png",
+      "width": 432,
+      "height": 552,
+      "content_rect": [
+        7,
+        4,
+        418,
+        544
+      ],
+      "anchor": [
+        216,
+        548
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          216,
+          548
+        ],
+        "radius": 30
+      }
+    },
+    {
+      "id": "arbol_03",
+      "label": "Arce abierto",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 4,
+      "file": "assets/arbol_03.png",
+      "width": 376,
+      "height": 424,
+      "content_rect": [
+        5,
+        4,
+        365,
+        416
+      ],
+      "anchor": [
+        188,
+        420
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          188,
+          420
+        ],
+        "radius": 26
+      }
+    },
+    {
+      "id": "arbol_04",
+      "label": "Roble inclinado",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 3,
+      "file": "assets/arbol_04.png",
+      "width": 512,
+      "height": 488,
+      "content_rect": [
+        7,
+        4,
+        497,
+        480
+      ],
+      "anchor": [
+        256,
+        484
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          256,
+          484
+        ],
+        "radius": 36
+      }
+    },
+    {
+      "id": "arbol_05",
+      "label": "Abeto",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 60,
+      "file": "assets/arbol_05.png",
+      "width": 472,
+      "height": 584,
+      "content_rect": [
+        5,
+        4,
+        461,
+        576
+      ],
+      "anchor": [
+        236,
+        580
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          236,
+          580
+        ],
+        "radius": 33
+      }
+    },
+    {
+      "id": "arbol_06",
+      "label": "Pino irregular",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 61,
+      "file": "assets/arbol_06.png",
+      "width": 520,
+      "height": 552,
+      "content_rect": [
+        4,
+        4,
+        511,
+        544
+      ],
+      "anchor": [
+        260,
+        548
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          260,
+          548
+        ],
+        "radius": 36
+      }
+    },
+    {
+      "id": "arbol_07",
+      "label": "Abedules gemelos",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 62,
+      "file": "assets/arbol_07.png",
+      "width": 368,
+      "height": 392,
+      "content_rect": [
+        4,
+        4,
+        359,
+        384
+      ],
+      "anchor": [
+        184,
+        388
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          184,
+          388
+        ],
+        "radius": 26
+      }
+    },
+    {
+      "id": "arbol_08",
+      "label": "Abedul alto",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 59,
+      "file": "assets/arbol_08.png",
+      "width": 448,
+      "height": 456,
+      "content_rect": [
+        4,
+        4,
+        439,
+        448
+      ],
+      "anchor": [
+        224,
+        452
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          224,
+          452
+        ],
+        "radius": 31
+      }
+    },
+    {
+      "id": "arbol_09",
+      "label": "Sauce",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 152,
+      "file": "assets/arbol_09.png",
+      "width": 544,
+      "height": 440,
+      "content_rect": [
+        6,
+        4,
+        532,
+        432
+      ],
+      "anchor": [
+        272,
+        436
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          272,
+          436
+        ],
+        "radius": 38
+      }
+    },
+    {
+      "id": "arbol_10",
+      "label": "Carpe",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 155,
+      "file": "assets/arbol_10.png",
+      "width": 328,
+      "height": 328,
+      "content_rect": [
+        4,
+        4,
+        319,
+        320
+      ],
+      "anchor": [
+        164,
+        324
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          164,
+          324
+        ],
+        "radius": 23
+      }
+    },
+    {
+      "id": "arbol_11",
+      "label": "Árbol de brezo",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 154,
+      "file": "assets/arbol_11.png",
+      "width": 528,
+      "height": 456,
+      "content_rect": [
+        7,
+        4,
+        513,
+        448
+      ],
+      "anchor": [
+        264,
+        452
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          264,
+          452
+        ],
+        "radius": 37
+      }
+    },
+    {
+      "id": "arbol_12",
+      "label": "Roble joven",
+      "group": "arboles",
+      "source": "sources/arboles.png",
+      "source_component": 153,
+      "file": "assets/arbol_12.png",
+      "width": 336,
+      "height": 360,
+      "content_rect": [
+        7,
+        4,
+        322,
+        352
+      ],
+      "anchor": [
+        168,
+        356
+      ],
+      "unique": false,
+      "trunk_footprint": {
+        "center": [
+          168,
+          356
+        ],
+        "radius": 24
+      }
+    },
+    {
+      "id": "sotobosque_01",
+      "label": "Helechos",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 2,
+      "file": "assets/sotobosque_01.png",
+      "width": 88,
+      "height": 56,
+      "content_rect": [
+        6,
+        4,
+        75,
+        48
+      ],
+      "anchor": [
+        44,
+        52
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_02",
+      "label": "Zarza de bayas",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 4,
+      "file": "assets/sotobosque_02.png",
+      "width": 104,
+      "height": 72,
+      "content_rect": [
+        5,
+        4,
+        93,
+        64
+      ],
+      "anchor": [
+        52,
+        68
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_03",
+      "label": "Hierbas y flores",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 3,
+      "file": "assets/sotobosque_03.png",
+      "width": 80,
+      "height": 56,
+      "content_rect": [
+        7,
+        4,
+        65,
+        48
+      ],
+      "anchor": [
+        40,
+        52
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_04",
+      "label": "Brote joven",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 1,
+      "file": "assets/sotobosque_04.png",
+      "width": 120,
+      "height": 152,
+      "content_rect": [
+        6,
+        4,
+        107,
+        144
+      ],
+      "anchor": [
+        60,
+        148
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_05",
+      "label": "Tronco caído",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 21,
+      "file": "assets/sotobosque_05.png",
+      "width": 208,
+      "height": 72,
+      "content_rect": [
+        5,
+        4,
+        197,
+        64
+      ],
+      "anchor": [
+        104,
+        68
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_06",
+      "label": "Tronco diagonal",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 18,
+      "file": "assets/sotobosque_06.png",
+      "width": 144,
+      "height": 136,
+      "content_rect": [
+        6,
+        4,
+        132,
+        128
+      ],
+      "anchor": [
+        72,
+        132
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_07",
+      "label": "Tocón con raíces",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 19,
+      "file": "assets/sotobosque_07.png",
+      "width": 120,
+      "height": 88,
+      "content_rect": [
+        6,
+        4,
+        107,
+        80
+      ],
+      "anchor": [
+        60,
+        84
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_08",
+      "label": "Rocas con musgo",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 20,
+      "file": "assets/sotobosque_08.png",
+      "width": 120,
+      "height": 88,
+      "content_rect": [
+        6,
+        4,
+        107,
+        80
+      ],
+      "anchor": [
+        60,
+        84
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_09",
+      "label": "Raíz horizontal",
+      "group": "raices",
+      "source": "sources/sotobosque.png",
+      "source_component": 30,
+      "file": "assets/sotobosque_09.png",
+      "width": 160,
+      "height": 72,
+      "content_rect": [
+        6,
+        4,
+        147,
+        64
+      ],
+      "anchor": [
+        80,
+        68
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_10",
+      "label": "Raíz de esquina",
+      "group": "raices",
+      "source": "sources/sotobosque.png",
+      "source_component": 25,
+      "file": "assets/sotobosque_10.png",
+      "width": 128,
+      "height": 104,
+      "content_rect": [
+        4,
+        4,
+        120,
+        96
+      ],
+      "anchor": [
+        64,
+        100
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_11",
+      "label": "Avellano bajo",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 27,
+      "file": "assets/sotobosque_11.png",
+      "width": 128,
+      "height": 96,
+      "content_rect": [
+        5,
+        4,
+        118,
+        88
+      ],
+      "anchor": [
+        64,
+        92
+      ],
+      "unique": false
+    },
+    {
+      "id": "sotobosque_12",
+      "label": "Juncos",
+      "group": "sotobosque",
+      "source": "sources/sotobosque.png",
+      "source_component": 26,
+      "file": "assets/sotobosque_12.png",
+      "width": 120,
+      "height": 104,
+      "content_rect": [
+        5,
+        4,
+        110,
+        96
+      ],
+      "anchor": [
+        60,
+        100
+      ],
+      "unique": false
+    },
+    {
+      "id": "puesto_frutas",
+      "label": "Puesto de frutas",
+      "group": "contexto_existente",
+      "file": "context/puesto_frutas.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        2,
+        6,
+        124,
+        120
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            17,
+            88
+          ],
+          [
+            111,
+            88
+          ],
+          [
+            111,
+            124
+          ],
+          [
+            17,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        0,
+        0,
+        320,
+        327
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "puesto_libros",
+      "label": "Puesto de libros y telas",
+      "group": "contexto_existente",
+      "file": "context/puesto_libros.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        5,
+        2,
+        118,
+        124
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            19,
+            87
+          ],
+          [
+            109,
+            87
+          ],
+          [
+            109,
+            124
+          ],
+          [
+            19,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        328,
+        0,
+        300,
+        327
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "farola",
+      "label": "Farola",
+      "group": "contexto_existente",
+      "file": "context/farola.png",
+      "width": 64,
+      "height": 128,
+      "content_rect": [
+        11,
+        18,
+        41,
+        108
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            27,
+            92
+          ],
+          [
+            37,
+            92
+          ],
+          [
+            37,
+            124
+          ],
+          [
+            27,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        44,
+        667,
+        228,
+        338
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "banco",
+      "label": "Banco",
+      "group": "contexto_existente",
+      "file": "context/banco.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        3,
+        92,
+        59
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            42
+          ],
+          [
+            83,
+            42
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        940,
+        760,
+        314,
+        207
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "jardinera",
+      "label": "Jardinera de rosas",
+      "group": "contexto_existente",
+      "file": "context/jardinera.png",
+      "width": 96,
+      "height": 64,
+      "content_rect": [
+        2,
+        2,
+        92,
+        60
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            13,
+            42
+          ],
+          [
+            83,
+            42
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            13,
+            60
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        630,
+        365,
+        305,
+        282
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "carro",
+      "label": "Carro de reparto",
+      "group": "contexto_existente",
+      "file": "context/carro.png",
+      "width": 128,
+      "height": 96,
+      "content_rect": [
+        3,
+        2,
+        122,
+        92
+      ],
+      "anchor": [
+        64,
+        96
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            18,
+            64
+          ],
+          [
+            110,
+            64
+          ],
+          [
+            110,
+            92
+          ],
+          [
+            18,
+            92
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        630,
+        0,
+        305,
+        327
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "fuente",
+      "label": "Fuente de la Rosa",
+      "group": "contexto_existente",
+      "file": "context/fuente.png",
+      "width": 128,
+      "height": 128,
+      "content_rect": [
+        2,
+        2,
+        124,
+        124
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            17,
+            87
+          ],
+          [
+            111,
+            87
+          ],
+          [
+            111,
+            124
+          ],
+          [
+            17,
+            124
+          ]
+        ]
+      ],
+      "source_sheet": "sources/decoracion.png",
+      "source_rect": [
+        938,
+        0,
+        316,
+        327
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "muralla_repetible_h",
+      "label": "Muralla / tramo repetible",
+      "group": "contexto_existente",
+      "file": "context/muralla_repetible_h.png",
+      "width": 64,
+      "height": 128,
+      "content_rect": [
+        0,
+        0,
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "ground": false,
+      "solid": true,
+      "collision_polygons": [
+        [
+          [
+            8,
+            75
+          ],
+          [
+            56,
+            75
+          ],
+          [
+            56,
+            126
+          ],
+          [
+            8,
+            126
+          ]
+        ]
+      ],
+      "source_sheet": "sources/defensas.png",
+      "source_rect": [
+        267,
+        199,
+        118,
+        246
+      ],
+      "new_asset": false
+    },
+    {
+      "id": "biblioteca",
+      "label": "Gran Biblioteca",
+      "group": "contexto_existente",
+      "file": "context/biblioteca.png",
+      "width": 512,
+      "height": 576,
+      "anchor": [
+        256,
+        576
+      ],
+      "content_rect": [
+        29,
+        2,
+        454,
+        572
+      ],
+      "solid": true,
+      "ground": false,
+      "collision_polygons": [
+        [
+          [
+            83.47999999999999,
+            415.84
+          ],
+          [
+            428.52,
+            415.84
+          ],
+          [
+            428.52,
+            572
+          ],
+          [
+            83.47999999999999,
+            572
+          ]
+        ]
+      ],
+      "new_asset": false
+    }
+  ],
+  "bridges": [
+    {
+      "id": "puente_piedra_ne",
+      "label": "Puente de piedra · SO–NE",
+      "material": "piedra",
+      "direction": "ne",
+      "screen_angle_deg": -45,
+      "logical_parts": 3,
+      "repeat_part": "tramo",
+      "span_step": [
+        128,
+        -128
+      ],
+      "cap_steps": [
+        144,
+        112
+      ],
+      "deck_normal_width_px": 60,
+      "walkable_normal_width_px": 48,
+      "assembly": "acceso_a + tramo × n + acceso_b",
+      "source": "sources/puentes_45_r02.png",
+      "source_component": 2,
+      "projection": {
+        "method": "authored diagonal camera",
+        "uniform_scale": 0.810207336523126,
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "parts": [
+        {
+          "part": "acceso_a",
+          "file": "assets/puente_piedra_ne_acceso_a.png",
+          "foreground": "assets/puente_piedra_ne_acceso_a_frente.png",
+          "width": 235,
+          "height": 215,
+          "anchor": [
+            39,
+            179
+          ],
+          "start": [
+            39,
+            179
+          ],
+          "end": [
+            183,
+            35
+          ],
+          "step": [
+            144,
+            -144
+          ],
+          "walkable_polygon": [
+            [
+              22,
+              162
+            ],
+            [
+              166,
+              18
+            ],
+            [
+              200,
+              52
+            ],
+            [
+              56,
+              196
+            ]
+          ],
+          "source_crop": [
+            29,
+            281,
+            235,
+            215
+          ],
+          "source_interval": [
+            null,
+            144
+          ]
+        },
+        {
+          "part": "tramo",
+          "file": "assets/puente_piedra_ne_tramo.png",
+          "foreground": "assets/puente_piedra_ne_tramo_frente.png",
+          "width": 215,
+          "height": 216,
+          "anchor": [
+            35,
+            163
+          ],
+          "start": [
+            35,
+            163
+          ],
+          "end": [
+            163,
+            35
+          ],
+          "step": [
+            128,
+            -128
+          ],
+          "walkable_polygon": [
+            [
+              18,
+              146
+            ],
+            [
+              146,
+              18
+            ],
+            [
+              180,
+              52
+            ],
+            [
+              52,
+              180
+            ]
+          ],
+          "source_crop": [
+            177,
+            153,
+            215,
+            216
+          ],
+          "source_interval": [
+            144,
+            272
+          ]
+        },
+        {
+          "part": "acceso_b",
+          "file": "assets/puente_piedra_ne_acceso_b.png",
+          "foreground": "assets/puente_piedra_ne_acceso_b_frente.png",
+          "width": 191,
+          "height": 206,
+          "anchor": [
+            35,
+            154
+          ],
+          "start": [
+            35,
+            154
+          ],
+          "end": [
+            147,
+            42
+          ],
+          "step": [
+            112,
+            -112
+          ],
+          "walkable_polygon": [
+            [
+              18,
+              137
+            ],
+            [
+              130,
+              25
+            ],
+            [
+              164,
+              59
+            ],
+            [
+              52,
+              171
+            ]
+          ],
+          "source_crop": [
+            305,
+            34,
+            191,
+            206
+          ],
+          "source_interval": [
+            272,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puente_piedra_se",
+      "label": "Puente de piedra · NO–SE",
+      "material": "piedra",
+      "direction": "se",
+      "screen_angle_deg": 45,
+      "logical_parts": 3,
+      "repeat_part": "tramo",
+      "span_step": [
+        128,
+        128
+      ],
+      "cap_steps": [
+        144,
+        112
+      ],
+      "deck_normal_width_px": 60,
+      "walkable_normal_width_px": 48,
+      "assembly": "acceso_a + tramo × n + acceso_b",
+      "source": "sources/puentes_45_r02.png",
+      "source_component": 1,
+      "projection": {
+        "method": "authored diagonal camera",
+        "uniform_scale": 0.810207336523126,
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "parts": [
+        {
+          "part": "acceso_a",
+          "file": "assets/puente_piedra_se_acceso_a.png",
+          "foreground": "assets/puente_piedra_se_acceso_a_frente.png",
+          "width": 232,
+          "height": 226,
+          "anchor": [
+            45,
+            43
+          ],
+          "start": [
+            45,
+            43
+          ],
+          "end": [
+            189,
+            187
+          ],
+          "step": [
+            144,
+            144
+          ],
+          "walkable_polygon": [
+            [
+              62,
+              26
+            ],
+            [
+              206,
+              170
+            ],
+            [
+              172,
+              204
+            ],
+            [
+              28,
+              60
+            ]
+          ],
+          "source_crop": [
+            11,
+            33,
+            232,
+            226
+          ],
+          "source_interval": [
+            null,
+            144
+          ]
+        },
+        {
+          "part": "tramo",
+          "file": "assets/puente_piedra_se_tramo.png",
+          "foreground": "assets/puente_piedra_se_tramo_frente.png",
+          "width": 210,
+          "height": 210,
+          "anchor": [
+            39,
+            43
+          ],
+          "start": [
+            39,
+            43
+          ],
+          "end": [
+            167,
+            171
+          ],
+          "step": [
+            128,
+            128
+          ],
+          "walkable_polygon": [
+            [
+              56,
+              26
+            ],
+            [
+              184,
+              154
+            ],
+            [
+              150,
+              188
+            ],
+            [
+              22,
+              60
+            ]
+          ],
+          "source_crop": [
+            161,
+            177,
+            210,
+            210
+          ],
+          "source_interval": [
+            144,
+            272
+          ]
+        },
+        {
+          "part": "acceso_b",
+          "file": "assets/puente_piedra_se_acceso_b.png",
+          "foreground": "assets/puente_piedra_se_acceso_b_frente.png",
+          "width": 190,
+          "height": 191,
+          "anchor": [
+            38,
+            43
+          ],
+          "start": [
+            38,
+            43
+          ],
+          "end": [
+            150,
+            155
+          ],
+          "step": [
+            112,
+            112
+          ],
+          "walkable_polygon": [
+            [
+              55,
+              26
+            ],
+            [
+              167,
+              138
+            ],
+            [
+              133,
+              172
+            ],
+            [
+              21,
+              60
+            ]
+          ],
+          "source_crop": [
+            290,
+            305,
+            190,
+            191
+          ],
+          "source_interval": [
+            272,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puente_madera_ne",
+      "label": "Puente de madera · SO–NE",
+      "material": "madera",
+      "direction": "ne",
+      "screen_angle_deg": -45,
+      "logical_parts": 3,
+      "repeat_part": "tramo",
+      "span_step": [
+        128,
+        -128
+      ],
+      "cap_steps": [
+        144,
+        112
+      ],
+      "deck_normal_width_px": 60,
+      "walkable_normal_width_px": 48,
+      "assembly": "acceso_a + tramo × n + acceso_b",
+      "source": "sources/puentes_45_r02.png",
+      "source_component": 4,
+      "projection": {
+        "method": "authored diagonal camera",
+        "uniform_scale": 0.810207336523126,
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "parts": [
+        {
+          "part": "acceso_a",
+          "file": "assets/puente_madera_ne_acceso_a.png",
+          "foreground": "assets/puente_madera_ne_acceso_a_frente.png",
+          "width": 236,
+          "height": 217,
+          "anchor": [
+            39,
+            179
+          ],
+          "start": [
+            39,
+            179
+          ],
+          "end": [
+            183,
+            35
+          ],
+          "step": [
+            144,
+            -144
+          ],
+          "walkable_polygon": [
+            [
+              22,
+              162
+            ],
+            [
+              166,
+              18
+            ],
+            [
+              200,
+              52
+            ],
+            [
+              56,
+              196
+            ]
+          ],
+          "source_crop": [
+            29,
+            256,
+            236,
+            217
+          ],
+          "source_interval": [
+            null,
+            144
+          ]
+        },
+        {
+          "part": "tramo",
+          "file": "assets/puente_madera_ne_tramo.png",
+          "foreground": "assets/puente_madera_ne_tramo_frente.png",
+          "width": 217,
+          "height": 217,
+          "anchor": [
+            36,
+            163
+          ],
+          "start": [
+            36,
+            163
+          ],
+          "end": [
+            164,
+            35
+          ],
+          "step": [
+            128,
+            -128
+          ],
+          "walkable_polygon": [
+            [
+              19,
+              146
+            ],
+            [
+              147,
+              18
+            ],
+            [
+              181,
+              52
+            ],
+            [
+              53,
+              180
+            ]
+          ],
+          "source_crop": [
+            176,
+            128,
+            217,
+            217
+          ],
+          "source_interval": [
+            144,
+            272
+          ]
+        },
+        {
+          "part": "acceso_b",
+          "file": "assets/puente_madera_ne_acceso_b.png",
+          "foreground": "assets/puente_madera_ne_acceso_b_frente.png",
+          "width": 193,
+          "height": 207,
+          "anchor": [
+            36,
+            154
+          ],
+          "start": [
+            36,
+            154
+          ],
+          "end": [
+            148,
+            42
+          ],
+          "step": [
+            112,
+            -112
+          ],
+          "walkable_polygon": [
+            [
+              19,
+              137
+            ],
+            [
+              131,
+              25
+            ],
+            [
+              165,
+              59
+            ],
+            [
+              53,
+              171
+            ]
+          ],
+          "source_crop": [
+            304,
+            9,
+            193,
+            207
+          ],
+          "source_interval": [
+            272,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puente_madera_se",
+      "label": "Puente de madera · NO–SE",
+      "material": "madera",
+      "direction": "se",
+      "screen_angle_deg": 45,
+      "logical_parts": 3,
+      "repeat_part": "tramo",
+      "span_step": [
+        128,
+        128
+      ],
+      "cap_steps": [
+        144,
+        112
+      ],
+      "deck_normal_width_px": 60,
+      "walkable_normal_width_px": 48,
+      "assembly": "acceso_a + tramo × n + acceso_b",
+      "source": "sources/puentes_45_r02.png",
+      "source_component": 3,
+      "projection": {
+        "method": "authored diagonal camera",
+        "uniform_scale": 0.810207336523126,
+        "shear": false,
+        "nonuniform_scale": false
+      },
+      "parts": [
+        {
+          "part": "acceso_a",
+          "file": "assets/puente_madera_se_acceso_a.png",
+          "foreground": "assets/puente_madera_se_acceso_a_frente.png",
+          "width": 235,
+          "height": 228,
+          "anchor": [
+            47,
+            43
+          ],
+          "start": [
+            47,
+            43
+          ],
+          "end": [
+            191,
+            187
+          ],
+          "step": [
+            144,
+            144
+          ],
+          "walkable_polygon": [
+            [
+              64,
+              26
+            ],
+            [
+              208,
+              170
+            ],
+            [
+              174,
+              204
+            ],
+            [
+              30,
+              60
+            ]
+          ],
+          "source_crop": [
+            9,
+            8,
+            235,
+            228
+          ],
+          "source_interval": [
+            null,
+            144
+          ]
+        },
+        {
+          "part": "tramo",
+          "file": "assets/puente_madera_se_tramo.png",
+          "foreground": "assets/puente_madera_se_tramo_frente.png",
+          "width": 213,
+          "height": 214,
+          "anchor": [
+            41,
+            44
+          ],
+          "start": [
+            41,
+            44
+          ],
+          "end": [
+            169,
+            172
+          ],
+          "step": [
+            128,
+            128
+          ],
+          "walkable_polygon": [
+            [
+              58,
+              27
+            ],
+            [
+              186,
+              155
+            ],
+            [
+              152,
+              189
+            ],
+            [
+              24,
+              61
+            ]
+          ],
+          "source_crop": [
+            159,
+            151,
+            213,
+            214
+          ],
+          "source_interval": [
+            144,
+            272
+          ]
+        },
+        {
+          "part": "acceso_b",
+          "file": "assets/puente_madera_se_acceso_b.png",
+          "foreground": "assets/puente_madera_se_acceso_b_frente.png",
+          "width": 195,
+          "height": 194,
+          "anchor": [
+            41,
+            44
+          ],
+          "start": [
+            41,
+            44
+          ],
+          "end": [
+            153,
+            156
+          ],
+          "step": [
+            112,
+            112
+          ],
+          "walkable_polygon": [
+            [
+              58,
+              27
+            ],
+            [
+              170,
+              139
+            ],
+            [
+              136,
+              173
+            ],
+            [
+              24,
+              61
+            ]
+          ],
+          "source_crop": [
+            287,
+            279,
+            195,
+            194
+          ],
+          "source_interval": [
+            272,
+            null
+          ]
+        }
+      ]
+    }
+  ],
+  "landmarks_unique": [
+    "castillo",
+    "catedral",
+    "mando",
+    "universidad"
+  ],
+  "terrain": {
+    "materials": [
+      {
+        "name": "Piedra de calle",
+        "file": "context/01_piedra_calle_campo.png"
+      },
+      {
+        "name": "Adoquín irregular",
+        "file": "context/02_adoquin_campo.png"
+      },
+      {
+        "name": "Sendero de tierra",
+        "file": "context/03_sendero_campo.png"
+      },
+      {
+        "name": "Césped",
+        "file": "context/04_cesped_campo.png"
+      },
+      {
+        "name": "Losas de plaza",
+        "file": "context/05_losas_plaza_campo.png"
+      },
+      {
+        "name": "Piedra con musgo",
+        "file": "context/06_piedra_musgo_campo.png"
+      },
+      {
+        "name": "Tierra de jardín",
+        "file": "context/07_tierra_jardin_campo.png"
+      },
+      {
+        "name": "Agua del río",
+        "file": "context/08_agua_campo.png"
+      },
+      {
+        "name": "Grava",
+        "file": "context/09_grava_campo.png"
+      },
+      {
+        "name": "Madera horizontal",
+        "file": "context/10_madera_h_campo.png"
+      },
+      {
+        "name": "Madera vertical",
+        "file": "context/11_madera_v_campo.png"
+      },
+      {
+        "name": "Pizarra",
+        "file": "context/12_pizarra_campo.png"
+      },
+      {
+        "name": "Mosaico verde",
+        "file": "context/13_mosaico_verde_campo.png"
+      },
+      {
+        "name": "Terracota",
+        "file": "context/14_terracota_campo.png"
+      },
+      {
+        "name": "Hierba y tierra",
+        "file": "context/15_hierba_tierra_campo.png"
+      },
+      {
+        "name": "Pétalos sobre piedra",
+        "file": "context/16_petalos_campo.png"
+      },
+      {
+        "name": "Concreto / mortero",
+        "file": "context/17_concreto_campo.png"
+      }
+    ],
+    "water": [
+      "context/rio_profundo_campo.png",
+      "context/rio_medio_campo.png",
+      "context/rio_somero_campo.png",
+      "context/sedimento_humedo_campo.png"
+    ],
+    "coping": "context/bordillo_piedra_campo.png"
+  },
+  "notes": {
+    "scale": "Elías conserva su atlas de 64 px, con figura visible de hasta 58 px. Puertas indicadas como medidas visuales aproximadas.",
+    "footprints": "Polígonos preliminares para revisar colocación. No se han aplicado colisiones ni TileSets al juego.",
+    "diagonals": "Calles y ejes de puentes exactos a ±45°. Edificios y puentes dibujados desde su orientación diagonal; exportación uniforme sin cizalla ni desplazamientos por columnas.",
+    "sources": "Arte creado con image_gen integrado; exportación uniforme y montaje con Node/Sharp. Prompts en sources/prompts.json y sources/prompts_revision02.json.",
+    "preserved_library": "La biblioteca anterior se conserva como contexto; la universidad es un edificio nuevo y distinto."
+  }
+}

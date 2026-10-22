@@ -1,0 +1,246 @@
+{
+  "browser": "134.0.6998.35",
+  "viewport": {
+    "x": 46,
+    "y": 139,
+    "width": 960,
+    "height": 540
+  },
+  "keyboard_delta": 127.98399999999765,
+  "camera_delta": 128,
+  "catalog_counts": {
+    "materials": 17,
+    "piedra": 47,
+    "tierra": 47,
+    "agua": 47,
+    "assets": 71,
+    "diagonals": 48,
+    "characters": 2
+  },
+  "navigation": {
+    "visited": 20,
+    "failed": [],
+    "bridges": [
+      {
+        "id": "puente_1",
+        "passed": true
+      },
+      {
+        "id": "puente_2",
+        "passed": true
+      },
+      {
+        "id": "puente_3",
+        "passed": true
+      },
+      {
+        "id": "puente_4",
+        "passed": true
+      },
+      {
+        "id": "puente_5",
+        "passed": true
+      },
+      {
+        "id": "puente_6",
+        "passed": true
+      },
+      {
+        "id": "puente_7",
+        "passed": true
+      }
+    ],
+    "solids": {
+      "river": true,
+      "wall": true,
+      "octagonal_corner": true
+    },
+    "gates": true,
+    "sideGates": [
+      {
+        "id": "este",
+        "direction": -1,
+        "passed": true
+      },
+      {
+        "id": "este",
+        "direction": 1,
+        "passed": true
+      },
+      {
+        "id": "oeste",
+        "direction": -1,
+        "passed": true
+      },
+      {
+        "id": "oeste",
+        "direction": 1,
+        "passed": true
+      }
+    ],
+    "riverStops": true
+  },
+  "playerAnimation": {
+    "name": "Elías",
+    "dimensions": [
+      1088,
+      256
+    ],
+    "details": [
+      {
+        "direction": "sur",
+        "mode": "walk",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "sur",
+        "mode": "run",
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "oeste",
+        "mode": "walk",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "oeste",
+        "mode": "run",
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "este",
+        "mode": "walk",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "este",
+        "mode": "run",
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "norte",
+        "mode": "walk",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      },
+      {
+        "direction": "norte",
+        "mode": "run",
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "directionCorrect": true,
+        "idleFrame": 16,
+        "passed": true
+      }
+    ],
+    "switchPreservesPhase": true,
+    "blockedIdle": true,
+    "resetPhase": 0,
+    "passed": true
+  },
+  "activity": {
+    "residents": 783,
+    "moved": 769,
+    "boatsMoved": 7,
+    "blockedResidents": []
+  },
+  "rendering": {
+    "mean_frame_ms": 0.17,
+    "cache_chunks": 32
+  },
+  "external_requests": 0,
+  "mobile_no_horizontal_overflow": true,
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "final_atlas": [
+    1088,
+    256
+  ],
+  "viewer_pause_and_step": true,
+  "directions": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "errors": [],
+  "passed": true
+}

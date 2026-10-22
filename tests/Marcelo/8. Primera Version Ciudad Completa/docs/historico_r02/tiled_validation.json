@@ -1,0 +1,15 @@
+{
+  "tmx": "tiled/Briar_Gran_Ciudad.tmx",
+  "version": "R02",
+  "collision_grid": [
+    1800,
+    1823
+  ],
+  "tile_size": 8,
+  "tilesets": 2,
+  "native_ground_images": 841,
+  "object_instances": 3259,
+  "destinations": 20,
+  "xml_parsed": true,
+  "opened_in_tiled": false
+}

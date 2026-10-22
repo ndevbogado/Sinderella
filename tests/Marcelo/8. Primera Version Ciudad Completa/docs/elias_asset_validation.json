@@ -1,0 +1,281 @@
+{
+  "revision": "B.1.5",
+  "method": "complete_drawn_poses_uniform_isotropic_export",
+  "dimensions": [
+    1088,
+    256
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "minimum_height": 49,
+  "maximum_height": 58,
+  "binary_alpha": true,
+  "clipped_frames": [],
+  "directions": [
+    {
+      "direction": "sur",
+      "unique_walk": 8,
+      "unique_run": 8,
+      "distinct_gaits": true
+    },
+    {
+      "direction": "oeste",
+      "unique_walk": 8,
+      "unique_run": 8,
+      "distinct_gaits": true
+    },
+    {
+      "direction": "este",
+      "unique_walk": 8,
+      "unique_run": 8,
+      "distinct_gaits": true
+    },
+    {
+      "direction": "norte",
+      "unique_walk": 8,
+      "unique_run": 8,
+      "distinct_gaits": true
+    }
+  ],
+  "registrations": [
+    {
+      "direction": "sur",
+      "mode": "walk",
+      "uniform_scale": 0.1223175965665236,
+      "source_head_width": 129,
+      "native_head_width": 15.778969957081545,
+      "head_x": 32,
+      "head_tops": [
+        4.122317596566525,
+        4,
+        4,
+        4.122317596566525,
+        4.733905579399142,
+        5.223175965665234,
+        4.978540772532192,
+        4.733905579399142
+      ],
+      "source_height_range": [
+        456,
+        466
+      ]
+    },
+    {
+      "direction": "sur",
+      "mode": "run",
+      "uniform_scale": 0.11864406779661017,
+      "source_head_width": 159,
+      "native_head_width": 18.864406779661017,
+      "head_x": 32,
+      "head_tops": [
+        5.237288135593218,
+        5.355932203389827,
+        5,
+        4.305084745762713,
+        6.542372881355931,
+        6.305084745762713,
+        5.305084745762713,
+        4.305084745762713
+      ],
+      "source_height_range": [
+        410,
+        472
+      ]
+    },
+    {
+      "direction": "sur",
+      "mode": "idle",
+      "uniform_scale": 0.08868501529051988,
+      "source_head_width": 170,
+      "native_head_width": 15.076452599388379,
+      "head_x": 32,
+      "head_tops": [
+        3
+      ],
+      "source_height_range": [
+        654,
+        654
+      ]
+    },
+    {
+      "direction": "oeste",
+      "mode": "walk",
+      "uniform_scale": 0.12808988764044943,
+      "source_head_width": 135,
+      "native_head_width": 17.29213483146067,
+      "head_x": 32,
+      "head_tops": [
+        4.512359550561804,
+        4.512359550561804,
+        4.384269662921355,
+        4.000000000000007,
+        5.537078651685398,
+        5.2808988764045,
+        5.024719101123601,
+        5.024719101123601
+      ],
+      "source_height_range": [
+        433,
+        445
+      ]
+    },
+    {
+      "direction": "oeste",
+      "mode": "run",
+      "uniform_scale": 0.13592233009708737,
+      "source_head_width": 134,
+      "native_head_width": 18.21359223300971,
+      "head_x": 29,
+      "head_tops": [
+        8.533980582524272,
+        8.66990291262136,
+        7.66990291262136,
+        6.66990291262136,
+        5.271844660194176,
+        5.271844660194176,
+        5,
+        6.66990291262136
+      ],
+      "source_height_range": [
+        360,
+        412
+      ]
+    },
+    {
+      "direction": "oeste",
+      "mode": "idle",
+      "uniform_scale": 0.08734939759036145,
+      "source_head_width": 184,
+      "native_head_width": 16.072289156626507,
+      "head_x": 32,
+      "head_tops": [
+        3
+      ],
+      "source_height_range": [
+        664,
+        664
+      ]
+    },
+    {
+      "direction": "este",
+      "mode": "walk",
+      "uniform_scale": 0.12866817155756208,
+      "source_head_width": 132,
+      "native_head_width": 16.984198645598195,
+      "head_x": 32,
+      "head_tops": [
+        4.514672686230249,
+        4,
+        4.514672686230249,
+        4.257336343115121,
+        5.544018058690746,
+        4.514672686230249,
+        4.514672686230249,
+        4.900677200902933
+      ],
+      "source_height_range": [
+        431,
+        443
+      ]
+    },
+    {
+      "direction": "este",
+      "mode": "run",
+      "uniform_scale": 0.13895781637717122,
+      "source_head_width": 132,
+      "native_head_width": 18.342431761786603,
+      "head_x": 35,
+      "head_tops": [
+        5,
+        6.111662531017366,
+        5.250620347394538,
+        4.250620347394538,
+        6.528535980148881,
+        6.250620347394538,
+        5.250620347394538,
+        4.250620347394538
+      ],
+      "source_height_range": [
+        383,
+        403
+      ]
+    },
+    {
+      "direction": "este",
+      "mode": "idle",
+      "uniform_scale": 0.08774583963691376,
+      "source_head_width": 180,
+      "native_head_width": 15.794251134644478,
+      "head_x": 32,
+      "head_tops": [
+        3
+      ],
+      "source_height_range": [
+        661,
+        661
+      ]
+    },
+    {
+      "direction": "norte",
+      "mode": "walk",
+      "uniform_scale": 0.11801242236024845,
+      "source_head_width": 121,
+      "native_head_width": 14.279503105590063,
+      "head_x": 32,
+      "head_tops": [
+        4.826086956521742,
+        4.826086956521742,
+        4.826086956521742,
+        4.70807453416149,
+        4.472049689440993,
+        4,
+        4.944099378881987,
+        4.118012422360245
+      ],
+      "source_height_range": [
+        475,
+        483
+      ]
+    },
+    {
+      "direction": "norte",
+      "mode": "run",
+      "uniform_scale": 0.12043010752688173,
+      "source_head_width": 121,
+      "native_head_width": 14.572043010752688,
+      "head_x": 32,
+      "head_tops": [
+        5.602150537634408,
+        5.602150537634408,
+        4.602150537634408,
+        3.602150537634408,
+        5.120430107526879,
+        5.120430107526879,
+        4.602150537634408,
+        3.602150537634408
+      ],
+      "source_height_range": [
+        418,
+        465
+      ]
+    },
+    {
+      "direction": "norte",
+      "mode": "idle",
+      "uniform_scale": 0.08868501529051988,
+      "source_head_width": 169,
+      "native_head_width": 14.98776758409786,
+      "head_x": 32,
+      "head_tops": [
+        3
+      ],
+      "source_height_range": [
+        654,
+        654
+      ]
+    }
+  ],
+  "passed": true
+}

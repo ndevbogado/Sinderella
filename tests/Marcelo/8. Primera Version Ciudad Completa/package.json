@@ -1,0 +1,23 @@
+{
+  "name": "briar-gran-ciudad",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Briar F.C, meandros y mercados, 10 × 18 pantallas",
+  "scripts": {
+    "layout": "python3 tools/build_fc.py && python3 tools/refine_defenses.py",
+    "terrain": "node tools/bake_terrain.cjs",
+    "render": "node tools/render_city.cjs",
+    "web": "node tools/build_web.cjs",
+    "tiled": "python3 tools/export_tiled.py",
+    "check:tiled": "python3 tools/import_tiled.py --check",
+    "test:web": "node tools/test_engine_fc.cjs",
+    "preview:elias": "node tools/preview_elias.cjs",
+    "build": "npm run terrain && npm run render && npm run tiled && npm run web",
+    "test:engine": "node tools/test_engine_fc.cjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.4",
+    "@napi-rs/canvas": "0.1.100",
+    "playwright": "1.62.1"
+  }
+}

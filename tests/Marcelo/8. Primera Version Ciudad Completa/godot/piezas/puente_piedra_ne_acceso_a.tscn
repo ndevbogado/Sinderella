@@ -1,0 +1,119 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/puente_piedra_ne_acceso_a.png" id="1_1ds8s"]
+[ext_resource type="Texture2D" path="res://assets/aprobados/puente_piedra_ne_acceso_a_frente.png" id="2_hjs3x"]
+
+[node name="puente_piedra_ne_acceso_a" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "puente_piedra_ne_acceso_a"
+metadata/nombre = "Puente de piedra · SO–NE · acceso_a"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_1ds8s")
+centered = false
+offset = Vector2(-39, -179)
+region_enabled = true
+region_rect = Rect2(0, 0, 235, 215)
+
+[node name="Baranda_delantera" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("2_hjs3x")
+centered = false
+offset = Vector2(-39, -179)
+
+[node name="Paso_sobre_agua" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+monitoring = false
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(128, -160, 136, -160, 136, -152, 128, -152)
+
+[node name="Forma_001" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(120, -152, 144, -152, 144, -144, 120, -144)
+
+[node name="Forma_002" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(112, -144, 152, -144, 152, -136, 112, -136)
+
+[node name="Forma_003" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(104, -136, 160, -136, 160, -128, 104, -128)
+
+[node name="Forma_004" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(96, -128, 168, -128, 168, -120, 96, -120)
+
+[node name="Forma_005" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(88, -120, 160, -120, 160, -112, 88, -112)
+
+[node name="Forma_006" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(80, -112, 152, -112, 152, -104, 80, -104)
+
+[node name="Forma_007" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(72, -104, 144, -104, 144, -96, 72, -96)
+
+[node name="Forma_008" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(64, -96, 136, -96, 136, -88, 64, -88)
+
+[node name="Forma_009" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(56, -88, 128, -88, 128, -80, 56, -80)
+
+[node name="Forma_010" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(48, -80, 120, -80, 120, -72, 48, -72)
+
+[node name="Forma_011" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(40, -72, 112, -72, 112, -64, 40, -64)
+
+[node name="Forma_012" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(32, -64, 104, -64, 104, -56, 32, -56)
+
+[node name="Forma_013" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(24, -56, 96, -56, 96, -48, 24, -48)
+
+[node name="Forma_014" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(16, -48, 88, -48, 88, -40, 16, -40)
+
+[node name="Forma_015" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(8, -40, 80, -40, 80, -32, 8, -32)
+
+[node name="Forma_016" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(0, -32, 72, -32, 72, -24, 0, -24)
+
+[node name="Forma_017" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(-8, -24, 64, -24, 64, -16, -8, -16)
+
+[node name="Forma_018" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(-16, -16, 56, -16, 56, -8, -16, -8)
+
+[node name="Forma_019" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(-8, -8, 48, -8, 48, 0, -8, 0)
+
+[node name="Forma_020" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(0, 0, 40, 0, 40, 8, 0, 8)
+
+[node name="Forma_021" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(8, 8, 32, 8, 32, 16, 8, 16)
+
+[node name="Forma_022" type="CollisionPolygon2D" parent="Paso_sobre_agua"]
+visible = false
+polygon = PackedVector2Array(16, 16, 24, 16, 24, 24, 16, 24)

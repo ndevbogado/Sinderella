@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/puente_piedra_se_acceso_b.png" id="1_vwiw4"]
+[ext_resource type="Texture2D" path="res://assets/aprobados/puente_piedra_se_acceso_b_frente.png" id="2_amt81"]
+
+[node name="puente_piedra_se_acceso_b" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "puente_piedra_se_acceso_b"
+metadata/nombre = "Puente de piedra · NO–SE · acceso_b"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_vwiw4")
+centered = false
+offset = Vector2(-38, -43)
+region_enabled = true
+region_rect = Rect2(0, 0, 190, 191)
+
+[node name="Baranda_delantera" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("2_amt81")
+centered = false
+offset = Vector2(-38, -43)

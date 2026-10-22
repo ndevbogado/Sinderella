@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/puente_piedra_se_tramo.png" id="1_umffb"]
+[ext_resource type="Texture2D" path="res://assets/aprobados/puente_piedra_se_tramo_frente.png" id="2_4qyie"]
+
+[node name="puente_piedra_se_tramo" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "puente_piedra_se_tramo"
+metadata/nombre = "Puente de piedra · NO–SE · tramo"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_umffb")
+centered = false
+offset = Vector2(-39, -43)
+region_enabled = true
+region_rect = Rect2(0, 0, 210, 210)
+
+[node name="Baranda_delantera" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("2_4qyie")
+centered = false
+offset = Vector2(-39, -43)

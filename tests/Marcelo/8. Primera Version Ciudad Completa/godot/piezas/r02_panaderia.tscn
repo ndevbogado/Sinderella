@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/panaderia.png" id="1_6gfqh"]
+
+[node name="r02_panaderia" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "r02_panaderia"
+metadata/nombre = "Panadería"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_6gfqh")
+centered = false
+offset = Vector2(-200, -388)
+region_enabled = true
+region_rect = Rect2(0, 0, 400, 392)
+
+[node name="Colision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-184, -92, 184, -92, 184, 4, -184, 4)

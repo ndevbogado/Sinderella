@@ -1,0 +1,169 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/b12_arco_rio_ne.png" id="1_cify3"]
+
+[node name="b12_arco_rio_ne" type="Node2D" groups=["briar_objeto"]]
+y_sort_enabled = true
+metadata/_edit_group_ = true
+metadata/asset_id = "b12_arco_rio_ne"
+metadata/nombre = "Arco fluvial diagonal · Briar"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-320, -768)
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 800)
+
+[node name="Profundidad_032" type="Sprite2D" parent="."]
+position = Vector2(0, -64)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-288, -736)
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 800)
+
+[node name="Profundidad_064" type="Sprite2D" parent="."]
+position = Vector2(0, -96)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-256, -704)
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 800)
+
+[node name="Profundidad_096" type="Sprite2D" parent="."]
+position = Vector2(0, -128)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-224, -672)
+region_enabled = true
+region_rect = Rect2(96, 0, 32, 800)
+
+[node name="Profundidad_128" type="Sprite2D" parent="."]
+position = Vector2(0, -160)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-192, -640)
+region_enabled = true
+region_rect = Rect2(128, 0, 32, 800)
+
+[node name="Profundidad_160" type="Sprite2D" parent="."]
+position = Vector2(0, -192)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-160, -608)
+region_enabled = true
+region_rect = Rect2(160, 0, 32, 800)
+
+[node name="Profundidad_192" type="Sprite2D" parent="."]
+position = Vector2(0, -224)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-128, -576)
+region_enabled = true
+region_rect = Rect2(192, 0, 32, 800)
+
+[node name="Profundidad_224" type="Sprite2D" parent="."]
+position = Vector2(0, -256)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-96, -544)
+region_enabled = true
+region_rect = Rect2(224, 0, 32, 800)
+
+[node name="Profundidad_256" type="Sprite2D" parent="."]
+position = Vector2(0, -288)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-64, -512)
+region_enabled = true
+region_rect = Rect2(256, 0, 32, 800)
+
+[node name="Profundidad_288" type="Sprite2D" parent="."]
+position = Vector2(0, -320)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(-32, -480)
+region_enabled = true
+region_rect = Rect2(288, 0, 32, 800)
+
+[node name="Profundidad_320" type="Sprite2D" parent="."]
+position = Vector2(0, -352)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(0, -448)
+region_enabled = true
+region_rect = Rect2(320, 0, 32, 800)
+
+[node name="Profundidad_352" type="Sprite2D" parent="."]
+position = Vector2(0, -384)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(32, -416)
+region_enabled = true
+region_rect = Rect2(352, 0, 32, 800)
+
+[node name="Profundidad_384" type="Sprite2D" parent="."]
+position = Vector2(0, -416)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(64, -384)
+region_enabled = true
+region_rect = Rect2(384, 0, 32, 800)
+
+[node name="Profundidad_416" type="Sprite2D" parent="."]
+position = Vector2(0, -448)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(96, -352)
+region_enabled = true
+region_rect = Rect2(416, 0, 32, 800)
+
+[node name="Profundidad_448" type="Sprite2D" parent="."]
+position = Vector2(0, -480)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(128, -320)
+region_enabled = true
+region_rect = Rect2(448, 0, 32, 800)
+
+[node name="Profundidad_480" type="Sprite2D" parent="."]
+position = Vector2(0, -512)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(160, -288)
+region_enabled = true
+region_rect = Rect2(480, 0, 32, 800)
+
+[node name="Profundidad_512" type="Sprite2D" parent="."]
+position = Vector2(0, -544)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(192, -256)
+region_enabled = true
+region_rect = Rect2(512, 0, 32, 800)
+
+[node name="Profundidad_544" type="Sprite2D" parent="."]
+position = Vector2(0, -576)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(224, -224)
+region_enabled = true
+region_rect = Rect2(544, 0, 32, 800)
+
+[node name="Profundidad_576" type="Sprite2D" parent="."]
+position = Vector2(0, -608)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(256, -192)
+region_enabled = true
+region_rect = Rect2(576, 0, 32, 800)
+
+[node name="Profundidad_608" type="Sprite2D" parent="."]
+position = Vector2(0, -640)
+texture = ExtResource("1_cify3")
+centered = false
+offset = Vector2(288, -160)
+region_enabled = true
+region_rect = Rect2(608, 0, 32, 800)

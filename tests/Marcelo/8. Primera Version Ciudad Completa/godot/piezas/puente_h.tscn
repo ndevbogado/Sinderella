@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/puente_h.png" id="1_qx0ew"]
+
+[node name="puente_h" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "puente_h"
+metadata/nombre = "Puente este-oeste"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_qx0ew")
+centered = false
+offset = Vector2(-128, -128)
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 128)

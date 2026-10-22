@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/b12_puerta_oeste.png" id="1_tsixq"]
+
+[node name="b12_puerta_oeste" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "b12_puerta_oeste"
+metadata/nombre = "Puerta oeste · paso lateral"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_tsixq")
+centered = false
+offset = Vector2(-128, -640)
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 640)

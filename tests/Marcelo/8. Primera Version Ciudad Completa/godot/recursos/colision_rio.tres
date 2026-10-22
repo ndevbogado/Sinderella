@@ -1,0 +1,21 @@
+[gd_resource type="TileSet" load_steps=4 format=3]
+
+[sub_resource type="Gradient" id="Gradient_gpox4"]
+colors = PackedColorArray(1, 0.25, 0.15, 0.55, 1, 0.25, 0.15, 0.55)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1dhgu"]
+gradient = SubResource("Gradient_gpox4")
+width = 8
+height = 8
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0bwfk"]
+texture = SubResource("GradientTexture2D_1dhgu")
+texture_region_size = Vector2i(8, 8)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+
+[resource]
+tile_size = Vector2i(8, 8)
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_0bwfk")

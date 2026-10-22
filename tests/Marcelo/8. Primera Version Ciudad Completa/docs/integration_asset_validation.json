@@ -1,0 +1,1457 @@
+{
+  "passed": true,
+  "approved_png_checked": 290,
+  "character_approved_sha256": "01f72d194c7c6b94048f72c131a3288ec335cbd17eea8c82aac2275fbca662ff",
+  "files": [
+    {
+      "file": "assets/aprobados/casa.png",
+      "sha256": "ae3e3ea28b22052d1cab040a905f21c8d7abae8d695b9efbd3b54b116f6ef58f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/panaderia.png",
+      "sha256": "a1ca69aa25cc3e051443ae42653422cdcb30f9637a2af8f753b6acbd60f19489",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/herreria.png",
+      "sha256": "adf4439fd99cd134778910cdcdff3866fb6493efa4127b66d9ae4541b823ec3c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/posada.png",
+      "sha256": "2aa1ecf95ea36c92b5a24d2efc81e0378389205cdd7019de6cf24e233855b026",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/herbolario.png",
+      "sha256": "13440c89b2354914a26dc1d55301d9f16becf97a64e380bdc6938eeb6c2db503",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/almacen.png",
+      "sha256": "114275b0f903fe0bbf388f958a78305d5f1daecfc6ba4181af35b5bbbdf00fc8",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/casa_45.png",
+      "sha256": "8e692f2908e7ef7704af291ccf32e486b8ca9e52f1d666f995fc80bde357b01a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/panaderia_45.png",
+      "sha256": "4b67007621757c6faa678a5894ca7bc8c052502f0300bd17629d3b8fc3dd954c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/libreria_45.png",
+      "sha256": "a2b5d05cb07848a4fb1fc02db2c657884be5a439999e2f88132c19fc84985970",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/herreria_45.png",
+      "sha256": "85b62b7aed04194352a2c91294f0c3268b84cfb979f9bdeb91fdbea70cd9f695",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/castillo.png",
+      "sha256": "7aa9e082a67933d1725570af2f18dee6c65cdda1ae041011e421420384b2066c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/catedral.png",
+      "sha256": "59eccd90225adb141138a0c12b88908f4deeb3daf08c2bf53b473ce8e9ff50cc",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/mando.png",
+      "sha256": "fd300f6e928b4a10e763a249cfa8f2342bb3bee5e0e25e489fcc7f24a18a3626",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/universidad.png",
+      "sha256": "74decb738df98008beb1739d937f85a3bdd752b236930107353e6b8927190b6a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_01.png",
+      "sha256": "6a43442a15c340f4094a929a02c502bed71a9a1828926a033e07ef3faa0ae0f1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_02.png",
+      "sha256": "9e4c86b130d0f036f2b1a03f68809a72f229946bc9ea7952225874d02c70564a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_03.png",
+      "sha256": "cabf2b2acce2ea69fa83fc5cbed62a205e8fb4e57baa3ef4a6eb582e44995064",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_04.png",
+      "sha256": "ce7560d1a72fa44d27a1c4e5a76a8427638de45d38815021046b47f55339f0ae",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_05.png",
+      "sha256": "079856b32417a864932e606ba81a51376567754b9c01cd6ad42cc07e77a05bd0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_06.png",
+      "sha256": "b95648ccf9976499898adca90680df647b9c0f11a10e2485f75fdbc5d473cd71",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_07.png",
+      "sha256": "2a9540e64ec7ab6a3127617ca6c85ec08391aa428477a1d43cd2ce7af7edaf00",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_08.png",
+      "sha256": "b349bff8ec0e770cce6fdba121dc0e40c6a89715ccf20bc4b317fabaf13b13d0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_09.png",
+      "sha256": "219479fb1b51aab359e9d5a43bf82a29a0cb83768dd1f95535263fabafdf4433",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_10.png",
+      "sha256": "5425666b14babcd74f1afa300a5b90fc433f0b5d0ab947c8a5a63f2552005767",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_11.png",
+      "sha256": "a52a8e5c39acbbe37a95ba596d785f3f37259c4f63173cbce6e6ad16e0551689",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/arbol_12.png",
+      "sha256": "90b3f5b258f7ffa679b126922f7c4f8ebb05929496fb5ecaeb0f7b105be5f92a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_01.png",
+      "sha256": "68a09e1d376c6dec5526d481967c63b95034c6e38536da486edfe3bd9e8e73fe",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_02.png",
+      "sha256": "c2f4390619fa4a0e20a6d2f68907d3b61aa3f17ad44d87adce251620db5a9eef",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_03.png",
+      "sha256": "6665c7c2612ace60a57513b5c958d0c650b01f60d64c53de4dd2f99502540cdf",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_04.png",
+      "sha256": "40632fd82d8062b7aecdccfdea3d17f41bdc97d4ec39dd55b27c55b8ba8c09a1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_05.png",
+      "sha256": "f2c193041a1642ce289c5bb9c776dbe94cdc10d821b2e4a98008286f23b38f2d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_06.png",
+      "sha256": "76acf2a4cc9f2f08d51d10da0e47d1f99ad232af11ba59665a9232f68734c296",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_07.png",
+      "sha256": "c1f5ddc045b76ce1c2af0ea8648db7b253407b0d23c45913492da77ffada6361",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_08.png",
+      "sha256": "53755678b31fd6bb3aa32eeabbb1d8475e5cb99e5ba879a81c44ea1c4993d1c3",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_09.png",
+      "sha256": "d8104647331ff48400905550f9260f0220d66ebef21994e52499903baa85adac",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_10.png",
+      "sha256": "5dd11ddf09118d02229ce7e96ba4c692bc11d8a5b435c625fe16893e7b9d33d8",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_11.png",
+      "sha256": "6af3cc0006d3c1d0340f1d160c4e15ee34b50724012f523f654026a9bc5f7c87",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/sotobosque_12.png",
+      "sha256": "924ad0d63ddc56b3ef72580b2cfe0af8af8b9bdd4b1d994c0db6a3b5d3abc71d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_ne_acceso_a.png",
+      "sha256": "84a766466f91bfdaf7663ab7616d4c5fd899736adc49f54ae7ec4b652e664f5c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_ne_acceso_a_frente.png",
+      "sha256": "d289a045ff031e4da77899cde8cfca3f015d9f0548ab10b3af2c83ee3cce2ec2",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_ne_tramo.png",
+      "sha256": "816cf7dc3c17688036deed28d388db35cedebf25db27d86822bec45a52d4106d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_ne_tramo_frente.png",
+      "sha256": "c08e0fa7bc20b581ff4a9966376e647e6b09f7e3503477be4205118a1a8842ad",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_ne_acceso_b.png",
+      "sha256": "9d185f7ea6e82318002d9d2bded6822393ae640015f6f9ece2f5daa7b01b9308",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_ne_acceso_b_frente.png",
+      "sha256": "e8b9ba19c9355c67a4e24d4036de76e044e2f199f5b3350f7a1348cd0eb67115",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_se_acceso_a.png",
+      "sha256": "736268378ec07aaeaf3ca8adb5c45442966d7f568cdfcf8675af8e1f7a5c98b5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_se_acceso_a_frente.png",
+      "sha256": "0816eed3992069165ae8ad9e0ec95ba82003c19fb6444f10ecba1ebfa879b3a1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_se_tramo.png",
+      "sha256": "23f0f5abfba28e7b029d7c1b1f87b6d60049d53d1a43c7a3e9cb72ec62427724",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_se_tramo_frente.png",
+      "sha256": "5e5110822a272955cea1dbb39459441247808892a6a2e9e0be67d25de8e2b43e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_se_acceso_b.png",
+      "sha256": "4fcb4b91389ad39309f035cb5d083dfb31a3b33c775b326cd42ff04f59779e0a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_piedra_se_acceso_b_frente.png",
+      "sha256": "35ea4569e131f201a029a26a05b978c63be6db14a9eec0bf918cef80e53c7e21",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_ne_acceso_a.png",
+      "sha256": "91aeb7da76bec217cad26bf2843facb79b075630a68d071ff0777fb041867e7e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_ne_acceso_a_frente.png",
+      "sha256": "c5fa0171b5e575c77670c2a1d46bc7fd275d2042bb2110bdcd15355734f2409a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_ne_tramo.png",
+      "sha256": "ad168d88940ec18568d12177889675119415c941fdbaec5a42a5fed8639143eb",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_ne_tramo_frente.png",
+      "sha256": "a496fc324dd16686aff800d9bef60b7c77f222b529c8222987a8ce01cb94133a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_ne_acceso_b.png",
+      "sha256": "548f8da0d076bd3b76c01990c2292ab308fb952311c13476c03856f60ec809fa",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_ne_acceso_b_frente.png",
+      "sha256": "6a117cac03d60307ad46bff798b360310d90401879c165342a69f436982c5232",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_se_acceso_a.png",
+      "sha256": "f05a2a7655d1de64bd6eadea388068f890445d1d426fa07dac7f8105735af690",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_se_acceso_a_frente.png",
+      "sha256": "3f88d23d774fc4916fc0da8c6826ea5c2f0c611b00f68ae3f6706d8f7123163d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_se_tramo.png",
+      "sha256": "945db00291739e1faffeaa2110fb9b0e50d9fbff3b9a5e7b80fd8d9e7e71c504",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_se_tramo_frente.png",
+      "sha256": "4eff5720642ae9277cd1ae388b97a6460045a9aa282e86e8a3e2da394e3b0992",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_se_acceso_b.png",
+      "sha256": "503aea2b9e7aa44d3e546f65ca1e6fb846e2b5c2aaa14462e16ccbdb6ea486ec",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "assets/aprobados/puente_madera_se_acceso_b_frente.png",
+      "sha256": "b7c7b9b0eec984a853d5fa0aaf6aac04fd093ff46f79270ac14b7d5c59d40b17",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/01_piedra_calle.png",
+      "sha256": "67137baf7e98d7d6d9d6180b81d2a10a17e40453c2ad36ee78b5232286d585f5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/01_piedra_calle_campo.png",
+      "sha256": "8d5ddeecf464a11217d7e1583907f4c83925368113ae725e6332a19f8f7646f9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/02_adoquin.png",
+      "sha256": "a74b25a2cc9c191217e7e773aba4ffb7cd03a15d4d05bb1ac55639b6e40f4943",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/02_adoquin_campo.png",
+      "sha256": "b4caa61c663cc9b58492389e513bc4a23e14a77c3072b3e9a57f17343a7bbe65",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/03_sendero.png",
+      "sha256": "25bd54c10ed68bb2c57d6a987acd7811afd8cd3405562c7c551e3bc43a3acb8e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/03_sendero_campo.png",
+      "sha256": "f787b976db8ffb6ce6073eda0debb24013f3fe57b61a4b0cd9176a40b189ef18",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/04_cesped.png",
+      "sha256": "4db86c66e27f938fe51d5935c73f292424d1f24eea8771496977d08f02a88d4a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/04_cesped_campo.png",
+      "sha256": "59747c2406d7c8f8e06e71a11f02d1490825ce2dc7204dff8a7a8ae9d65e6892",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/05_losas_plaza.png",
+      "sha256": "c2020ecb82bb78aeecf5cc3eb022c43e218ee42e412b68e8cc0c594c414e4bb2",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/05_losas_plaza_campo.png",
+      "sha256": "6b5ff698f0237433837c6860bd1fec3406219dd4b97193c7e211ce332ed5180e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/06_piedra_musgo.png",
+      "sha256": "e31b8871524d0596509e2e1ebeaf847165ab6fc8e97263e7bd380e3fd7142852",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/06_piedra_musgo_campo.png",
+      "sha256": "c52ed03daf4496befd63a460e8701035bf15bd5c1264966ebcadf65ace85f8d6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/07_tierra_jardin.png",
+      "sha256": "a6b2b40acac1b3b7eabf1e7dc775ff228d8f76fb5484ff0de71699cc9a30906c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/07_tierra_jardin_campo.png",
+      "sha256": "d4aae9f5f590993bab4ce3b6fa868cb31b36784d34385b46df8a1ceac639c1f6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/08_agua.png",
+      "sha256": "fc5e511d6fa3ca70fa49148a1e6935be87695ae2da472230671a64f317d5b142",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/08_agua_campo.png",
+      "sha256": "21e3b12281441e146de391143154d1f82ee9eb4c15d875ebc2b5801054d35dc7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/09_grava.png",
+      "sha256": "cde66240ea22895a6afcaeec77f2c6b2ee12d09f4f817cb3360991035bf3b056",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/09_grava_campo.png",
+      "sha256": "8609d6a1cd6d0a462fcde35a8b6912c6addab42ec136de5552159664ad6de3f0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/10_madera_h.png",
+      "sha256": "8cc47ea8135b8a7fe3552815882e263a038c50aab2a9a2c4f6b28f32e4f2f24e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/10_madera_h_campo.png",
+      "sha256": "27d9e1dac7d76c395aeab51df8e711e5141ec4bf40101393d33905dc5719e4ec",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/11_madera_v.png",
+      "sha256": "c39394d9f5bc290dd22bd2032c623eee4bcc8e41c30152519b8c300656c65d34",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/11_madera_v_campo.png",
+      "sha256": "2fc91ccd03cbfb57a0641cd4dd8473eba71fbccb7b89c3ef43f1d147c18f5b42",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/12_pizarra.png",
+      "sha256": "3ee9b3cdf8151322ad7c1b3aeee04b7b1010da367ced0085b08b32223f17496a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/12_pizarra_campo.png",
+      "sha256": "f7358d260c3ec1cb9c2ff6873535f91329af9fb5c1ca78cc25aaa9ec0e67ce60",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/13_mosaico_verde.png",
+      "sha256": "8695cf2d29d9acee6ed74e3759d489e4c49660937ebddaf5d6ad63a6759d990c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/13_mosaico_verde_campo.png",
+      "sha256": "4e053c21287beeae9254ec7ab32220d06cb230bcc79fe4f591e468c8d6bbf200",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/14_terracota.png",
+      "sha256": "a567c20a9750798b153d834162aa69526ab3eb36bc449e94cd2ba98b420a5073",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/14_terracota_campo.png",
+      "sha256": "4118cd57d26bfe895702fcb984cd086c7c8bec5f20aa0f21a897347c9f73ab53",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/15_hierba_tierra.png",
+      "sha256": "37d95dc7389c538e0e41877cad252c298f62eea6494d8cb0b71b25f865dfab36",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/15_hierba_tierra_campo.png",
+      "sha256": "8ca1b24615e1f5330017235c0c10cb9a58447938b0b87a69e3cc5dcfdbc395d6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/16_petalos.png",
+      "sha256": "6a5c650d18ad12486889d918793e4e13490ed7713067efc399aef1529b857f64",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/16_petalos_campo.png",
+      "sha256": "928f823e4b527ec257500a355ca6e1c9e65cd225d65b4cb2a9c852187d7ffe18",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/materiales/17_concreto.png",
+      "sha256": "4265105cc2daa2177f132c2fd67aff321d18af703d60b5a6fb1905395bcd9c4d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/17_concreto_campo.png",
+      "sha256": "ca4dad5bfa3fbc9ca90e836f4818a18af19f952cd60cea088ef889f493062b80",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_01_m0.png",
+      "sha256": "211d7f2aff14698b1e88670e2b59dfd114e6a1e8877a89d7b01f1352c9e788a3",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_02_m1.png",
+      "sha256": "d4d9253de7999cd2f7cfbc46cad1f9f11ffb7479f3e73a92b5a93c82418affe9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_03_m2.png",
+      "sha256": "4a1c1d59094de377b6e065b2beda57845123f7d7621915a489306dc73bd222c7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_04_m3.png",
+      "sha256": "653f5156498a97a009c7cde6fa91c1d18a963c22404997514a04ab51ad1cb987",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_05_m4.png",
+      "sha256": "777b98bc4467dd93e5ec5b5eff315c610c23dbe268c665eb1d46a2b6dbd69919",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_06_m5.png",
+      "sha256": "4ecc833f5b320d53d45aac987d34886e4cdd6bb38797af4f6631b6c5bca28201",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_07_m6.png",
+      "sha256": "a9888efc6853039585ad529565f4443a92abedb387f0f84c73f2501c147dda08",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_08_m7.png",
+      "sha256": "fdfeff20fd64585dbaa0513c45e4b1b773cdfccc3c925aee9d4b8b299425c433",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_09_m8.png",
+      "sha256": "4160ccebe10206915eaf3ec3dac899fc9a58dbf4555fa2a24c210ff2c8d05879",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_10_m9.png",
+      "sha256": "95f718265a862c52dd8e2bbf8f523075e2a413ec4b2b88e9675233e26d02cb01",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_11_m10.png",
+      "sha256": "030c036284918ca5e318218f726cd342fc319b855d260fa25f6ff983c14e32a0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_12_m11.png",
+      "sha256": "2ee25c649f8a826017b11039c6d38ce02785865c36aacd99038bd7ff68b040d3",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_13_m12.png",
+      "sha256": "bb6a852de98ad659246da8ccc2312ec0bb6ff2f32f4c6fbbef52a87d567e081d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_14_m13.png",
+      "sha256": "71b7ae50df24411d3e86a38d3bc42a53e907ec7e4d4bbd937ee197a56b34e574",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_15_m14.png",
+      "sha256": "e44481542606665ce7a3ae2555b06099854a7b14d06d5093b6a68f114be5bfc7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_16_m15.png",
+      "sha256": "c331410fe6962bc08513e0c8eb6a3de5bd65df7473d57583a1ae7a72c6e0f4e9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_17_m19.png",
+      "sha256": "ff9a6bb7f6e29b64a8fbc4aafde62c171b87b39467ddd9302ebe1ed2f5f5e0bb",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_18_m23.png",
+      "sha256": "d2bc16db3eec16a0863582b8060e05fac1b0cba4fb66b025922d44239d08ee55",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_19_m27.png",
+      "sha256": "8d04ee6216ea81329e0433cab3a72db58de6bb23759b8ff4879af3497e3101b4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_20_m31.png",
+      "sha256": "f9b700f8020990b27933e3c0fab649b2cbac24fd65b1f322fb6bb525df8c5bd4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_21_m38.png",
+      "sha256": "339e3d9b7caa9781b8c4192bb95d8cbe7ba2b510943a129bc70af55f28f12f6d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_22_m39.png",
+      "sha256": "20763f56bca4d9e44e14ab204963fabdc811b12fef638ee4972bc3fb9a1ee75f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_23_m46.png",
+      "sha256": "20f17583da90fd78ef41d13881e643480c20b16f7fe57640f1ee751e715650ad",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_24_m47.png",
+      "sha256": "2bbe12a6fd1f1fa000e3c73c6dbf35892e5435c8233c872cd950ac4d612b8fd6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_25_m55.png",
+      "sha256": "9ff59b51228ba934b53106ed027bb343e14f19d585d346842f7b22c169bfe3d0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_26_m63.png",
+      "sha256": "e3bdd4cd284107804834dd320e98049c1d60d4c831618272dd8c84132cc75088",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_27_m76.png",
+      "sha256": "a367eb42d4d58a5abc3dfc9a18b72d8028c93a04af281e3f144e549ef3c0b04e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_28_m77.png",
+      "sha256": "de19e01e56815bea095a0c60b36ce03a0ab754f67d6c27f29445aa5ecd53f40a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_29_m78.png",
+      "sha256": "592bb652ea4022163bf0b349a182c4c1d32962003589e2b85961daaa80a72e16",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_30_m79.png",
+      "sha256": "77794df1417be7d3a949469cfbe556bd39bba2d6bf83c302f1fcbdafe3fe7381",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_31_m95.png",
+      "sha256": "a99ea12b9d63c73873d94d856d3c81ee357719b55ab12280ac1021798dbf7d25",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_32_m110.png",
+      "sha256": "ff20175577f01db7dbcdce5b07001e02c208a408f83200d5910f21b01fd8922b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_33_m111.png",
+      "sha256": "beaf458940f17c97e5f418f2f2ab8ed38673bd57de77870f3a62fa8b816a647a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_34_m127.png",
+      "sha256": "1feb355a0f6e6c7c8dade02644ba333c767c3b1fdd444784909e4305c8d02d59",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_35_m137.png",
+      "sha256": "0e2ab5125e9e4e36c37849c93f985981979bd59250ac851e81d44c9fe4d1ce7d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_36_m139.png",
+      "sha256": "0c212792dd9e74fbb6f08fd6a3003571bc0e875ad3f67e71f668549197c4ee26",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_37_m141.png",
+      "sha256": "97288e3bb1b4eac44efbfa6f181a5edea7418c1887166b3b70df33ad39814e44",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_38_m143.png",
+      "sha256": "c84fcd4ef0c10c0ae23fd66d263a31c980c546082835002a2a8a48d4d4207e4f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_39_m155.png",
+      "sha256": "89c68f616c8410a6ca2a8a96526bda190bc8eaa4e54a74bb4e03ce64aab69e51",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_40_m159.png",
+      "sha256": "301ed3d4f4da7b23a0ad40478eb4aa5b4073a37de2af9af515afe1f743d136c5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_41_m175.png",
+      "sha256": "33d3c2e789b309383d30e8c7bcf97b9f1eb6690a9bfcea090551226fb63c2607",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_42_m191.png",
+      "sha256": "9b3e54a1dc80026a8d55c0e987e71741c1d3047318a009f6d8bfe7a0974af64b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_43_m205.png",
+      "sha256": "096fb6bd5e2d9200d26413ff5d5680a8610b47bf70279d958f050dc5518e520e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_44_m207.png",
+      "sha256": "530e1568e73ea86ed3ad2fde9c94fa6396dda3deec85fa21c23870b75ab3efd2",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_45_m223.png",
+      "sha256": "eeed04b1be409b9e84dee28cc5cab537d89b5a416a8ab26c08de45d7a462b695",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_46_m239.png",
+      "sha256": "77121c9137ecd85c2a13f25b26f2b56e325a5e88645d180e6551ec7ab987e62e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/piedra_47_m255.png",
+      "sha256": "31ab2606ecdc7684c2597221f3bb96508300ba74bca9314c7e631d845d158e7c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_01_m0.png",
+      "sha256": "a1473595c801d1dcc606f158d84ea59044253413b2d44b50f0a70b574f5f3eda",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_02_m1.png",
+      "sha256": "31a3bb24c5b4e8f481c60a64e20ab248b93036793259e80746ae89d40134f602",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_03_m2.png",
+      "sha256": "67eca08fa9696fc584b43d80ac15b251af5d83433b285278fda82e09bb9d3173",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_04_m3.png",
+      "sha256": "5aedbb0e1d433ba4ea188fedb337510df78d411bba02710a18c03455347617c4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_05_m4.png",
+      "sha256": "09a4dcf672cfeca13068f22107d729e91a6166974d63dbdb9906eff16046219a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_06_m5.png",
+      "sha256": "d1c0e87b3ce5f62d5d347aab351d1fef3230426998f116fb617b1364fd6cb222",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_07_m6.png",
+      "sha256": "f7ec61114997ab51e2c46b88c7c1dc9555cb213b609609c9b8f28164add396a5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_08_m7.png",
+      "sha256": "3abfdabae1b64176b0d306e143bf26cc10050515699b4d4905799e745ec38b23",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_09_m8.png",
+      "sha256": "1ccedbaf633b153194a75a8ebe2a07232d265c601a241ce0f2101e4b2945e4df",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_10_m9.png",
+      "sha256": "e45ee7d82af52f5c93ecba8bb1e3cfe90215496227c6d02d6d7d68082e18df75",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_11_m10.png",
+      "sha256": "8e14d934bff833ec4fe58887fb324357954d4c5d9f7b864a3fb68a60081ff92a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_12_m11.png",
+      "sha256": "fab7f1be0a57d6cfed939d49ef5067f4231cdd18670dd66f07a3b097886a6cc7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_13_m12.png",
+      "sha256": "9999349cd7fc00137da7f1bbce4d45aeb3402da5db694abc8b7d3172b227ade4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_14_m13.png",
+      "sha256": "3f5f94b1c75a4085f3aa505fbf64574ef8c4b28b6fe1725f4d66880609d42ffc",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_15_m14.png",
+      "sha256": "f7bb5176b32d6dfce23d45bfc2e0b1028f948e8bcfc59cfa72c344b2ced632f6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_16_m15.png",
+      "sha256": "8cd863dc4c169691e85f05309dd40d205d6390af9397e1b54d406a57a78f20c7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_17_m19.png",
+      "sha256": "4919b79f646ac795a06d8ee8e391817751d90ef1b6766d57f8f7d3d55e2ac6ea",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_18_m23.png",
+      "sha256": "0fdceead2f5d096899ca87f55c5cce926c46c1233713bf7d63ac54c83030b424",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_19_m27.png",
+      "sha256": "1eca6595a4ec86775983473f324915d8733364b10a4d1575ecf3a383d00be86b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_20_m31.png",
+      "sha256": "286c9fa523f70a54fea0089200990d26c4be693aa56371ee42e9655b3c92589f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_21_m38.png",
+      "sha256": "fe95f45156afffda815319696a5f503958a4764fa7c00aee254dfb2c7b00b047",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_22_m39.png",
+      "sha256": "de9ad94d98ef91c26b3037e447e20b34691c1e5fcf5ed2084ec5fcb757f8ec63",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_23_m46.png",
+      "sha256": "67d6f1e921006399c41ceab484a107a51fc83108f1fabc7b953b3dfa14d5b8e1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_24_m47.png",
+      "sha256": "27cd2543fd180eb7e5611645a8fdccb22b0709505c716cc4fab1d2ab5c91ac3f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_25_m55.png",
+      "sha256": "257aa515bef040a761fda666e4dbda6c9d84a65b0bf095b34df4e9d7e1ee4d4a",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_26_m63.png",
+      "sha256": "b09f0ccaf08b4b1d2640be3b29b9a39c8942ace5567bae58d9ccccfdfd3816a8",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_27_m76.png",
+      "sha256": "7df4803e8899b735054c9f6a7f7baa60b042c878dded076df67f2414bbc704fc",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_28_m77.png",
+      "sha256": "ac65d3b728b83782532b8df781aa0f69238173e74af3b85255bb0d9ae5f3c937",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_29_m78.png",
+      "sha256": "c44f4c413fd10c44c7fcc606e9a0ead2716db50390b08bc64ad8dca3330a0dd5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_30_m79.png",
+      "sha256": "3033996b46ca35bf1cb01717da59580f75768a8a6b0c5057f2c0c553cef3135b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_31_m95.png",
+      "sha256": "f28d354bdc8d5b442c203e6cacd79c640278c135ef4a83ebeedbe738b07caf5b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_32_m110.png",
+      "sha256": "99273f5ab2551b5fc9cd6b51e943dbe5aceb50465815609a2385a472f566892e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_33_m111.png",
+      "sha256": "7779bede37b6141be03a3ee597dadfba3df0a799b6b0303a9694cc22a682af8b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_34_m127.png",
+      "sha256": "12f859db88a59fab7e4193a58d1cd4115003911d6fbfc7b856ab5f75ffd369c7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_35_m137.png",
+      "sha256": "79dbd24e2a7d9f6177784bf4a29fb6cc70c83127a32c0d0ac9963e031ed38234",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_36_m139.png",
+      "sha256": "5172b1dccf969498d20f75e8eabc45d3eba559aa2bfe593e4a42323671fc7a68",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_37_m141.png",
+      "sha256": "470901defca2293bbd083797ae8de9b4f4be38dcaa7a7e2f1b3a2f5450ebfdfc",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_38_m143.png",
+      "sha256": "aa967d43bebe43a6753a695baac3bba263edf5021e7ae1241dfe77eb03c0f59e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_39_m155.png",
+      "sha256": "2fbb347c6202801224e2d7d233e29ec807a6edd803d5332066ce51d4418dd605",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_40_m159.png",
+      "sha256": "da7f5906df213c33d293676150f7d50ae2daec65635043e1e8b518c7eac53179",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_41_m175.png",
+      "sha256": "e7b0e0ee7202cf394d00428c3020f76201f77fa760ec53df781c9239ef25a0ba",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_42_m191.png",
+      "sha256": "aaee8a10074b6a42d2d5649d1eeda738f692bcade877f0fc8785270341b57ebb",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_43_m205.png",
+      "sha256": "47f8cb6cb08d71f9099f3d76f95425e576c3f12d5d4dd2fd4690ded7b9dde5fb",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_44_m207.png",
+      "sha256": "4aa761c5072e1c97a50f3ac57fed6870ff0827a60df1f4d3385d7cf370d873f1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_45_m223.png",
+      "sha256": "d9124230a2574dbcde2bec843c6ac1dcccaafecad37ac9e97aefca1ed2fcfbd5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_46_m239.png",
+      "sha256": "a87f77d347dd654f891d665ac0dd21fd1aba74e27df5f14702087f249c27f8b7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/tierra_47_m255.png",
+      "sha256": "cf2be0c41acf95938c6b76f054dacda8d1eb87be41ea3dec7aac35ab242ccfe9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_01_m0.png",
+      "sha256": "0b7b5bc0eea0d5ab61491e6a66938c459475abcabfd2c490cab9cc1621b881f1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_02_m1.png",
+      "sha256": "45c0581fe822ca9cbcc40dfe4d0e8787aca0d591fbf9c829fca19090147cc3be",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_03_m2.png",
+      "sha256": "ff6cf3c7438b2f2f72e3aa97e9ad82b92edbb05fb6092885e9ae3005dc22274b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_04_m3.png",
+      "sha256": "da63159b19696552f46bbd403c2c7d49f9116a3bf2d3905731511c751f8bfd52",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_05_m4.png",
+      "sha256": "c04716f7105d4dfb47fd65ad85b5d1bd08ae95dc3a91068abee7d5f1b24d3c9b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_06_m5.png",
+      "sha256": "d4062e7e7b886c4075f9bb1eb589f88cb4f90c9d18344a469eb9dc8d14b88d86",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_07_m6.png",
+      "sha256": "f01c5dbe5c8be029752d0112440b8da1bbea3e09532737fe9b4eac5fda07e9f8",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_08_m7.png",
+      "sha256": "0832a223707f939c1eae8174a60508d8318e467e15d2d966951ec8fc387007f7",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_09_m8.png",
+      "sha256": "5fdd38322ea262d332f677e28a6b6d93d790bfb52dcced346cbf2f46512af5c6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_10_m9.png",
+      "sha256": "cc15b89093b56a3fe0e0181a4f5d9e7008cd8d0f778bd7870da7121e17416e79",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_11_m10.png",
+      "sha256": "774447f5262e0d2ac64f648f292b6148ef0d6947f71cf94da40c2a90ccd8d185",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_12_m11.png",
+      "sha256": "2e9e6500df0971683f053dcff27ac95593daa93270b520e40e2c69988f8fe7c0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_13_m12.png",
+      "sha256": "1d929ae1aff35091d2063134edd918a330763ddfcb544132e336be26522768ec",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_14_m13.png",
+      "sha256": "2ad47bdaacbf0f7f427ca336ede50afa36d9146d91ac60f2c9f10ed74e48deba",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_15_m14.png",
+      "sha256": "605f49aac109a5733fcd4ee72fe465b6f87a9c8ed0a0b1fe58b03eadbc1234ab",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_16_m15.png",
+      "sha256": "dd8ab1f1da0a59821f8f99cac3072ea89c7b2902008f3153de9f0a776fb8fc5d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_17_m19.png",
+      "sha256": "5f8a4336582fa1cc758da18180a26238b311b6af5d724c69ee8956bd9c35cb84",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_18_m23.png",
+      "sha256": "803512b77eece587ed2e31955377f675499c687fef1515449f4998e9cb85c636",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_19_m27.png",
+      "sha256": "fb2ffa3e387428bcf2447ed41e6c5c6865241498c9f59601dbc3af6997986af0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_20_m31.png",
+      "sha256": "29863ad64d4af6e9081d4853576ea9992a6a7bd44fc95450d63f37d316ca20ca",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_21_m38.png",
+      "sha256": "161098b9a01e1edbbf192e980c37ea28d553a1bbb6c5306342e26b6e8f7c52c4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_22_m39.png",
+      "sha256": "21b9ac715099c0b46a28b6355c821586964ecef9525aca8caebcc6ed14475874",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_23_m46.png",
+      "sha256": "789ad156a33b672ffedf096c56993096e72583b432b22ea23d85c771b431139c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_24_m47.png",
+      "sha256": "e4c61ca0b1bd3c2e3cf5311e7693d7dbeb4b2484c6042df73e2255befb31f439",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_25_m55.png",
+      "sha256": "b6174746e05af15f253f26b0985da4687ed9f056ef03c9686ae70f71469116d1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_26_m63.png",
+      "sha256": "ff3931e6d86958c1ba25810967031a707d9d47900acd7ed5b32bb719895d8cfa",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_27_m76.png",
+      "sha256": "8d715d27399d95c7f76ca4ddd7d87353a7fe67313f17ca3a1cdfaa0beaca57a1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_28_m77.png",
+      "sha256": "e6e7cecc1def50fa949d6b83019d66ae5bf37dd7a8ad1e0e758cff374f322887",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_29_m78.png",
+      "sha256": "5638c52c2fc11c87ccfc33dc410d84d05c9ccb04defc6d803b03f8e833870d7f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_30_m79.png",
+      "sha256": "b82a9c65b87142b8cb3e12343564938f5229f6d200b1cf535539a7cfd0c0b0c9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_31_m95.png",
+      "sha256": "195d9d88472ec52d1acb2ef9689a3db5a5a19be3d5ba1cf9606640d8e5687845",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_32_m110.png",
+      "sha256": "01480aa706bd29ea016ccf75918c4985eb58c3c8e270225ba01f92a841a81771",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_33_m111.png",
+      "sha256": "fd750740ee8da340abcb471f1ddc97969105872a32cbc091d5c6f7d422f64565",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_34_m127.png",
+      "sha256": "eb5348b8c6ee4dfc2041c8687d354a82256481d8d0d53207931e7c675c7a85bc",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_35_m137.png",
+      "sha256": "1b77ff6f150154e5958d53f78d34b8ed5f5c19da42ab7fb479461d5ecf888064",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_36_m139.png",
+      "sha256": "fae26e52636632d674762841684db3742cd65f30f226bdd3acce2a46a00ad20d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_37_m141.png",
+      "sha256": "a3ee75f36a6ef3596e5602abe5c91b12334f6e77d004e90f29e1d4ff40cfa9a0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_38_m143.png",
+      "sha256": "50a7ea6df0954b2439114fd1d832f044253d124f634dbbd3bbb3b13d6f12a7b8",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_39_m155.png",
+      "sha256": "0b6e45a902e7d88a345d53a064828e5fd9c2397180d08870c8207c2beae3dee9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_40_m159.png",
+      "sha256": "aaafe56a993c4bce55d6d06a554c387148d368caf9f102e1aef38b0f8f3297d8",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_41_m175.png",
+      "sha256": "8982f89f2ef584725d1ab40610271a3e273c6bd6de76001310793a33d6313af4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_42_m191.png",
+      "sha256": "6b36e1009edeb0bb530bd694c2b0639724d09321cbdccba3c316c374dc7efa3e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_43_m205.png",
+      "sha256": "241bbc1f6c9bb56c4a3f284f57bb46d0d944b4db94c6eaf005dfea65213f49a5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_44_m207.png",
+      "sha256": "2c375b52b8a297032f5cdad2912cb39e242791b4e23e6c5a90533e1ebcc7a99c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_45_m223.png",
+      "sha256": "0acbd6833e0bce2c837d6ae34b2593782359077484c22df6de4f6457c5192336",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_46_m239.png",
+      "sha256": "b27e794cb167dbdcd4f967de931d9c724134bcc808810dae29d1a266e7cbc58d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/transiciones/agua_47_m255.png",
+      "sha256": "30595e9becc80a3becc0a0be22b8417e0cbdf6fa4e425e44da18494663af4988",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_00.png",
+      "sha256": "dce6083c72f5963e9f66b8dfde080d342a30df60d9b31652d9055fb6ef786c48",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_01.png",
+      "sha256": "2e372f35e91e4a204f3f12af39d73792f01c986f67c93ccc29e19cf402ed4186",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_02.png",
+      "sha256": "b30e5655f484e6e2db827765688af334f305b1749212c5c524c962d2a632b2c6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_03.png",
+      "sha256": "d4d36e038b9385ef3a4e84c4a99db78212bb90e2319e27b4f46488413cc43a82",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_04.png",
+      "sha256": "4675236c2a484b914b9f62493ba227e41e1e419b26f8ae455675619a795a2fdd",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_05.png",
+      "sha256": "6e91df98c70de4ede3484fae9e2716e33ba016d86b7e11e8056cc3d11de826c3",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_06.png",
+      "sha256": "3f34bead4baa050d5c9af233b1724a71e5abc50d9b24729f7e98bbd1ac3d954d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_07.png",
+      "sha256": "8e8dacb5abb1bb46072ccf0fd14877109b0478e4df83c5486e2aac54377cacf1",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_08.png",
+      "sha256": "12e9f7659919d9d72813db4d4f9afbb58732cf82bde337cb3e8c16faf819bd44",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_09.png",
+      "sha256": "88f2c116d9455ab6dc82b2fda91496cb0272657dccf97cd530e34ea8841a9f66",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_10.png",
+      "sha256": "8ed2322312ab7b7ee74534ff39da593f260c8a78b29f76ac1d3f180e7adce44c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_11.png",
+      "sha256": "de6351ee6e878d30fe78f4b24ea58e9ab06c96cfd04a53e88802aefda74d0e9e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_12.png",
+      "sha256": "b881ed0a6976d1497c321a803b87f95b0528c2d5802841c15c02792547db0a12",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_13.png",
+      "sha256": "f357c7bbfb9bebb1ad2a65e272fc54cfcaf1ad5edbe8e7abb62f65928396a60f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_14.png",
+      "sha256": "59a40b69d86b578e75f083d169c5cc42805e8abe74c719cdbb3911bc7bf1e43d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/piedra_15.png",
+      "sha256": "31ab2606ecdc7684c2597221f3bb96508300ba74bca9314c7e631d845d158e7c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_00.png",
+      "sha256": "dce6083c72f5963e9f66b8dfde080d342a30df60d9b31652d9055fb6ef786c48",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_01.png",
+      "sha256": "37d9405306d4c02c7e2bb5d78f691a8b3316301537c3499a2b180e315920188f",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_02.png",
+      "sha256": "58b8df3525965f42a6135b8aa97247a5d4d341b75147c7c4fd16cfbd15fb5198",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_03.png",
+      "sha256": "bf4de75166d6f665c84f95f04bcd642ef304e54934265ee0e9338a1a0ca39d96",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_04.png",
+      "sha256": "d64b1d350374085ab0131ed2ef29e1aec932088f2242e66037974539bdd925ab",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_05.png",
+      "sha256": "90a555f176aba2135e856f34e9203e3e50a911caa09926a55b7d712a4b83dcfb",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_06.png",
+      "sha256": "f0ac129e3f1a270220076f67180f3945448429a19c1111efaa0ac7b3b0476abe",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_07.png",
+      "sha256": "5b0ee32e63128ca95fe2f4c0bf780a73dd8efc8c63bbc3d5d8ccd99d5bf01d78",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_08.png",
+      "sha256": "6a1d220538fcb70d922046b127a8a31d0094e26a811fda5362c4700fae91ef71",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_09.png",
+      "sha256": "33804b5ef1842dee32bb41a2308c98cd30612c67b73d2094efe1acd524bc0a56",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_10.png",
+      "sha256": "7c481b2e8c95bc31d2b3f6892d9721e6dadfb51376d85ea76fcc56e0a9d02dd4",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_11.png",
+      "sha256": "6c6775b6436d37d89571fe262a165844cb1052aac76dcdbfc3a01cf48df067da",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_12.png",
+      "sha256": "ae6f2697c1613c1d62cba0a149530436491a800a7601919df0e8ab7fbffdc242",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_13.png",
+      "sha256": "10554c380b179e81bacf7276a22e4b8fc74669f61553b921db7898f3164a1735",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_14.png",
+      "sha256": "b2ebaaa357530217e6e1f044dac924fc8c2ec60e7ac302fb90a82fd1177e5ca5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/tierra_15.png",
+      "sha256": "cf2be0c41acf95938c6b76f054dacda8d1eb87be41ea3dec7aac35ab242ccfe9",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_00.png",
+      "sha256": "dce6083c72f5963e9f66b8dfde080d342a30df60d9b31652d9055fb6ef786c48",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_01.png",
+      "sha256": "7471218e1ecc50dc513b243da6fa0d145f0e43745bbdc1d676170c75f35ab8bc",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_02.png",
+      "sha256": "66bfcb79b8a1a6ef247f297b957d4e9be0d4b0844f2e9921a94e31762fad1f1d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_03.png",
+      "sha256": "88041a6e0d9a34472e6bce1a4727224005185ecbf162b6798a37994879c29c30",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_04.png",
+      "sha256": "eb92f68213336a8412ce7c39ef7b6754ab09c3f57b0f00b637dd3453c0414e1b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_05.png",
+      "sha256": "343c47f48ca2e290b3ed473b6b5453b608ffe7b1a8666cd2c1f0395610a3aeb6",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_06.png",
+      "sha256": "faa2ab387bb1c6481ad6367bce23a8d306d6210803be53e106fa750880af6577",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_07.png",
+      "sha256": "67d5a2f7fd832f58922a299bacb79fa3b03a5a6d09e3a2f93928c122ccdade70",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_08.png",
+      "sha256": "6b1180553443656bfc7f53f579828212bdf49bf033d21da445f40028d3134234",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_09.png",
+      "sha256": "26acddc6b1f7003710ff32b2543bbbf8879eed0608bc65988961ddbe08e13c5b",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_10.png",
+      "sha256": "16b373808b49a409c67b98ccee4aa0a3836338a5b6cb12a95afa6ddbd6a770ee",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_11.png",
+      "sha256": "a5bf0dfa42f893a53c1d5b243a774303299f109be890053c9ca05dd4f80c6b31",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_12.png",
+      "sha256": "156ee7d2033770b1a35ea701c98bb2234ba1cf552ee470e7807c949bc7bcec2d",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_13.png",
+      "sha256": "13234809dda0dc5504c03986575b2ca0d29cc602eaa1861b9a8667b231cf9861",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_14.png",
+      "sha256": "71a90a848f51511c34a705c7a8869a7df6e9b69900c05c8fc3188a851eb89a5c",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/diagonales/agua_15.png",
+      "sha256": "30595e9becc80a3becc0a0be22b8417e0cbdf6fa4e425e44da18494663af4988",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/rio_profundo_campo.png",
+      "sha256": "5ddb43bf54109e4586c6cc4ee0fc2807eaf74c5aeb7bb673986a5e44f2bce856",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/rio_medio_campo.png",
+      "sha256": "807df10f94a3fe6d25782389324a1c3cb2c96d716e4750c388962402ba4da51e",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/rio_somero_campo.png",
+      "sha256": "a4ad7b0b78e5809613f527da639873e62ac2239c606e503ec23d2c3aa32214f0",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/sedimento_humedo_campo.png",
+      "sha256": "a0397cc80283347c665485277e853fc694ca8ec5a96d382d072ac49e1edb81a5",
+      "approved_bytes_preserved": true
+    },
+    {
+      "file": "terrenos/campos/bordillo_piedra_campo.png",
+      "sha256": "3668c499e9464a0f6acdabda0cc3851817c34db2a8fd7bd47a96a242035b6b4d",
+      "approved_bytes_preserved": true
+    }
+  ]
+}

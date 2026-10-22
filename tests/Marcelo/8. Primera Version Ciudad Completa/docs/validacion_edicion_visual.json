@@ -1,0 +1,28 @@
+{
+  "animation_cycles_with_eight_poses": 8,
+  "boats": 7,
+  "bridge_crossings": 14,
+  "checked_at_utc": "2026-10-15T02:13:02",
+  "collision_differences": 0,
+  "collision_samples": 57840,
+  "destinations_accessible": 22,
+  "engine": "4.5.1-stable (official)",
+  "errors": [],
+  "floor_tiles": 91200,
+  "gate_crossings": 8,
+  "move_duplicate_delete_collision": true,
+  "objects": 1766,
+  "passed": true,
+  "residents": 388,
+  "saved_edits_survive_reload_and_start": true,
+  "saved_nodes": 10679,
+  "scope": "Original F.C migration; temporary edits only. No user scene overwritten.",
+  "terrain_paint_updates_passage": true,
+  "editor_visual_check": {
+    "engine": "Godot 4.5.1",
+    "native_2d_scene_visible": true,
+    "briar_panel_selects_saved_hero": true,
+    "frame_selected_node": true,
+    "screenshot": "docs/editor_visual.png"
+  }
+}

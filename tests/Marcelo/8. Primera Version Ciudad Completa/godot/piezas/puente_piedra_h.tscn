@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/puente_piedra_h.png" id="1_q7oj6"]
+
+[node name="puente_piedra_h" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "puente_piedra_h"
+metadata/nombre = "Puente de piedra horizontal"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_q7oj6")
+centered = false
+offset = Vector2(-128, -160)
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 160)

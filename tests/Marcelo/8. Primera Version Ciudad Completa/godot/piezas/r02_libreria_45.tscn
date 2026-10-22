@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/libreria_45.png" id="1_ooun5"]
+
+[node name="r02_libreria_45" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "r02_libreria_45"
+metadata/nombre = "Librería diagonal"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_ooun5")
+centered = false
+offset = Vector2(-204, -420)
+region_enabled = true
+region_rect = Rect2(0, 0, 408, 424)
+
+[node name="Colision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-4, -180, 4, -180, 4, -172, -4, -172)
+
+[node name="Forma_001" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-20, -172, 20, -172, 20, -164, -20, -164)
+
+[node name="Forma_002" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-36, -164, 36, -164, 36, -156, -36, -156)
+
+[node name="Forma_003" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-52, -156, 52, -156, 52, -148, -52, -148)
+
+[node name="Forma_004" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-68, -148, 68, -148, 68, -140, -68, -140)
+
+[node name="Forma_005" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-84, -140, 84, -140, 84, -132, -84, -132)
+
+[node name="Forma_006" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-100, -132, 100, -132, 100, -124, -100, -124)
+
+[node name="Forma_007" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-116, -124, 116, -124, 116, -116, -116, -116)
+
+[node name="Forma_008" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-132, -116, 132, -116, 132, -108, -132, -108)
+
+[node name="Forma_009" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-148, -108, 148, -108, 148, -100, -148, -100)
+
+[node name="Forma_010" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-164, -100, 164, -100, 164, -92, -164, -92)
+
+[node name="Forma_011" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-180, -92, 180, -92, 180, -84, -180, -84)
+
+[node name="Forma_012" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-164, -84, 164, -84, 164, -76, -164, -76)
+
+[node name="Forma_013" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-148, -76, 148, -76, 148, -68, -148, -68)
+
+[node name="Forma_014" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-132, -68, 132, -68, 132, -60, -132, -60)
+
+[node name="Forma_015" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-116, -60, 116, -60, 116, -52, -116, -52)
+
+[node name="Forma_016" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-100, -52, 100, -52, 100, -44, -100, -44)
+
+[node name="Forma_017" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-84, -44, 84, -44, 84, -36, -84, -36)
+
+[node name="Forma_018" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-68, -36, 68, -36, 68, -28, -68, -28)
+
+[node name="Forma_019" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-52, -28, 52, -28, 52, -20, -52, -20)
+
+[node name="Forma_020" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-36, -20, 36, -20, 36, -12, -36, -12)
+
+[node name="Forma_021" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-20, -12, 20, -12, 20, -4, -20, -4)
+
+[node name="Forma_022" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)

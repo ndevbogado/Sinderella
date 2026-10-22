@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/arbol_07.png" id="1_rmqxu"]
+
+[node name="r02_arbol_07" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "r02_arbol_07"
+metadata/nombre = "Abedules gemelos"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_rmqxu")
+centered = false
+offset = Vector2(-184, -388)
+region_enabled = true
+region_rect = Rect2(0, 0, 368, 392)
+
+[node name="Colision" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Forma_000" type="CollisionPolygon2D" parent="Colision"]
+visible = false
+polygon = PackedVector2Array(-16, -20, 24, -20, 24, 12, -16, 12)

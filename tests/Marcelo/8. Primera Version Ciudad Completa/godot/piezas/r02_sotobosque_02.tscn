@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/aprobados/sotobosque_02.png" id="1_l0fh4"]
+
+[node name="r02_sotobosque_02" type="Node2D" groups=["briar_objeto"]]
+metadata/_edit_group_ = true
+metadata/asset_id = "r02_sotobosque_02"
+metadata/nombre = "Zarza de bayas"
+
+[node name="Aspecto" type="Sprite2D" parent="."]
+texture = ExtResource("1_l0fh4")
+centered = false
+offset = Vector2(-52, -68)
+region_enabled = true
+region_rect = Rect2(0, 0, 104, 72)

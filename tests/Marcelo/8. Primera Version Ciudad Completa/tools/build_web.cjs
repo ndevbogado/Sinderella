@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p));
+const catalog=JSON.parse(read('catalogo.json')),map=JSON.parse(read('mapa/ciudad.json'));
+const files=new Set([...catalog.assets.flatMap(a=>a.foreground?[a.file,a.foreground]:[a.file]),...catalog.materials.map(m=>m.field),...catalog.terrain_revision.water,catalog.terrain_revision.coping,catalog.terrain_revision.control,catalog.terrain_revision.river,...catalog.materials.map(m=>m.file),...catalog.transitions.map(t=>t.file),...catalog.diagonal_transitions.map(t=>t.file),catalog.player.file,catalog.npcs.file,...catalog.diagonal_atlases,'atlases/terrenos_32.png','atlases/transicion_piedra_47.png','atlases/transicion_tierra_47.png','atlases/transicion_agua_47.png','previews/Briar_Plano_Sin_Rotulos.png']);
+const images=Object.fromEntries([...files].map(p=>[p,'data:image/png;base64,'+read(p).toString('base64')]));
+const layers=Object.fromEntries(['base','overlay','collision'].map(n=>[n,read(n==='collision'?map.layers.collision:'mapa/'+n+'.bin').toString('base64')]));
+const pack={catalog,map,layers,images};
+let html=read('tools/page.html').toString().replace('__BRIAR_PACK__',JSON.stringify(pack).replaceAll('<','\\u003c')).replace('__BRIAR_CORE__','window.BriarSurfaces=(()=>{'+read('tools/surfaces.cjs').toString().replace('module.exports=','return ')+'})();\n'+read('tools/terrain_r02.js').toString()+'\n'+read('tools/city_b1.js').toString());
+fs.writeFileSync(path.join(root,'Briar_Jugable.html'),html);
+console.log('Offline HTML: '+(Buffer.byteLength(html)/1048576).toFixed(2)+' MiB; '+files.size+' embedded PNG.');
