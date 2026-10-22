@@ -1,0 +1,57 @@
+# ============================================================
+# .gitignore - Godot 4.7 (GDScript) | Repo: raiz del repositorio
+# ============================================================
+# IMPORTANTE:
+#   - SI se versionan los archivos *.import y *.uid (Godot los necesita
+#     para conservar la configuracion de importacion y las referencias).
+#   - NO se versiona la carpeta .godot/ (cache local, se regenera sola).
+# ============================================================
+
+# --- Godot: cache y archivos generados ---
+.godot/
+
+# --- Godot: credenciales y datos locales de exportacion (NUNCA subir) ---
+export_credentials.cfg
+.godot/export_credentials.cfg
+
+# --- Godot: plantillas y builds locales ---
+/godot/android/
+/builds/
+/godot/builds/
+*.pck
+*.apk
+*.aab
+
+# --- Godot: solo si en el futuro se usa C# (.NET) ---
+.mono/
+mono_crash.*.json
+/godot/bin/
+/godot/obj/
+
+# --- Material licenciado (MIENTRAS EL REPOSITORIO SEA PUBLICO) ---
+# Cuando el repositorio pase a privado, se puede borrar este bloque.
+# OJO: lo que ya se haya subido al repo publico queda en el historial.
+/_source/licensed/*
+!/_source/licensed/.gitkeep
+
+# --- Herramientas externas (Python u otros) ---
+__pycache__/
+*.pyc
+.venv/
+
+# --- Editores e IDEs ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.fleet/
+*.swp
+*~
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.directory
+.Trash-*
+*.tmp

@@ -1,0 +1,43 @@
+# EditorConfig: https://editorconfig.org
+# Lo respetan VS Code, JetBrains y la mayoria de los editores (con plugin si hace falta).
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+
+# GDScript: tabulaciones (convencion oficial de Godot)
+[*.gd]
+indent_style = tab
+
+# Archivos generados por Godot: no tocar el formato
+[*.{tscn,tres,godot,cfg,import,uid}]
+trim_trailing_whitespace = false
+insert_final_newline = unset
+
+# Markdown: los espacios al final pueden ser saltos de linea intencionales
+[*.md]
+trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2
+
+# Datos y configuracion
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Scripts de herramientas externas
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Solo si en el futuro se usa C#
+[*.cs]
+indent_style = space
+indent_size = 4
+
+[*.bat]
+end_of_line = crlf

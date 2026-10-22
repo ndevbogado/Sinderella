@@ -1,0 +1,75 @@
+# ============================================================
+# .gitattributes - Equipo mixto Linux (SteamOS/Ubuntu) + Windows
+# ============================================================
+
+# --- Fin de linea: SIEMPRE LF en el repo, en todos los sistemas ---
+* text=auto eol=lf
+
+# --- Archivos de texto de Godot ---
+*.gd         text
+*.gdshader   text
+*.gdshaderinc text
+*.tscn       text
+*.tres       text
+*.godot      text
+*.cfg        text
+*.import     text
+*.uid        text
+*.gdignore   text
+
+# --- Otros archivos de texto ---
+*.md         text
+*.json       text
+*.yml        text
+*.yaml       text
+*.svg        text
+*.gltf       text
+*.py         text
+*.sh         text eol=lf
+
+# --- Scripts de Windows (necesitan CRLF) ---
+*.bat        text eol=crlf
+*.cmd        text eol=crlf
+
+# --- Archivos binarios (Git no debe intentar convertirlos ni mostrar diffs) ---
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.webp       binary
+*.ico        binary
+*.icns       binary
+*.ogg        binary
+*.wav        binary
+*.mp3        binary
+*.flac       binary
+*.mp4        binary
+*.webm       binary
+*.ttf        binary
+*.otf        binary
+*.woff2      binary
+*.glb        binary
+*.fbx        binary
+*.blend      binary
+*.psd        binary
+*.kra        binary
+*.xcf        binary
+*.aseprite   binary
+*.zip        binary
+*.7z         binary
+
+# ============================================================
+# GIT LFS (DECISION PENDIENTE - por ahora desactivado)
+# ============================================================
+# Para activarlo mas adelante:
+#   1) Instalar Git LFS y ejecutar:  git lfs install
+#   2) Borrar de la lista "binary" de arriba las extensiones elegidas
+#   3) Descomentar las lineas correspondientes de abajo
+#   4) Si ya hay binarios subidos, migrarlos con: git lfs migrate import
+#      (reescribe el historial: coordinarlo con todo el equipo)
+#
+# *.psd   filter=lfs diff=lfs merge=lfs -text
+# *.kra   filter=lfs diff=lfs merge=lfs -text
+# *.blend filter=lfs diff=lfs merge=lfs -text
+# *.wav   filter=lfs diff=lfs merge=lfs -text
+# *.mp4   filter=lfs diff=lfs merge=lfs -text
+# *.fbx   filter=lfs diff=lfs merge=lfs -text
